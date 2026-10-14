@@ -1,0 +1,86 @@
+/* Palette tirée du logo : turquoise, orange, jaune, rouge, encre bleu-nuit */
+:root {
+  --teal: #36b9b4;
+  --orange: #f4813f;
+  --yellow: #fdc16d;
+  --red: #e5322d;
+  --night: #261f2e;
+  --ink: #261f2e;
+  --bg: #fff4e0;
+  --alt: #fde2b0;
+  --link: #c4301c;
+  --font: "Quicksand", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #261f2e; --alt: #332a3c; --ink: #fff4e0; --link: #fdc16d; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body { margin: 0; font: 500 1.1rem/1.6 var(--font); background: var(--bg); color: var(--ink); }
+a { color: var(--link); }
+h1, h2, h3 { font-weight: 700; line-height: 1.15; text-transform: uppercase; letter-spacing: .02em; }
+
+.site-header { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; align-items: center; justify-content: space-between; padding: .6rem 1rem; background: var(--night); border-bottom: 5px solid var(--orange); }
+.brand { display: flex; align-items: center; gap: .6rem; color: #fff4e0; font-weight: 700; text-transform: uppercase; text-decoration: none; }
+.brand img { height: 3rem; width: auto; }
+nav { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; }
+nav a { color: #fff4e0; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: .95rem; }
+nav a:hover { color: var(--yellow); }
+
+section, footer { padding: 3.5rem max(1rem, calc((100% - 52rem) / 2)); }
+section.alt { background: var(--alt); }
+h2 { font-size: 2rem; margin-top: 0; }
+h2::after { content: ""; display: block; width: 4rem; height: 6px; margin-top: .5rem; border-radius: 3px; background: linear-gradient(90deg, var(--teal), var(--orange), var(--red)); }
+
+.hero { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 1rem; text-align: center; padding-top: 3rem; padding-bottom: 6rem; color: var(--ink);
+  background: linear-gradient(180deg, var(--teal) 0, var(--teal) 25%, var(--yellow) 25%, var(--orange) 62%, var(--red) 62%, var(--red) 80%, var(--teal) 80%); }
+.hero img { width: min(18rem, 70vw); height: auto; border: 5px solid var(--night); }
+.hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin: .5rem 0 0; color: #fff4e0; text-shadow: 3px 3px 0 var(--night); }
+.hero p { margin: 0; max-width: 34rem; padding: .4rem 1rem; background: var(--bg); border: 3px solid var(--night); font-weight: 700; color: var(--ink); }
+
+.button { display: inline-block; padding: .7rem 1.5rem; border: 3px solid var(--night); border-radius: 2rem; background: var(--night); color: #fff4e0; font-weight: 700; text-transform: uppercase; text-decoration: none; }
+.button:hover { background: var(--red); }
+.hero .button { background: var(--yellow); color: var(--night); box-shadow: 4px 4px 0 var(--night); }
+.hero .button:hover { background: #fff4e0; }
+
+.news { list-style: none; padding: 0; }
+.news li { padding: .6rem 0; border-bottom: 2px dashed color-mix(in srgb, var(--ink) 30%, transparent); }
+.news time { display: inline-block; min-width: 7.5rem; font-weight: 700; color: var(--red); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.cards article { padding: 1rem 1.25rem; background: var(--alt); border: 3px solid var(--night); border-top: 10px solid var(--orange); border-radius: .5rem; }
+.cards article:nth-child(2) { border-top-color: var(--teal); }
+.cards article:nth-child(3) { border-top-color: var(--red); }
+.cards article:nth-child(4) { border-top-color: var(--yellow); }
+.cards h3 { margin-top: 0; font-size: 1.1rem; }
+
+footer { text-align: center; font-size: .9rem; background: var(--night); color: #fff4e0; border-top: 5px solid var(--teal); }
+footer a { color: var(--yellow); }
+
+/* Phare de Saint-Nazaire et vagues */
+.hero { position: relative; overflow: hidden; }
+.hero > * { position: relative; z-index: 1; }
+.hero::before { content: ""; position: absolute; z-index: 0; right: max(1rem, 8%); bottom: 2rem; width: clamp(3.5rem, 9vw, 6rem); aspect-ratio: 60 / 170; background: url("images/phare.svg") center / contain no-repeat; }
+.hero::after, footer::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3.5rem; background: url("images/vague.svg") 0 100% / 14rem 100% repeat-x; }
+footer { position: relative; margin-top: 3.5rem; }
+footer::before { bottom: 100%; }
+
+/* Actualités : grille d'affiches et pages d'articles */
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+.news-card { display: flex; flex-direction: column; gap: .4rem; padding: .6rem; background: var(--bg); border: 3px solid var(--night); border-radius: .5rem; color: var(--ink); text-decoration: none; transition: transform .15s, box-shadow .15s; }
+.news-card:hover { transform: translate(-3px, -3px); box-shadow: 5px 5px 0 var(--orange); }
+.news-card img, .no-poster { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: .25rem; }
+.no-poster { background: linear-gradient(135deg, var(--teal), var(--orange) 60%, var(--red)); }
+.news-title { font-weight: 700; line-height: 1.25; }
+.news-card time { font-size: .9rem; color: var(--red); font-weight: 700; }
+@media (prefers-color-scheme: dark) { .news-card time { color: var(--yellow); } }
+
+.subpage { min-height: 70vh; }
+.subpage h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin-top: 0; }
+.post { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem; }
+.post time { display: block; margin-bottom: 1rem; font-weight: 700; color: var(--red); }
+.post img { max-width: 100%; height: auto; border: 3px solid var(--night); border-radius: .25rem; margin: .5rem 0; }
+.post figure { margin: 1rem 0; }
+.post .poster { display: block; margin: 0 auto 1.5rem; max-height: 36rem; }
+.post-body { overflow-wrap: anywhere; }
+.post-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 3px dashed var(--orange); font-weight: 700; }
+.post-nav a:last-child { text-align: right; }
