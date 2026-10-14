@@ -88,7 +88,6 @@ def main():
         if p["slug"] in pages and p["slug"] not in KEPT and p["slug"] not in REDIRECTS:
             write(ROOT / p["slug"] / "index.html", redirect_page(f"posts/{slug}.html", "../"))
 
-    write(ROOT / "CNAME", "lespiedsontdesoreilles.fr\n")
     write(ROOT / ".nojekyll", "")
     write(ROOT / "404.html", bn.page("Page introuvable",
           '<section><h1>Page introuvable</h1><p>Cette page n\'existe pas ou a changé d\'adresse.</p>'

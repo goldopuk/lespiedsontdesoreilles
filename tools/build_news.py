@@ -25,6 +25,14 @@ def fr_date(iso):
     return f"{int(d)} {MONTHS[int(m) - 1]} {y}"
 
 
+def shown_date(p):
+    """Les événements importés du disque dur n'ont que le mois et l'année."""
+    if p.get("month"):
+        y, m = p["date"][:7].split("-")
+        return f"{MONTHS[int(m) - 1]} {y}"
+    return fr_date(p["date"])
+
+
 def clean_title(t):
     t = html.unescape(t)
     # retire les emojis de début/fin pour garder un titre sobre
@@ -145,7 +153,7 @@ def card(p, prefix):
            if p["poster"] else '<div class="no-poster" aria-hidden="true"></div>')
     return (f'<a class="news-card" href="{prefix}posts/{p["slug"]}.html">{img}'
             f'<span class="news-title">{html.escape(p["title"])}</span>'
-            f'<time datetime="{p["date"]}">{fr_date(p["date"])}</time></a>')
+            f'<time datetime="{p["date"]}">{shown_date(p)}</time></a>')
 
 
 def main():
@@ -166,6 +174,14 @@ def main():
         posts.append({"title": title, "slug": slug, "date": r["date"][:10], "raw": r,
                       "poster": poster_of(r)})
 
+    # événements d'archives (affiches du disque dur) : pas de texte, seulement l'affiche
+    events_file = ROOT / "tools" / "events.json"
+    if events_file.exists():
+        for e in json.loads(events_file.read_text()):
+            posts.append({"title": e["title"], "slug": e["slug"], "date": e["date"] + "-01", "month": True,
+                          "raw": {"content": ""}, "poster": e["poster"]})
+    posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
+
     for i, p in enumerate(posts):
         body_html = convert_content(p["raw"]["content"], "../")
         poster = ""
@@ -179,7 +195,7 @@ def main():
         nav += f'<a href="{newer["slug"]}.html">{html.escape(newer["title"])} →</a>' if newer else "<span></span>"
         nav += "</nav>"
         body = (f'<article class="post"><p><a href="../actualites.html">← Toutes les actualités</a></p>'
-                f'<h1>{html.escape(p["title"])}</h1><time datetime="{p["date"]}">Publié le {fr_date(p["date"])}</time>'
+                f'<h1>{html.escape(p["title"])}</h1><time datetime="{p["date"]}">{"Événement de " + shown_date(p) if p.get("month") else "Publié le " + shown_date(p)}</time>'
                 f'{poster}<div class="post-body">{body_html}</div>{nav}</article>')
         (ROOT / "posts" / f'{p["slug"]}.html').write_text(page(p["title"], body, "../"))
 

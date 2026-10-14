@@ -20,7 +20,7 @@ python3 tools/build_news.py && python3 tools/build_pages.py
 Voir le site en local : `python3 -m http.server 8765` puis http://localhost:8765
 
 ## Mise en ligne (GitHub Pages + Gandi)
-1. Créer un dépôt GitHub, y pousser le dossier (`CNAME` et `.nojekyll` sont déjà là).
+1. Créer un dépôt GitHub, y pousser le dossier (`.nojekyll` est déjà là ; le fichier `CNAME` contenant `lespiedsontdesoreilles.fr` n'est ajouté qu'au moment de la bascule du domaine).
 2. Dépôt > Settings > Pages : source « Deploy from a branch », branche `main`, dossier `/ (root)`.
 3. Même page : domaine personnalisé `lespiedsontdesoreilles.fr`, puis cocher « Enforce HTTPS » une fois le certificat prêt.
 4. Chez Gandi (Nom de domaine > Enregistrements DNS), remplacer les enregistrements de WordPress.com par :

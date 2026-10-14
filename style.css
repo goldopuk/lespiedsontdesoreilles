@@ -84,3 +84,5 @@ footer::before { bottom: 100%; }
 .post-body { overflow-wrap: anywhere; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 3px dashed var(--orange); font-weight: 700; }
 .post-nav a:last-child { text-align: right; }
+.post-nav a { color: var(--link); text-transform: none; font-size: 1rem; }
+.post-nav a:hover { color: var(--red); }
