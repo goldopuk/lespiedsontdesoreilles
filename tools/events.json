@@ -1,416 +1,1673 @@
 [
  {
-  "title": "Forró do domingo à L'Appart",
-  "date": "2019-10",
+  "kind": "event",
+  "slug": "2026-09-05-place-aux-associations",
+  "title": "Place aux associations",
+  "date": "2026-09-05",
+  "end": null,
+  "place": "Place de l'Amérique Latine, Saint-Nazaire",
+  "desc": "Cette année on se retrouve au Forum des associations !\nC'est le moment idéal pour venir nous rencontrer, papoter, poser toutes vos questions sur les cours, les bals, les concerts… et pourquoi pas vous inscrire pour la rentrée.\nÀ 16h, rendez-vous sur la scène de l'Alvéole 12 pour un mini-bal forró !\nOn ne sera pas seul·es sur le stand : vous pourrez aussi rencontrer Farofa, toute nouvelle association nazairienne autour de la culture brésilienne.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2026-08-25-bal-concert-forro-avec-gandaia-na-ponte-au-five-oh",
+  "title": "Bal-concert forró avec Gandaia na Ponte au Five-Oh",
+  "date": "2026-08-25",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Bal et concert forró avec Gandaia na Ponte. Participation libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2026-04-25-bal-concert-forro-avec-gandaia-na-ponte-au-nomad-c",
+  "title": "Bal-concert forró avec Gandaia na Ponte au Nomad Café",
+  "date": "2026-04-25",
+  "end": null,
+  "place": "Nomad Café, 13 allée des Myosotis, Saint-Nazaire",
+  "desc": "Avec Gandaia na Ponte, ça part en vrille… mais en rythme. Du forró qui claque, des sourires en cascade.\n19h : ouverture des portes\n19h30 : initiation / échauffement au forró\n20h : concert",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2026-04-25-bal-concert-forro-avec-gandaia-na-ponte-au-nomad-c.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-04-03-bal-concert-forro-avec-gandaia-na-ponte-a-la-frate",
+  "title": "Bal-concert forró avec Gandaia na Ponte à la Fraternité",
+  "date": "2026-04-03",
+  "end": null,
+  "place": "La Fraternité, 1 rue de l'Île de France, Saint-Nazaire",
+  "desc": "Une soirée chaleureuse et festive pour partager la danse et la musique brésilienne.\n19h30 – 20h : mise en jambes en playlist\n20h – 20h15 : initiation au forró\n20h30 – 22h : concert live\nParticipation libre au chapeau, au profit de la Frat'. Bar sans alcool sur place.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2026-01-21-bal-concert-forro-avec-gandaia-na-ponte-a-porniche",
+  "title": "Bal-concert forró avec Gandaia na Ponte à Pornichet",
+  "date": "2026-01-21",
+  "end": null,
+  "place": "Quai des Arts, Pornichet",
+  "desc": "Initiation : 19h15-20h\nBal et concert : 20h-22h",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2026-01-21-bal-concert-forro-avec-gandaia-na-ponte-a-porniche.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-01-11-brunch-forro-de-la-nouvelle-annee",
+  "title": "Brunch forró de la nouvelle année",
+  "date": "2026-01-11",
+  "end": null,
+  "place": "Salle polyvalente d'Avalix, 3 rue du Dr Calmette, Saint-Nazaire",
+  "desc": "Après la boum brasilidade, avant d'attaquer les stages forró : brunch forró en mode auberge espagnole. Tu ramènes un plat, on ramène le café.\nDanse sur playlist forró pour réveiller les jambes sans les brusquer.\nDimanche, 12h–14h.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2026-01-10-stages-forro-roots-intensifs-avec-cokelico",
+  "title": "Stages forró roots intensifs avec Cokelicô",
+  "date": "2026-01-10",
+  "end": "2026-01-11",
+  "place": "Salle Avalix, 3 rue du Docteur Calmette, Saint-Nazaire",
+  "desc": "Intensif de progression sur 6 cours d'une heure : l'essence du forró roots (connexion, équilibre, musicalité) et une vraie autonomie en bal.\nSamedi 10 janvier : corps roots et musicalité, connexion roots, équilibre et mouvement, pratique libre guidée.\nDimanche 11 janvier : footwork roots, routine roots et créativité, pratique libre guidée.\nEn participant aux stages, vous devenez adhérent·e de l'association Les Pieds Ont Des Oreilles.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2025-11-29-forro-et-gandaia-na-ponte-au-bar-bar",
+  "title": "Forró et Gandaia na Ponte au Bar Bar",
+  "date": "2025-11-29",
+  "end": null,
+  "place": "La Bodeguita, Saint-Nazaire",
+  "desc": "Concert et bal forró avec Gandaia na Ponte, dans le cadre du festival Culture Bar Bar.\nGandaia na Ponte, ou « le bazar sur le pont », est un groupe nazairien de forró : guitare, zabumba, cavaquinho, triangle, pandeiro, chant et chœur. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-11-29-forro-et-gandaia-na-ponte-au-bar-bar.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-11-09-bal-brunch-forro-au-nomad-cafe",
+  "title": "Bal-brunch forró au Nomad Café",
+  "date": "2025-11-09",
+  "end": null,
+  "place": "Nomad Café, allée des Myosotis, Saint-Nazaire",
+  "desc": "On prolonge la fête après Forró na Chuva ! Bal-brunch forró au Nomad'Café, dimanche 9 novembre, de 12h à 15h.\nMode auberge espagnole (chacun peut apporter à manger, le bar sert café, thé et jus), playlist forró pour danser. Entrée libre et gratuite.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-11-09-bal-brunch-forro-au-nomad-cafe.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-09-12-bal-forro-avec-gandaia-na-ponte-a-la-bodeguita",
+  "title": "Bal forró avec Gandaia na Ponte à la Bodeguita",
+  "date": "2025-09-12",
+  "end": null,
+  "place": "La Bodeguita, 7 rue du Bois Savary, Saint-Nazaire",
+  "desc": "Concert et bal forró avec Gandaia na Ponte, à la Bodeguita de 20h à 23h. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-09-12-bal-forro-avec-gandaia-na-ponte-a-la-bodeguita.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-09-06-bal-forro-place-du-commando",
+  "title": "Bal forró place du Commando",
+  "date": "2025-09-06",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Un petit forró à Saint-Nazaire sur la place du Commando, de 18h30 à 20h30. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-09-06-bal-forro-place-du-commando.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-08-28-bal-forro-avec-seba-do-forro-a-mean-penhoet",
+  "title": "Bal forró avec Seba do Forró à Méan-Penhoët",
+  "date": "2025-08-28",
+  "end": null,
+  "place": "Maison de quartier de Méan-Penhoët, 1 rue Émile Combes, Saint-Nazaire",
+  "desc": "Gandaia est malade, Seba prend le relais pour les Terrasses de Méan.\nInitiation à la danse forró à 20h, puis concert en intérieur ou en extérieur selon la météo, à la maison de quartier. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-08-28-bal-forro-avec-seba-do-forro-a-mean-penhoet.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-04-28-forro-na-rua-avec-gandaia-na-ponte",
+  "title": "Forró na rua avec Gandaia na Ponte",
+  "date": "2025-04-28",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Le concert de Méan-Penhoët ayant été annulé à cause du mauvais temps, Gandaia na Ponte joue place du Commando, de 18h à 21h environ. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-04-28-forro-na-rua-avec-gandaia-na-ponte.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-04-20-brunch-et-jam-forro",
+  "title": "Brunch et jam forró",
+  "date": "2025-04-20",
+  "end": null,
+  "place": "Salle de convivialité de Saint-Marc, 46 bd Jules Dumont d'Urville, Saint-Nazaire",
+  "desc": "Pour terminer le week-end après le concert de Nandinho, brunch forró et JAM FORRÓ. Apportez vos instruments. Auberge espagnole, boissons fournies par le bar.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2025-04-19-stages-de-danse-forro-avec-marion-lima",
+  "title": "Stages de danse forró avec Marion Lima",
+  "date": "2025-04-19",
+  "end": null,
+  "place": "École Gambetta, 67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "À l'occasion du concert de Nandinho Barros, des stages de niveau international avec Marion Lima (Paris).\n15h30-17h : forró tous niveaux, un stage transversal.\n17h30-19h : danse à trois (apprendre à danser en trio, changer de partenaire au cours d'une danse).\nLes deux stages sont adaptés à tous les niveaux, la maîtrise des pas de base est requise.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2025-03-15-stage-de-samba-no-pe-avec-tatiana-barros",
+  "title": "Stage de samba no pé avec Tatiana Barros",
+  "date": "2025-03-15",
+  "end": null,
+  "place": "Salle de danse Gambetta, 67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "Stage de « samba no pé » dirigé par Tatiana Barros, de 16h30 à 18h, tous niveaux. Le soir : concert carnavalesque à l'R du Temps.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2025-02-11-concert-de-caio-sete-cordas",
+  "title": "Concert de Caio Sete Cordas",
+  "date": "2025-02-11",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Caio Constantino, installé à Lisbonne, est un guitariste hors pair de Pernambuco (Brésil). Choro, samba, forró et compositions (1h), suivi d'un forrozinho (petit bal forró).\n19h : ouverture des portes. 19h30 : concert. 20h30 : bal forró. 22h : fin.\nParticipation libre et consciente (environ 10 €). Réservation obligatoire par e-mail. Soirée en mode auberge espagnole.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2025-02-11-concert-de-caio-sete-cordas.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-10-12-concert-de-leo-correa-et-gandaia-na-ponte-a-la-gra",
+  "title": "Concert de Léo Corrêa et Gandaia na Ponte à la Grande Tablée",
+  "date": "2024-10-12",
+  "end": null,
+  "place": "Devant l'hôtel de ville, Saint-Nazaire",
+  "desc": "La Grande Tablée est une grande journée de festivité devant l'hôtel de ville : animations des associations et banquet convivial.\nPour clôturer la journée, concert forró avec Gandaia na Ponte augmenté de Léo Corrêa. Initiation à la danse et concert de 20h15 à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2024-10-12-concert-de-leo-correa-et-gandaia-na-ponte-a-la-gra.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-09-21-concert-forro-avec-le-trio-turbilhao-sao-paulo",
+  "title": "Concert forró avec le Trio Turbilhão (São Paulo)",
+  "date": "2024-09-21",
+  "end": null,
+  "place": "L'R du Temps, Saint-Nazaire",
+  "desc": "Un groupe de forró brésilien composé uniquement de femmes, originaire de la région de São Paulo, qui joue un forró traditionnel pé-de-serra, grands classiques et compositions.\n20h30 : ouverture des portes et initiation à la danse. 21h30 – minuit : concert. Minuit – 1h : playlist.\nRéservation via HelloAsso (12 €).",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2024-09-21-concert-forro-avec-le-trio-turbilhao-sao-paulo.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-09-07-place-aux-assos",
+  "title": "Place aux assos",
+  "date": "2024-09-07",
+  "end": null,
+  "place": "Place de l'Amérique Latine, Saint-Nazaire",
+  "desc": "Nous serons à Place aux assos pour présenter nos activités de la saison 24-25. Venez nous rencontrer, papoter, faire de la musique avec nous. Sans oublier le mini-bal à 17h.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2024-09-07-place-aux-assos.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-08-25-concert-du-coletivo-da-chuva",
+  "title": "Concert du Coletivo da Chuva",
+  "date": "2024-08-25",
+  "end": null,
+  "place": "Five-Oh, skatepark, boulevard Albert 1er, Saint-Nazaire",
+  "desc": "Forró after-beach avec le Coletivo da Chuva, face à la mer, sur la terrasse en bois du Five-Oh.\n18h : début du bal. 18h30 : concert. 21h30 : on baisse le son.\nParticipation libre et consciente (autour de 10 €). En cas de mauvais temps, repli dans une salle polyvalente de la ville.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2024-08-25-concert-du-coletivo-da-chuva.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-07-10-cote-plage-atelier-danse-musique-et-bal-forro",
+  "title": "Côté plage : atelier danse, musique et bal forró",
+  "date": "2024-07-10",
+  "end": null,
+  "place": "Skatepark, Saint-Nazaire",
+  "desc": "10h - 11h30 : atelier d'initiation à la danse forró\n12h - 13h : atelier de musique forró\n20h - 21h : bal forró",
+  "also": [
+   {
+    "title": "Côté plage : atelier de musique forró",
+    "date": "2024-08-21",
+    "place": "Esplanade Monsieur Hulot, Saint-Nazaire"
+   },
+   {
+    "title": "Côté plage : atelier danse, musique et bal forró",
+    "date": "2024-08-28",
+    "place": "Place du Commando, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2024-07-10-cote-plage-atelier-danse-musique-et-bal-forro.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-07-18-gandaia-na-ponte-aux-terrasses-de-mean-penhoet",
+  "title": "Gandaia na Ponte aux Terrasses de Méan-Penhoët",
+  "date": "2024-07-18",
+  "end": null,
+  "place": "MQMP, Méan-Penhoët, Saint-Nazaire",
+  "desc": "Jeudi 18 juillet, notre dernier événement forró avant la pause estivale. Invités par la maison de quartier de Méan-Penhoët aux Terrasses de Méan pour un concert/bal forró avec Gandaia na Ponte et Léo Corrêa.\nÀ partir de 19h30, bal-concert à 20h. L'initiation à la danse a lieu tout le long du bal. Gratuit.",
+  "also": [
+   {
+    "title": "Gandaia na Ponte à la Flânerie du Brivet",
+    "date": "2024-07-18",
+    "place": "Méan-Penhoët, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2024-07-18-gandaia-na-ponte-aux-terrasses-de-mean-penhoet.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-07-06-gandaia-na-ponte-au-festival-tintamarre-et-chariva",
+  "title": "Gandaia na Ponte au festival Tintamarre et Charivari",
+  "date": "2024-07-06",
+  "end": null,
+  "place": "Place Nadia Boulanger, Saint-Nazaire",
+  "desc": "Invités par la maison de quartier de la Bouletterie à leur festival Tintamarre et Charivari. Le concert est suivi de l'Arbre à Danser. Initiation à la danse à 17h.",
+  "also": [],
+  "other_org": "Événement organisé par Gandaia na Ponte",
+  "poster": "evt-2024-07-06-gandaia-na-ponte-au-festival-tintamarre-et-chariva.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-06-21-fete-de-la-musique-forro-samba",
+  "title": "Fête de la musique forró/samba",
+  "date": "2024-06-21",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Bal forró/samba avec Léo Corrêa, Gandaia na Ponte, Forró da Quinta, Pitchipalapala et jam session. De 19h à 23h, place du Commando.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2024-06-21-fete-de-la-musique-forro-samba.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-06-14-sambada-do-brasil-jam-forro-samba",
+  "title": "Sambada do Brasil (jam forró/samba)",
+  "date": "2024-06-14",
+  "end": null,
+  "place": "Le Kiosq, Saint-Nazaire",
+  "desc": "Jam session et bal forró/samba ouvert aux musiciens de tout bord, dirigée par l'artiste brésilien Léo Corrêa. Les musiciens interprètent les standards de forró et de samba pendant que le public danse. Participation libre (chapeau).",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2024-06-14-sambada-do-brasil-jam-forro-samba.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-06-01-concert-forro-aux-grandes-marees-de-saint-nazaire",
+  "title": "Concert forró aux Grandes Marées de Saint-Nazaire",
+  "date": "2024-06-01",
+  "end": null,
+  "place": "Rond-point de Sautron, Saint-Nazaire",
+  "desc": "Lenilda Verissimo (voix, triangle) et Karine Huet (accordéon, chant), accompagnées d'Edu Vieira (zabumba, chant) et Sébastien Pacreau (percussions, batterie). Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-05-09-roda-de-forro-samba-au-skate-park",
+  "title": "Roda de forró/samba au skate park",
+  "date": "2024-05-09",
+  "end": null,
+  "place": "Guinguette Five-Oh, skate park, Saint-Nazaire",
+  "desc": "",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-04-11-gandaia-na-ponte-au-plan-b",
+  "title": "Gandaia na Ponte au Plan B",
+  "date": "2024-04-11",
+  "end": null,
+  "place": "Le Plan B, 12 place du Marché, La Turballe",
+  "desc": "Initiation à la danse, concert et bal forró avec Gandaia na Ponte, groupe de forró de Saint-Nazaire. Participation libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-04-07-stage-de-danse-forro-pour-salseros-avances",
+  "title": "Stage de danse forró pour salseros avancés",
+  "date": "2024-04-07",
+  "end": null,
+  "place": "Salle Kerfaouet, 12B rue des Pinsons, Saint-Nazaire",
+  "desc": "Dans le cadre du Gros Week-end Forró, Marion Lima, référence du forró en France, donne un stage réservé aux danseurs de salsa confirmés (au moins 2 ans de pratique régulière). Prix subventionné : 5 €, réservation obligatoire. Le cours est suivi du bal-jam forró à la P'tite Scène des Halles.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-03-30-gandaia-na-ponte-a-la-soupe-aux-cailloux-trignac",
+  "title": "Gandaia na Ponte à la Soupe aux Cailloux (Trignac)",
+  "date": "2024-03-30",
+  "end": null,
+  "place": "8 rue Marie Thérèse Eyquem, Trignac",
+  "desc": "L'association La Soupe aux Cailloux inaugure son nouveau local avec « La Crémaillère au Crayon », une journée de festivité. Gandaia se donne en concert pour l'occasion : initiation à la danse à 18h30, concert de 19h à 20h. Gratuit.",
+  "also": [],
+  "other_org": "Événement organisé par Gandaia na Ponte",
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-03-02-deambulation-carnavalesque",
+  "title": "Déambulation carnavalesque",
+  "date": "2024-03-02",
+  "end": null,
+  "place": "Ruban Bleu, devant l'R du Temps, Saint-Nazaire",
+  "desc": "Déambulation carnavalesque avec l'association Les pieds ont des oreilles. Départ à 15h place des Droits de l'Homme, puis 17h au Ruban Bleu devant l'R du Temps. Rendez-vous nombreux et déguisés !",
+  "also": [],
+  "other_org": "Événement du Centre commercial Ruban Bleu",
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-02-26-stages-pour-enfants-cirque-et-musique-bresilienne",
+  "title": "Stages pour enfants : cirque et musique brésilienne",
+  "date": "2024-02-26",
+  "end": "2024-03-01",
+  "place": "La Volière, 60 rue de la Ville Halluard, Saint-Nazaire",
+  "desc": "Stages pour enfants de 3 à 11 ans, du lundi 26 février au vendredi 1er mars 2024, encadrés par un·e intervenant·e cirque de La Volière et un intervenant musique brésilienne de l'association.\nCirque : acrobatie, équilibres, jonglerie, agrès aériens. Musique brésilienne : jeux de rythmes, instruments brésiliens (pandeiro, agogo, zabumba, ganzas), chansons, fabrication de petits instruments de carnaval.\nLes participants étaient invités au carnaval de l'association le samedi 2 mars.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2024-02-16-bal-un-peu-foutraque-musique-bresilienne-mais-pas",
+  "title": "Bal un peu foutraque : musique brésilienne mais pas que…",
+  "date": "2024-02-16",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Cours de forró, bal pop, musique brésilienne avec Léo Corrêa et Gandaia na Ponte, rock, métissage en tout genre, magie, restauration sur place.",
+  "also": [],
+  "other_org": "Événement organisé par Belleville en mer",
+  "poster": "evt-2024-02-16-bal-un-peu-foutraque-musique-bresilienne-mais-pas.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-12-17-bal-jam-forro-de-noel",
+  "title": "Bal-jam forró de Noël",
+  "date": "2023-12-17",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Et si on fêtait la fin d'année avec une pratique forró de toute beauté ? Initiation à la danse à 18h30, début de la jam à 19h. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2023-12-17-bal-jam-forro-de-noel.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-11-18-concert-et-bal-forro-avec-madame-forro-balanceio",
+  "title": "Concert et bal forró avec Madame Forró & Balanceio",
+  "date": "2023-11-18",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Madame Forró, française expatriée au Brésil, danseuse, clown, chanteuse et accordéoniste, accompagnée de Julian Biblocq (zabumba) et Isadora (triangle et voix). Concert de 18h à 22h30 à la P'tite Scène des Halles, jauge limitée à 60.\nL'après-midi (14h-16h), stage de danse forró niveau intermédiaire : connexion, trava (blocage) et musicalité.",
+  "also": [
+   {
+    "title": "Stage de danse forró inter/avancé avec Madame Forró",
+    "date": "2023-11-18",
+    "place": "Ferme Couronnée, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2023-11-18-concert-et-bal-forro-avec-madame-forro-balanceio.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-10-27-gandaia-au-bal-de-la-yole-a-mesquer",
+  "title": "Gandaia au Bal de la Yole à Mesquer",
+  "date": "2023-10-27",
+  "end": null,
+  "place": "Rue des Artisans, Mesquer",
+  "desc": "Gandaia donne un concert forró pendant cette soirée organisée par l'association Le défi du traict. Au programme : ouverture du Bar Bar et restauration dès 19h, Gandaia na Ponte à 20h, puis Marcel Dorcel et son orchestre.",
+  "also": [],
+  "other_org": "Soirée organisée par l'association Le défi du traict",
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-10-15-initiation-forro-et-mini-bal-avec-l-asso-odyssee-p",
+  "title": "Initiation forró et mini-bal avec l'asso Odyssée pour s'Aimer",
+  "date": "2023-10-15",
+  "end": null,
+  "place": "Gymnase Pierre et Marie Curie, 2 rue George Sand, Saint-Nazaire",
+  "desc": "Dans le cadre de l'événement « Corps et Danse », au profit des personnes malades, initiation forró (1h) suivie d'un mini-bal (1h), pour participer à la lutte contre le cancer.",
+  "also": [],
+  "other_org": "Événement de l'association Odyssée pour s'Aimer",
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-09-24-bal-jam-forro-dirige-par-aline",
+  "title": "Bal-jam forró dirigé par Aline",
+  "date": "2023-09-24",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Un bal/jam forró dirigé par Aline Le Masson de Forró Na Chuva ! Apportez vos instruments, vos pieds et vos oreilles. Participation libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2023-09-24-bal-jam-forro-dirige-par-aline.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-09-17-gandaia-a-la-terrasse-du-bois-joalland",
+  "title": "Gandaia à la Terrasse du Bois Joalland",
+  "date": "2023-09-17",
+  "end": null,
+  "place": "Place Fernand Guériff, Saint-Nazaire",
+  "desc": "Gandaia en concert pour un bal forró au bord du lac ! Initiation à la danse, ambiance festive et conviviale. Gratuit, au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-09-09-le-forro-au-forum-des-assos-et-mini-bal",
+  "title": "Le forró au Forum des assos et mini-bal",
+  "date": "2023-09-09",
+  "end": null,
+  "place": "Place de l'Amérique Latine, Saint-Nazaire",
+  "desc": "Nous aurons notre stand, comme chaque année. Mini-concert et mini-bal forró de 17h30 à 18h30 sur la scène de la terrasse.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-07-07-chams-trio-musiques-de-palestine",
+  "title": "CHAMS trio : musiques de Palestine",
+  "date": "2023-07-07",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "CHAMS est un trio franco-palestinien en tournée dans l'ouest de la France : oud, percussions et violon, chansons populaires du Moyen-Orient, morceaux instrumentaux et compositions originales. Prix libre (conseillé 10 €).",
+  "also": [],
+  "other_org": "Événement organisé par Dona Iemanjà",
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-06-15-fete-de-fin-d-annee-du-forro-des-podos",
+  "title": "Fête de fin d'année du forró des Podos",
+  "date": "2023-06-15",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Pour fêter la fin de l'année scolaire : bal forró, concert de fin d'année de l'atelier de musique forró et démonstrations de danse forró par les élèves des cours.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-06-11-forro-swing-party",
+  "title": "Forró Swing Party",
+  "date": "2023-06-11",
+  "end": null,
+  "place": "Maison de quartier Immaculée Beauregard, Saint-Nazaire",
+  "desc": "La rencontre de deux associations passionnées de danse : un stage de lindy hop (15h - 16h15), un stage de forró (16h30 - 17h45), puis soirée dansante de 18h à 22h avec apéro partagé et une playlist métissée entre swing et forró.\nGratuit pour les adhérent·e·s des associations, 5 € pour les autres. Partenariat entre Kick&Swing et Les Pieds Ont Des Oreilles.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2023-06-11-forro-swing-party.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-05-14-apero-forro-et-gandaia-a-saint-marc-sur-mer",
+  "title": "Apéro forró et Gandaia à Saint-Marc-sur-Mer",
+  "date": "2023-05-14",
+  "end": null,
+  "place": "59 route de l'Océan, Saint-Marc, Saint-Nazaire",
+  "desc": "Dans le cadre du festival Mai des Arts à Saint-Marc, Gandaia na Ponte en concert à 21h30 dans un jardin particulier face à la mer. Apéro dès 20h. Gratuit.",
+  "also": [
+   {
+    "title": "Stage de danse forró avec Alise Marieta",
+    "date": "2023-05-14",
+    "place": "Salle des Hibiscus, Saint-Nazaire"
+   },
+   {
+    "title": "Ateliers de danse brésilienne enfants 4/6 et 7/12 ans",
+    "date": "2023-05-14",
+    "place": "Salle des Hibiscus, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2023-05-14-apero-forro-et-gandaia-a-saint-marc-sur-mer.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-04-16-bal-jam-forro-do-domingo",
+  "title": "Bal-jam forró do domingo",
+  "date": "2023-04-16",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Une jam forró animée par l'accordéoniste Aline Le Masson, avec en première partie le groupe nazairien Gandaia na Ponte.",
+  "also": [
+   {
+    "title": "Atelier batucada forró par Julian Biblocq",
+    "date": "2023-04-16",
+    "place": "Maison de quartier d'Avalix, Saint-Nazaire"
+   },
+   {
+    "title": "Ateliers de musique brésilienne enfants 4/6 et 7/12 ans",
+    "date": "2023-04-16",
+    "place": "Salle Jardin des Plantes, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2023-04-16-bal-jam-forro-do-domingo.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-04-01-forro-belem-en-concert",
+  "title": "Forró Belem en concert",
+  "date": "2023-04-01",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Un concert forró avec le groupe nantais Forró Belem : cinq musiciens, un forró à la fois traditionnel, moderne et original (accordéon, zabumba, marimba, basse, guitare, voix, triangle).\n20h : playlist forró. 20h15 : initiation à la danse. 21h : concert. Minuit : le bal continue. Billetterie limitée à 65 entrées. Concert complet.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2023-04-01-forro-belem-en-concert.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-02-25-carnaval-forro-avec-saira-en-concert",
+  "title": "Carnaval forró avec Saíra en concert",
+  "date": "2023-02-25",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "C'est carnaval, déguisons-nous ! Du forró au coco, de la valse à la ciranda, Saíra, quartet franco-brésilien, invite à un bal brésilien populaire et chaleureux, inspiré du répertoire forró des années 70.\n19h : ouverture des portes. 19h15 : initiation. 20h30 : concert. Prix libre entre 7 et 12 €.",
+  "also": [
+   {
+    "title": "Stages de danse forró avec Tatiana Barros",
+    "date": "2023-02-25",
+    "place": "Espace civique Dubé, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2023-02-25-carnaval-forro-avec-saira-en-concert.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-02-05-percussion-corporelle-et-chant-forro-avec-gabriel",
+  "title": "Percussion corporelle et chant forró avec Gabriel + bal-jam",
+  "date": "2023-02-05",
+  "end": null,
+  "place": "Espace civique Dubé, 1 rue des Ajoncs, Saint-Nazaire",
+  "desc": "Plongez dans l'univers rythmique du bal brésilien à travers la percussion corporelle et le chant : ciranda, xote, baião, arrastapé. Ateliers dirigés par Gabriel Lesoeur, suivis d'un bal-jam forró.\n1re partie : 14h30 - 16h. 2e partie : 16h15 - 17h45. 15 € un stage, 25 € les deux.",
+  "also": [
+   {
+    "title": "Musique et percussion corporelle brésilienne pour les enfants",
+    "date": "2023-02-05",
+    "place": "Salle des Hibiscus, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2023-02-05-percussion-corporelle-et-chant-forro-avec-gabriel.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-01-22-bal-jam-forro-do-domingo",
+  "title": "Bal-jam forró do domingo",
+  "date": "2023-01-22",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Et si on fêtait le début d'année avec une pratique forró de toute beauté ? Initiation à la danse à 18h30. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-01-08-brunch-forro-au-garage",
+  "title": "Brunch forró au Garage",
+  "date": "2023-01-08",
+  "end": null,
+  "place": "Le Garage, Saint-Nazaire",
+  "desc": "Un brunch forró au Garage pour fêter la nouvelle année : apportez de quoi boire et manger, dansez les quadrilles. Initiation à la danse à 11h30. Gratuit. Suivi de deux ateliers de musique forró animés par Gabriel Lesoeur.",
+  "also": [
+   {
+    "title": "Stage de musique forró (niveau inter) avec Gabriel Lesoeur",
+    "date": "2023-01-08",
+    "place": "Les Landettes, Saint-Nazaire"
+   },
+   {
+    "title": "Stage de percussion corporelle et chant forró (pour tous)",
+    "date": "2023-01-08",
+    "place": "Les Landettes, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2023-01-08-brunch-forro-au-garage.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-12-18-bal-jam-forro-de-noel",
+  "title": "Bal-jam forró de Noël",
+  "date": "2022-12-18",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Une pratique forró pour fêter la fin d'année : initiation à la danse à 19h, début de la jam à 19h30. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-12-18-bal-jam-forro-de-noel.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-11-06-jam-session-forro-avec-aline-le-masson",
+  "title": "Jam session forró avec Aline Le Masson",
+  "date": "2022-11-06",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "La brillante accordéoniste Aline Le Masson (Forró Na Chuva) dirige cette jam session au bar L'Appart. Apportez vos instruments ou votre voix, vos pieds et vos oreilles. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.",
+  "also": [
+   {
+    "title": "Stage de percussions corporelles et musique forró",
+    "date": "2022-11-06",
+    "place": "Maison de quartier de la Bouletterie, Saint-Nazaire"
+   },
+   {
+    "title": "Stage de forró avec Alise Marieta (niveau intermédiaire)",
+    "date": "2022-11-06",
+    "place": "Maison de quartier Chesnaie-Trébale, Saint-Nazaire"
+   },
+   {
+    "title": "Stage danses du Nordeste avec Alise et Gabidju",
+    "date": "2022-11-06",
+    "place": "Maison de quartier Chesnaie-Trébale, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2022-11-06-jam-session-forro-avec-aline-le-masson.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-10-08-gros-week-end-forro-avec-black-do-acordeon",
+  "title": "Gros week-end forró avec Black do Acordeon",
+  "date": "2022-10-08",
+  "end": "2022-10-09",
+  "place": "Le Garage, Saint-Nazaire",
+  "desc": "Un week-end de folie avec deux mestres du forró : Black do Acordeon (musique) et Rudolfo Batista (danse). Stages de danse, atelier de musique, concert et jam au Garage.\nBlack, chanteur, accordéoniste et compositeur, est un phénomène au Brésil : un forró aux influences de reggae, samba, ijexá et baião.\nRudolfo Batista, danseur, pédagogue, musicien et producteur, brésilien d'Olinda, installé à Cologne, propose un forró aux influences multiples (roots, universitaire, coco).",
+  "also": [
+   {
+    "title": "Stage d'initiation à la danse forró",
+    "date": "2022-10-08",
+    "place": "Le Garage, Saint-Nazaire"
+   },
+   {
+    "title": "Stages de danse forró avec Rudolfo Batista",
+    "date": "2022-10-08",
+    "place": "Le Garage, Saint-Nazaire"
+   },
+   {
+    "title": "Stages de musique forró avec Leandro Campanha",
+    "date": "2022-10-09",
+    "place": "Les Landettes, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2022-10-08-gros-week-end-forro-avec-black-do-acordeon.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-09-10-the-forroscopic-s-a-la-p-tite-scene-des-halles",
+  "title": "The Forroscopic's à la P'tite Scène des Halles",
+  "date": "2022-09-10",
+  "end": null,
+  "place": "La P'tite Scène des Halles, Saint-Nazaire",
+  "desc": "Premier concert forró à la P'tite Scène des Halles avec The Forroscopic's : un forró traditionnel qui s'éloigne des sentiers battus, dans un univers swingué, chaleureux et joyeux.\n19h30 : DJ. 20h : initiation à la danse. 20h30 : concert. DJ jusqu'à minuit. Participation à partir de 5 €.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-09-10-the-forroscopic-s-a-la-p-tite-scene-des-halles.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-09-03-le-forro-au-forum-des-assos",
+  "title": "Le forró au Forum des assos",
+  "date": "2022-09-03",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Venez nous retrouver sur notre stand au Forum des Assos à Saint-Nazaire. À 16h, mini-bal forró !",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-08-25-gandaia-a-piriac-forro-et-samba",
+  "title": "Gandaia à Piriac (forró et samba)",
+  "date": "2022-08-25",
+  "end": null,
+  "place": "Le Barbichet, Piriac-sur-Mer",
+  "desc": "Gandaia na Ponte en concert à Piriac, face mer, au Barbichet. Deux sets de 45 min, du forró et de la samba autour de la paillote. Au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-07-20-forro-les-pieds-dans-le-sable",
+  "title": "Forró les pieds dans le sable",
+  "date": "2022-07-20",
+  "end": null,
+  "place": "Plage de Pen Bron, La Turballe",
+  "desc": "Un forró sauvage sur une plage qui l'est tout autant ! Sable, mer limpide, bon son et coucher de soleil. Pensez aux maillots de bain et de quoi partager l'apéro.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-07-12-forro-plage-a-pornichet",
+  "title": "Forró plage à Pornichet",
+  "date": "2022-07-12",
+  "end": null,
+  "place": "Plage de Bonne Source, à droite du restaurant Le Récif, Pornichet",
+  "desc": "Un premier forró à la plage sur la plage de Bonne Source, à droite du restaurant Le Récif.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-07-06-les-cours-de-forro-partent-en-vacances",
+  "title": "Les cours de forró partent en vacances",
+  "date": "2022-07-06",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Pour se dire bonnes vacances et fêter l'année de cours de forró, venez boire un coup et faire quelques pas, ce mercredi soir, place du Commando.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-07-02-gandaia-na-ponte-au-festival-tintamarre-et-chariva",
+  "title": "Gandaia na Ponte au festival Tintamarre et Charivari",
+  "date": "2022-07-02",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Gandaia na Ponte en concert de 20h à 21h au festival Tintamarre et Charivari.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-06-21-gandaia-na-ponte-a-pornichet-pour-la-fete-de-la-mu",
+  "title": "Gandaia na Ponte à Pornichet pour la fête de la musique",
+  "date": "2022-06-21",
+  "end": null,
+  "place": "Bar Plein Sud, plage des libraires, Pornichet",
+  "desc": "Concert de Gandaia na Ponte pour la fête de la musique, de 19h30 à 22h : un mix de musiques brésiliennes, à tester en dansant forró et samba sur le sable.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-06-21-gandaia-na-ponte-a-pornichet-pour-la-fete-de-la-mu.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-06-18-trio-alvorada-en-concert",
+  "title": "Trio Alvorada en concert",
+  "date": "2022-06-18",
+  "end": null,
+  "place": "Entre chèvres et choux, Saint-Nazaire",
+  "desc": "Le groupe de forró brésilien Trio Alvorada, venu de São Paulo, un groupe phare du forró au Brésil : zabumba, accordéon, basse, voix, triangle.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-06-18-trio-alvorada-en-concert.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-06-12-brunch-jam-forro",
+  "title": "Brunch - jam forró",
+  "date": "2022-06-12",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Apporte de quoi grignoter un brunch et viens danser ou jouer le forró ! À midi, place du Commando.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-06-12-brunch-jam-forro.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-05-21-gandaia-na-ponte-dans-les-jardins-de-saint-marc",
+  "title": "Gandaia na Ponte dans les jardins de Saint-Marc",
+  "date": "2022-05-21",
+  "end": null,
+  "place": "Villa Plaisance, 59 route de l'Océan, Saint-Marc, Saint-Nazaire",
+  "desc": "Dans le cadre de la journée des Arts dans les jardins, Gandaia na Ponte alterne entre forró et samba, de 20h à 21h15. Pelouse pour danser autour de la scène.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-05-21-gandaia-na-ponte-dans-les-jardins-de-saint-marc.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-05-14-the-forroscopic-s-sous-les-palmiers",
+  "title": "The Forroscopic's sous les palmiers",
+  "date": "2022-05-14",
+  "end": null,
+  "place": "Sous les palmiers, la plage, Saint-Nazaire",
+  "desc": "The Forroscopic's emmène sur les traces du forró traditionnel, dans un univers swingué, chaleureux, sensible et joyeux. Initiation à la danse : 18h30. Concert : 19h.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-05-14-the-forroscopic-s-sous-les-palmiers.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-04-30-24h-avec-forro-a-lenha",
+  "title": "24h avec Forró à Lenha",
+  "date": "2022-04-30",
+  "end": "2022-05-01",
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Le groupe de forró toulousain Forró à Lenha, avec Lucas Notaro, Isaac Paiva et Eduardo Vieira, rejoints par Céline Costa du groupe Forroscopics, pour un moyen-gros week-end forró.\nSamedi 30 avril : la grosse soirée. Ouverture des portes à 20h, concert à 21h (8/10/15 €).\nDimanche 1er mai : ateliers et jam.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-04-30-24h-avec-forro-a-lenha.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-04-03-jam-session-forro",
+  "title": "Jam session forró",
+  "date": "2022-04-03",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter, jouer le forró et terminer joyeusement le week-end. Apportez votre instrument et joignez-vous aux autres musiciens.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-04-03-jam-session-forro.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-03-19-gros-week-end-forro-avec-cacau-et-forro-na-chuva",
+  "title": "Gros week-end forró avec Cacau et Forró Na Chuva",
+  "date": "2022-03-19",
+  "end": "2022-03-20",
+  "place": "L'Appart et Saint-Nazaire",
+  "desc": "Grâce à la venue de Cacau Moutinho et Forró Na Chuva, un gros week-end forró à Saint-Nazaire.\nSamedi 19 mars : stage débutant de musique forró (11h-13h), stages de danse niveaux 1 et 2, puis le gros concert à L'Appart (initiation, concert d'arrumadinho de Cacau et Forró Na Chuva, DJ set).\nDimanche 20 mars : stage avancé de musique avec Léo Corrêa, stages de danse niveaux 1 et 2, puis bal/jam forró à L'Appart.",
+  "also": [
+   {
+    "title": "Atelier de musique forró débutant avec Cacau",
+    "date": "2022-03-19",
+    "place": "Saint-Nazaire"
+   },
+   {
+    "title": "Stage de musique forró avancé",
+    "date": "2022-03-20",
+    "place": "Saint-Nazaire"
+   },
+   {
+    "title": "Atelier de pandeiro débutant",
+    "date": "2022-03-30",
+    "place": "École Carnot, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2022-03-19-gros-week-end-forro-avec-cacau-et-forro-na-chuva.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-02-22-atelier-de-musique-forro-avec-leo-correa",
+  "title": "Atelier de musique forró avec Léo Corrêa",
+  "date": "2022-02-22",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Ateliers forró de Léo, pour monter un groupe de forró éphémère et apprendre à jouer 2 ou 3 forrós avec style. Léo Corrêa, musicien brésilien de São Paulo, est chanteur, joueur de rabeca, percussionniste, compositeur et luthier (Forró Na Chuva). 10 personnes maximum, 3h d'atelier : 20 €.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-02-22-atelier-de-musique-forro-avec-leo-correa.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-02-05-forro-belem-en-concert-a-asserac",
+  "title": "Forró Belem en concert à Assérac",
+  "date": "2022-02-05",
+  "end": null,
+  "place": "Assérac",
+  "desc": "Concert du groupe forró nantais Forró Belem : cinq musiciens, un forró traditionnel, moderne et original. 19h : DJ-set. 21h : concert. 10 €. Complet.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2022-02-05-forro-belem-en-concert-a-asserac.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-09-26-atelier-et-stage-de-musique-forro-du-26-septembre",
+  "title": "Atelier et stage de musique forró du 26 septembre",
+  "date": "2021-09-26",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Venez apprendre à jouer et improviser le forró, cette musique populaire du Nordeste brésilien. Tout instrument (hors percussion), un minimum de maîtrise instrumentale est nécessaire. Le stage est suivi d'un bœuf. 12 places, 25 €.",
+  "also": [
+   {
+    "title": "Atelier de percussions forró",
+    "date": "2021-09-26",
+    "place": "Saint-Nazaire"
+   },
+   {
+    "title": "Jam forró",
+    "date": "2021-09-26",
+    "place": "L'Appart, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2021-09-26-atelier-et-stage-de-musique-forro-du-26-septembre.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-10-22-concert-de-leo-correa-e-as-trovadoras-itinerantes",
+  "title": "Concert de Léo Corrêa e as Trovadoras Itinerantes",
+  "date": "2021-10-22",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Léo Corrêa, musicien, compositeur et luthier de São Paulo, accompagné de Barbara (Forró Bacana), Julian (Forró Na Chuva) et de deux musiciennes du Nordeste, Josy et Luciana : les « trovadoras itinerantes ». Un bal brésilien à la sauce nordestine : forró, coco, ciranda, arrasta-pé, rabeca, accordéon.\n19h30 : DJ-set. 20h : initiation à la danse forró. 21h : concert. 6 € sur le site, 7 € sur place.",
+  "also": [
+   {
+    "title": "Atelier de musique forró (tout instrument)",
+    "date": "2021-10-23",
+    "place": "Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2021-10-22-concert-de-leo-correa-e-as-trovadoras-itinerantes.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-10-02-concert-de-conterraneos-rio-de-janeiro",
+  "title": "Concert de Conterrâneos (Rio de Janeiro)",
+  "date": "2021-10-02",
+  "end": "2021-10-03",
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Les deux Rodrigos du groupe carioca Conterrâneos, en tournée européenne, accompagnés de Barbara de Trio Bacana, pour un concert exceptionnel au bar L'Appart.\n20h : ouverture des portes + DJ. 21h30 : concert. 2h : fin de soirée. Jauge limitée à 60 personnes. 8 € / 11 € / 14 €.",
+  "also": [
+   {
+    "title": "Jam session forró avec Conterrâneos",
+    "date": "2021-10-03",
+    "place": "L'Appart, Saint-Nazaire"
+   },
+   {
+    "title": "Masterclass forró avec Rodrigo et Rodrigo de Conterrâneos",
+    "date": "2021-10-03",
+    "place": "Saint-Nazaire"
+   },
+   {
+    "title": "Stages forró avec Yse Góes",
+    "date": "2021-10-03",
+    "place": "Rue des Hibiscus, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2021-10-02-concert-de-conterraneos-rio-de-janeiro.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-09-19-mini-forro-brunch-sauvage-a-saint-marc",
+  "title": "Mini-forró brunch sauvage à Saint-Marc",
+  "date": "2021-09-19",
+  "end": null,
+  "place": "12 rue du Commandant Charcot, Saint-Nazaire",
+  "desc": "Mini-bal forró à Saint-Marc, devant le manège, pour faire un petit coup de pub pour le forró à Saint-Nazaire. 11h : café. 11h30 : mini-bal. 12h : apéro.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2021-09-04-les-pieds-ont-des-oreilles-au-forum-des-assos",
+  "title": "Les Pieds Ont Des Oreilles au Forum des Assos",
+  "date": "2021-09-04",
+  "end": null,
+  "place": "Base sous-marine, Saint-Nazaire",
+  "desc": "Pour lancer la rentrée, nous serons au forum des assos de Saint-Nazaire, avec un mini-bal (et initiation) de 16h à 16h30.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2021-07-14-bal-populaire-bresilien-avec-forro-na-chuva",
+  "title": "Bal populaire brésilien avec Forró Na Chuva",
+  "date": "2021-07-14",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Forró na Chuva, littéralement « le forró sous la pluie », l'expression de la musique populaire du Nordeste brésilien sous le ciel de Bretagne : Léo Corrêa, Marion Limosino, Aline Le Masson et Julian Biblocq.\n18h : DJ Juliano. 18h30 : initiation à la danse forró. 19h30 : concert. 23h : fin des hostilités. Prix libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2021-07-14-bal-populaire-bresilien-avec-forro-na-chuva.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-08-15-bal-forro-au-bois-joalland",
+  "title": "Bal forró au bois Joalland",
+  "date": "2021-08-15",
+  "end": null,
+  "place": "Terrasse du Bois Joalland, Saint-Nazaire",
+  "desc": "Apprendre à danser le forró à la Terrasse du Bois Joalland. Initiation à la danse : 18h30. Bal avec DJ Juliano. Soirée gratuite.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2021-08-15-bal-forro-au-bois-joalland.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-05-23-atelier-percussion-et-chant-forro",
+  "title": "Atelier percussion et chant forró",
+  "date": "2021-05-23",
+  "end": null,
+  "place": "La Baule-Escoublac",
+  "desc": "Atelier de percussion et chant avec Léo de Forró Na Chuva.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2020-10-09-forro-na-chuva-en-concert-au-trou-du-fut",
+  "title": "Forró Na Chuva en concert au Trou du Fût",
+  "date": "2020-10-09",
+  "end": null,
+  "place": "Le Trou du Fût, Saint-Nazaire",
+  "desc": "Forró na Chuva, le « forró sous la pluie » : Léo Corrêa, Marion Limosino, Aline Le Masson et Julian Biblocq. Prix libre au chapeau.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2020-10-09-forro-na-chuva-en-concert-au-trou-du-fut.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-08-01-concert-bresilien-avec-forro-de-um-dia",
+  "title": "Concert brésilien avec Forró De Um Dia",
+  "date": "2020-08-01",
+  "end": null,
+  "place": "Guinguette La Bara-K, Saint-Nazaire",
+  "desc": "Un trio de forró festif : Céline Costa (voix et percussion), Manu Mezalma (accordéon, voix, percussion) et Tatiana Barros (percussion, voix). En extérieur, face mer. Atelier d'initiation à la danse de 18h à 18h30. Participation libre.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2020-08-01-concert-bresilien-avec-forro-de-um-dia.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-02-23-concert-carnavalesque-avec-forro-de-um-dia",
+  "title": "Concert carnavalesque avec Forró De Um Dia",
+  "date": "2020-02-23",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Le groupe Forró de Um Dia pour « pular o carnaval », avec Céline Costa, Manu Mezalma et Tatiana Barros. Thème : paillettes et plumes ! Atelier de danses brésiliennes gratuit de 17h à 18h, concert à 18h30. Participation libre.",
+  "also": [
+   {
+    "title": "Atelier danses brésiliennes avec Tatiana Barros",
+    "date": "2020-02-23",
+    "place": "L'Appart, Saint-Nazaire"
+   }
+  ],
+  "other_org": null,
+  "poster": "evt-2020-02-23-concert-carnavalesque-avec-forro-de-um-dia.jpg"
+ },
+ {
+  "kind": "series",
+  "slug": "2020-01-forro-de-l-appart-2020",
+  "title": "Forró de l'Appart et Afterbeach (2020)",
+  "date": "2020-01-01",
+  "intro": "Les rendez-vous forró au bar L'Appart, à Saint-Nazaire, et les afterbeach de l'été 2020.",
+  "dates": [
+   [
+    "2020-01-26",
+    "Forró à l'Appart"
+   ],
+   [
+    "2020-04-26",
+    "Forró à l'Appart"
+   ],
+   [
+    "2020-07-17",
+    "Forró à l'Appart"
+   ],
+   [
+    "2020-07-24",
+    "Forró Afterbeach de l'Appart"
+   ],
+   [
+    "2020-08-07",
+    "Forró Afterbeach de l'Appart"
+   ],
+   [
+    "2020-08-21",
+    "Forró Afterbeach de l'Appart"
+   ],
+   [
+    "2020-08-30",
+    "Forró Afterbeach de l'Appart"
+   ],
+   [
+    "2020-10-04",
+    "Forró de l'Appart"
+   ],
+   [
+    "2020-10-11",
+    "Forró de l'Appart"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2020-01-ateliers-forro-2020",
+  "title": "Ateliers forró (2020)",
+  "date": "2020-01-01",
+  "intro": "Ateliers de forró à Pornichet et à Saint-Nazaire.",
+  "dates": [
+   [
+    "2020-01-25",
+    "Atelier forró à Pornichet (Hôtel Le Danicheff)"
+   ],
+   [
+    "2020-03-19",
+    "Atelier forró le jeudi à Pornichet (Hôtel Le Danicheff)"
+   ],
+   [
+    "2020-03-21",
+    "Atelier forró à Saint-Nazaire"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2020-09-cours-forro-2020",
+  "title": "Cours de forró à Saint-Nazaire (2020)",
+  "date": "2020-09-01",
+  "intro": "Reprise des cours de forró à Saint-Nazaire.",
+  "dates": [
+   [
+    "2020-09-07",
+    "Cours de forró"
+   ],
+   [
+    "2020-09-14",
+    "Cours de forró"
+   ],
+   [
+    "2020-12-14",
+    "Cours de forró"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2021-05-apero-forro-appart-2021",
+  "title": "Apéro-forró à l'Appart (2021)",
+  "date": "2021-05-01",
+  "intro": "Les apéro-forró du dimanche au bar L'Appart, à Saint-Nazaire, au printemps et à l'été 2021.",
+  "dates": [
+   [
+    "2021-05-30",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-06-06",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-06-20",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-06-27",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-07-04",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-07-18",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-08-29",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-09-05",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-09-12",
+    "Apéro-forró à l'Appart"
+   ],
+   [
+    "2021-09-19",
+    "Apéro-forró à l'Appart"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2021-12-bals-forro-du-dimanche-appart-2022",
+  "title": "Bals forró du dimanche à l'Appart (2021-2022)",
+  "date": "2021-12-01",
+  "intro": "Le bal forró du dimanche au bar L'Appart, à Saint-Nazaire, de décembre 2021 à novembre 2022.",
+  "dates": [
+   [
+    "2021-12-19",
+    "Bal forró du dimanche"
+   ],
+   [
+    "2022-02-27",
+    "Bal forró du dimanche"
+   ],
+   [
+    "2022-03-06",
+    "Bal forró du dimanche"
+   ],
+   [
+    "2022-03-13",
+    "Bal forró du dimanche"
+   ],
+   [
+    "2022-03-27",
+    "Bal forró du dimanche"
+   ],
+   [
+    "2022-04-24",
+    "Bal forró du dimanche"
+   ],
+   [
+    "2022-05-22",
+    "Forró du dimanche"
+   ],
+   [
+    "2022-05-29",
+    "Forró du dimanche"
+   ],
+   [
+    "2022-09-04",
+    "Forró do domingo"
+   ],
+   [
+    "2022-09-25",
+    "Forró do domingo"
+   ],
+   [
+    "2022-10-02",
+    "Forró do domingo"
+   ],
+   [
+    "2022-10-16",
+    "Forró do domingo"
+   ],
+   [
+    "2022-11-27",
+    "Forró do domingo"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2022-08-apero-forro-commando",
+  "title": "Apéro-forró place du Commando (2022-2023)",
+  "date": "2022-08-01",
+  "intro": "Apéro-forró sur la place du Commando, à Saint-Nazaire.",
+  "dates": [
+   [
+    "2022-08-30",
+    "Apéro-forró à Saint-Nazaire"
+   ],
+   [
+    "2023-05-28",
+    "Apéro-forró à Saint-Nazaire"
+   ],
+   [
+    "2023-06-04",
+    "Apéro-forró à Saint-Nazaire"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2023-11-forro-do-domingo-dube-2023",
+  "title": "Forró do domingo et pratiques à l'espace Dubé (2023-2024)",
+  "date": "2023-11-01",
+  "intro": "Les forró do domingo et pratiques forró à l'espace civique Dubé, à Saint-Nazaire.",
+  "dates": [
+   [
+    "2023-11-12",
+    "Forró do domingo"
+   ],
+   [
+    "2023-11-26",
+    "Forró do domingo"
+   ],
+   [
+    "2023-12-03",
+    "Forró do domingo"
+   ],
+   [
+    "2023-12-10",
+    "Forró do domingo"
+   ],
+   [
+    "2023-12-22",
+    "Juste une pratique forró"
+   ],
+   [
+    "2024-01-21",
+    "Juste une pratique forró"
+   ]
+  ],
+  "poster": null
+ },
+ {
+  "kind": "series",
+  "slug": "2021-09-portes-ouvertes",
+  "title": "Portes ouvertes des cours (2021-2025)",
+  "date": "2021-09-01",
+  "intro": "Les portes ouvertes des cours de danse et de musique forró, à chaque rentrée.",
+  "dates": [
+   [
+    "2021-09-29",
+    "Porte ouverte cours de forró, École Carnot"
+   ],
+   [
+    "2022-09-06",
+    "Porte ouverte cours de danse forró, École Carnot"
+   ],
+   [
+    "2022-09-08",
+    "Porte ouverte cours de musique forró avec Léo Corrêa, École Carnot"
+   ],
+   [
+    "2022-09-15",
+    "Porte ouverte cours de musique forró avec Léo Corrêa, École Carnot"
+   ],
+   [
+    "2023-09-13",
+    "Porte ouverte ateliers de musique brésilienne enfants-parents, groupe scolaire Andrée Chedid"
+   ],
+   [
+    "2023-09-26",
+    "Porte ouverte cours de danse forró, École Carnot"
+   ],
+   [
+    "2023-09-28",
+    "Porte ouverte cours de musique forró, École Carnot"
+   ],
+   [
+    "2023-10-31",
+    "Porte ouverte cours de batucada samba carioca, École Jean-Zay"
+   ],
+   [
+    "2024-07-04",
+    "Les portes ouvertes des Pieds ont des oreilles, École Carnot"
+   ],
+   [
+    "2024-09-10",
+    "Portes ouvertes danse et musique forró pour enfants et adultes"
+   ],
+   [
+    "2024-09-25",
+    "Portes ouvertes ateliers de musique brésilienne enfants"
+   ],
+   [
+    "2025-09-12",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-09-16",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-09-19",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-09-23",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-09-25",
+    "Portes ouvertes cours hebdo de musique du Nordeste brésilien"
+   ],
+   [
+    "2025-09-26",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-09-30",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-10-02",
+    "Portes ouvertes cours hebdo de musique du Nordeste brésilien"
+   ],
+   [
+    "2025-10-03",
+    "Portes ouvertes cours hebdo de danse forró"
+   ],
+   [
+    "2025-10-09",
+    "Portes ouvertes cours hebdo de musique du Nordeste brésilien"
+   ]
+  ],
+  "poster": "evt-2021-09-portes-ouvertes.jpg"
+ },
+ {
+  "kind": "series",
+  "slug": "2024-04-ateliers-hebdo-coco-2024",
+  "title": "Ateliers hebdo de coco et cours hebdo (2024)",
+  "date": "2024-04-01",
+  "intro": "Ateliers hebdomadaires de coco, chant et percussions brésiliennes avec Léo Corrêa, et cours hebdo de danse forró.",
+  "dates": [
+   [
+    "2024-04-10",
+    "Ateliers hebdo de coco, chant et percussions brésiliennes avec Léo Corrêa (salle Lamartine)"
+   ],
+   [
+    "2024-04-24",
+    "Ateliers hebdo de coco, chant et percussions brésiliennes avec Léo Corrêa (salle Lamartine)"
+   ],
+   [
+    "2024-06-26",
+    "Ateliers hebdo de coco, chant et percussions brésiliennes avec Léo Corrêa (salle Lamartine)"
+   ],
+   [
+    "2024-09-24",
+    "Cours hebdo de danse forró (École Carnot)"
+   ],
+   [
+    "2024-09-26",
+    "Ateliers hebdo de musique brésilienne (forró, coco…), École Carnot"
+   ],
+   [
+    "2024-10-01",
+    "Cours hebdo de danse forró (École Carnot)"
+   ]
+  ],
+  "poster": "evt-2024-04-ateliers-hebdo-coco-2024.jpg"
+ },
+ {
+  "kind": "series",
+  "slug": "2025-04-pratiques-forro-2025-2026",
+  "title": "Pratiques forró (2025-2026)",
+  "date": "2025-04-01",
+  "intro": "Les pratiques de forró : place du Commando, au Five-Oh du skate park et à la salle Gambetta.",
+  "dates": [
+   [
+    "2025-04-08",
+    "Pratique forró, place du Commando"
+   ],
+   [
+    "2025-06-24",
+    "Pratique forró, place du Commando"
+   ],
+   [
+    "2025-07-01",
+    "Pratique forró, Five-Oh du skate park"
+   ],
+   [
+    "2025-10-28",
+    "Pratique forró, salle Gambetta"
+   ],
+   [
+    "2026-02-01",
+    "Pratique forró à Saint-Nazaire"
+   ],
+   [
+    "2026-03-29",
+    "Pratique forró, salle Gambetta"
+   ],
+   [
+    "2026-05-17",
+    "Pratique forró, salle Gambetta"
+   ],
+   [
+    "2026-06-09",
+    "Pratique forró au Five-Oh"
+   ],
+   [
+    "2026-06-16",
+    "Pratique forró au Five-Oh"
+   ],
+   [
+    "2026-06-23",
+    "Pratique forró au Five-Oh"
+   ],
+   [
+    "2026-06-30",
+    "Pratique forró au Five-Oh"
+   ],
+   [
+    "2026-07-21",
+    "Pratique forró au Five-Oh"
+   ],
+   [
+    "2026-08-18",
+    "Pratique forró au Five-Oh"
+   ],
+   [
+    "2026-09-01",
+    "Pratique forró au Five-Oh"
+   ]
+  ],
+  "poster": "evt-2025-04-pratiques-forro-2025-2026.jpg"
+ },
+ {
+  "kind": "archive",
   "slug": "2019-10-forro-do-domingo-a-l-appart",
+  "title": "Forró do domingo à L'Appart",
+  "date": "2019-10-01",
+  "month": true,
   "poster": "evt-2019-10-forro-do-domingo-a-l-appart.jpg"
  },
  {
-  "title": "Forró sous les palmiers",
-  "date": "2019-10",
+  "kind": "archive",
   "slug": "2019-10-forro-sous-les-palmiers",
+  "title": "Forró sous les palmiers",
+  "date": "2019-10-01",
+  "month": true,
   "poster": "evt-2019-10-forro-sous-les-palmiers.jpg"
  },
  {
-  "title": "Forró na chuva au Quenet",
-  "date": "2020-01",
+  "kind": "archive",
   "slug": "2020-01-forro-na-chuva-au-quenet",
+  "title": "Forró na chuva au Quenet",
+  "date": "2020-01-01",
+  "month": true,
   "poster": "evt-2020-01-forro-na-chuva-au-quenet.jpg"
  },
  {
-  "title": "Forró do Carnaval à L'Appart",
-  "date": "2020-02",
-  "slug": "2020-02-forro-do-carnaval-a-l-appart",
-  "poster": "evt-2020-02-forro-do-carnaval-a-l-appart.jpg"
- },
- {
-  "title": "Raiz do Sana",
-  "date": "2020-02",
+  "kind": "archive",
   "slug": "2020-02-raiz-do-sana",
+  "title": "Raiz do Sana",
+  "date": "2020-02-01",
+  "month": true,
   "poster": "evt-2020-02-raiz-do-sana.jpg"
  },
  {
-  "title": "Forró de um dia",
-  "date": "2020-08",
-  "slug": "2020-08-forro-de-um-dia",
-  "poster": "evt-2020-08-forro-de-um-dia.jpg"
- },
- {
-  "title": "Forró na chuva au Trou du Fût",
-  "date": "2020-10",
-  "slug": "2020-10-forro-na-chuva-au-trou-du-fut",
-  "poster": "evt-2020-10-forro-na-chuva-au-trou-du-fut.jpg"
- },
- {
-  "title": "Une enceinte pour le forró (crowdfunding)",
-  "date": "2021-06",
+  "kind": "archive",
   "slug": "2021-06-une-enceinte-pour-le-forro-crowdfunding",
+  "title": "Une enceinte pour le forró (crowdfunding)",
+  "date": "2021-06-01",
+  "month": true,
   "poster": "evt-2021-06-une-enceinte-pour-le-forro-crowdfunding.jpg"
  },
  {
-  "title": "Forró na chuva à L'Appart",
-  "date": "2021-07",
-  "slug": "2021-07-forro-na-chuva-a-l-appart",
-  "poster": "evt-2021-07-forro-na-chuva-a-l-appart.jpg"
- },
- {
-  "title": "Forró pé-de-serra à la terrasse du Bois Joalland",
-  "date": "2021-08",
-  "slug": "2021-08-forro-pe-de-serra-a-la-terrasse-du-bois-joalland",
-  "poster": "evt-2021-08-forro-pe-de-serra-a-la-terrasse-du-bois-joalland.jpg"
- },
- {
-  "title": "Atelier de musique forró du 26 septembre",
-  "date": "2021-09",
-  "slug": "2021-09-atelier-de-musique-forro-du-26-septembre",
-  "poster": "evt-2021-09-atelier-de-musique-forro-du-26-septembre.jpg"
- },
- {
-  "title": "Arrumadinho de forró avec Léo Corrêa et les Trovadoras",
-  "date": "2021-09",
-  "slug": "2021-09-arrumadinho-de-forro-avec-leo-correa-et-les-trovad",
-  "poster": "evt-2021-09-arrumadinho-de-forro-avec-leo-correa-et-les-trovad.jpg"
- },
- {
-  "title": "Conterrâneos à Saint-Nazaire",
-  "date": "2021-10",
-  "slug": "2021-10-conterraneos-a-saint-nazaire",
-  "poster": "evt-2021-10-conterraneos-a-saint-nazaire.jpg"
- },
- {
-  "title": "Forroscopic's sous les palmiers (annulé)",
-  "date": "2021-12",
-  "slug": "2021-12-forroscopic-s-sous-les-palmiers-annule",
-  "poster": "evt-2021-12-forroscopic-s-sous-les-palmiers-annule.jpg"
- },
- {
-  "title": "Forró Belém au Quenet",
-  "date": "2022-01",
-  "slug": "2022-01-forro-belem-au-quenet",
-  "poster": "evt-2022-01-forro-belem-au-quenet.jpg"
- },
- {
-  "title": "Atelier de musique forró avec Léo Corrêa",
-  "date": "2022-02",
-  "slug": "2022-02-atelier-de-musique-forro-avec-leo-correa",
-  "poster": "evt-2022-02-atelier-de-musique-forro-avec-leo-correa.jpg"
- },
- {
-  "title": "Cours particulier avec Marion Lima",
-  "date": "2022-02",
+  "kind": "archive",
   "slug": "2022-02-cours-particulier-avec-marion-lima",
+  "title": "Cours particulier avec Marion Lima",
+  "date": "2022-02-01",
+  "month": true,
   "poster": "evt-2022-02-cours-particulier-avec-marion-lima.jpg"
  },
  {
-  "title": "Cacau et Forró na chuva à Saint-Nazaire",
-  "date": "2022-03",
-  "slug": "2022-03-cacau-et-forro-na-chuva-a-saint-nazaire",
-  "poster": "evt-2022-03-cacau-et-forro-na-chuva-a-saint-nazaire.jpg"
- },
- {
-  "title": "Forró da lenha",
-  "date": "2022-04",
-  "slug": "2022-04-forro-da-lenha",
-  "poster": "evt-2022-04-forro-da-lenha.jpg"
- },
- {
-  "title": "Gandaia na Ponte chez Catherine",
-  "date": "2022-05",
-  "slug": "2022-05-gandaia-na-ponte-chez-catherine",
-  "poster": "evt-2022-05-gandaia-na-ponte-chez-catherine.jpg"
- },
- {
-  "title": "Jam session forró à L'Appart",
-  "date": "2022-05",
-  "slug": "2022-05-jam-session-forro-a-l-appart",
-  "poster": "evt-2022-05-jam-session-forro-a-l-appart.jpg"
- },
- {
-  "title": "Brunch jam forró",
-  "date": "2022-06",
-  "slug": "2022-06-brunch-jam-forro",
-  "poster": "evt-2022-06-brunch-jam-forro.jpg"
- },
- {
-  "title": "Rentrée 2022-23 : cours de danse et de musique forró",
-  "date": "2022-06",
+  "kind": "archive",
   "slug": "2022-06-rentree-2022-23-cours-de-danse-et-de-musique-forro",
+  "title": "Rentrée 2022-23 : cours de danse et de musique forró",
+  "date": "2022-06-01",
+  "month": true,
   "poster": "evt-2022-06-rentree-2022-23-cours-de-danse-et-de-musique-forro.jpg"
  },
  {
-  "title": "Gandaia à Pornichet",
-  "date": "2022-06",
-  "slug": "2022-06-gandaia-a-pornichet",
-  "poster": "evt-2022-06-gandaia-a-pornichet.jpg"
- },
- {
-  "title": "Trio Alvorada à la ferme Chèvres et Choux",
-  "date": "2022-06",
-  "slug": "2022-06-trio-alvorada-a-la-ferme-chevres-et-choux",
-  "poster": "evt-2022-06-trio-alvorada-a-la-ferme-chevres-et-choux.jpg"
- },
- {
-  "title": "Forroscopic's à la P'tite scène des Halles",
-  "date": "2022-09",
-  "slug": "2022-09-forroscopic-s-a-la-p-tite-scene-des-halles",
-  "poster": "evt-2022-09-forroscopic-s-a-la-p-tite-scene-des-halles.jpg"
- },
- {
-  "title": "Rentrée 2022 : portes ouvertes des cours de forró",
-  "date": "2022-09",
-  "slug": "2022-09-rentree-2022-portes-ouvertes-des-cours-de-forro",
-  "poster": "evt-2022-09-rentree-2022-portes-ouvertes-des-cours-de-forro.jpg"
- },
- {
-  "title": "Gros week-end forró avec Black do Acordeon",
-  "date": "2022-10",
-  "slug": "2022-10-gros-week-end-forro-avec-black-do-acordeon",
-  "poster": "evt-2022-10-gros-week-end-forro-avec-black-do-acordeon.jpg"
- },
- {
-  "title": "Jam session forró",
-  "date": "2022-11",
-  "slug": "2022-11-jam-session-forro",
-  "poster": "evt-2022-11-jam-session-forro.jpg"
- },
- {
-  "title": "Pratique et jam à la P'tite scène des Halles",
-  "date": "2022-12",
-  "slug": "2022-12-pratique-et-jam-a-la-p-tite-scene-des-halles",
-  "poster": "evt-2022-12-pratique-et-jam-a-la-p-tite-scene-des-halles.jpg"
- },
- {
-  "title": "Brunch forró et ateliers avec Gabriel",
-  "date": "2023-01",
-  "slug": "2023-01-brunch-forro-et-ateliers-avec-gabriel",
-  "poster": "evt-2023-01-brunch-forro-et-ateliers-avec-gabriel.jpg"
- },
- {
-  "title": "Ateliers de musique brésilienne pour enfants",
-  "date": "2023-02",
-  "slug": "2023-02-ateliers-de-musique-bresilienne-pour-enfants",
-  "poster": "evt-2023-02-ateliers-de-musique-bresilienne-pour-enfants.jpg"
- },
- {
-  "title": "Saíra et stages",
-  "date": "2023-02",
-  "slug": "2023-02-saira-et-stages",
-  "poster": "evt-2023-02-saira-et-stages.jpg"
- },
- {
-  "title": "Atelier et jam avec Aline",
-  "date": "2023-04",
-  "slug": "2023-04-atelier-et-jam-avec-aline",
-  "poster": "evt-2023-04-atelier-et-jam-avec-aline.jpg"
- },
- {
-  "title": "Forró Belém à L'Appart",
-  "date": "2023-04",
-  "slug": "2023-04-forro-belem-a-l-appart",
-  "poster": "evt-2023-04-forro-belem-a-l-appart.jpg"
- },
- {
-  "title": "Ateliers de danse brésilienne pour enfants avec Alise",
-  "date": "2023-05",
-  "slug": "2023-05-ateliers-de-danse-bresilienne-pour-enfants-avec-al",
-  "poster": "evt-2023-05-ateliers-de-danse-bresilienne-pour-enfants-avec-al.jpg"
- },
- {
-  "title": "Forró swing party",
-  "date": "2023-06",
-  "slug": "2023-06-forro-swing-party",
-  "poster": "evt-2023-06-forro-swing-party.jpg"
- },
- {
-  "title": "Jam session à la P'tite scène des Halles",
-  "date": "2023-09",
-  "slug": "2023-09-jam-session-a-la-p-tite-scene-des-halles",
-  "poster": "evt-2023-09-jam-session-a-la-p-tite-scene-des-halles.jpg"
- },
- {
-  "title": "Stage de danse forró avec Madame Forró",
-  "date": "2023-11",
-  "slug": "2023-11-stage-de-danse-forro-avec-madame-forro",
-  "poster": "evt-2023-11-stage-de-danse-forro-avec-madame-forro.jpg"
- },
- {
-  "title": "Bal-jam forró de Noël",
-  "date": "2023-12",
-  "slug": "2023-12-bal-jam-forro-de-noel",
-  "poster": "evt-2023-12-bal-jam-forro-de-noel.jpg"
- },
- {
-  "title": "Belleville en mer : bal avec Léo Corrêa",
-  "date": "2024-02",
-  "slug": "2024-02-belleville-en-mer-bal-avec-leo-correa",
-  "poster": "evt-2024-02-belleville-en-mer-bal-avec-leo-correa.jpg"
- },
- {
-  "title": "Atelier hebdo de coco",
-  "date": "2024-04",
-  "slug": "2024-04-atelier-hebdo-de-coco",
-  "poster": "evt-2024-04-atelier-hebdo-de-coco.jpg"
- },
- {
-  "title": "Rythmes salés",
-  "date": "2024-05",
+  "kind": "archive",
   "slug": "2024-05-rythmes-sales",
+  "title": "Rythmes salés",
+  "date": "2024-05-01",
+  "month": true,
   "poster": "evt-2024-05-rythmes-sales.jpg"
  },
  {
-  "title": "Sambada do Brasil au Kiosq",
-  "date": "2024-06",
-  "slug": "2024-06-sambada-do-brasil-au-kiosq",
-  "poster": "evt-2024-06-sambada-do-brasil-au-kiosq.jpg"
- },
- {
-  "title": "Fête de la musique",
-  "date": "2024-06",
-  "slug": "2024-06-fete-de-la-musique",
-  "poster": "evt-2024-06-fete-de-la-musique.jpg"
- },
- {
-  "title": "Portes ouvertes",
-  "date": "2024-07",
-  "slug": "2024-07-portes-ouvertes",
-  "poster": "evt-2024-07-portes-ouvertes.jpg"
- },
- {
-  "title": "Gandaia na Ponte à Tintamarre",
-  "date": "2024-07",
-  "slug": "2024-07-gandaia-na-ponte-a-tintamarre",
-  "poster": "evt-2024-07-gandaia-na-ponte-a-tintamarre.jpg"
- },
- {
-  "title": "Côté plage",
-  "date": "2024-07",
-  "slug": "2024-07-cote-plage",
-  "poster": "evt-2024-07-cote-plage.jpg"
- },
- {
-  "title": "Gandaia na Ponte aux terrasses de Méan-Penhoët",
-  "date": "2024-07",
-  "slug": "2024-07-gandaia-na-ponte-aux-terrasses-de-mean-penhoet",
-  "poster": "evt-2024-07-gandaia-na-ponte-aux-terrasses-de-mean-penhoet.jpg"
- },
- {
-  "title": "Coletivo da Chuva",
-  "date": "2024-08",
-  "slug": "2024-08-coletivo-da-chuva",
-  "poster": "evt-2024-08-coletivo-da-chuva.jpg"
- },
- {
-  "title": "Place aux assos",
-  "date": "2024-09",
-  "slug": "2024-09-place-aux-assos",
-  "poster": "evt-2024-09-place-aux-assos.jpg"
- },
- {
-  "title": "Concert du Trio Turbilhão",
-  "date": "2024-09",
-  "slug": "2024-09-concert-du-trio-turbilhao",
-  "poster": "evt-2024-09-concert-du-trio-turbilhao.jpg"
- },
- {
-  "title": "Grande tablée avec Léo Corrêa",
-  "date": "2024-10",
-  "slug": "2024-10-grande-tablee-avec-leo-correa",
-  "poster": "evt-2024-10-grande-tablee-avec-leo-correa.jpg"
- },
- {
-  "title": "Caio 7 cordas",
-  "date": "2025-02",
-  "slug": "2025-02-caio-7-cordas",
-  "poster": "evt-2025-02-caio-7-cordas.jpg"
- },
- {
-  "title": "Pratique forró sur la place du Commando",
-  "date": "2025-04",
-  "slug": "2025-04-pratique-forro-sur-la-place-du-commando",
-  "poster": "evt-2025-04-pratique-forro-sur-la-place-du-commando.jpg"
- },
- {
-  "title": "Gandaia na Ponte à Méan-Penhoët",
-  "date": "2025-04",
-  "slug": "2025-04-gandaia-na-ponte-a-mean-penhoet",
-  "poster": "evt-2025-04-gandaia-na-ponte-a-mean-penhoet.jpg"
- },
- {
-  "title": "Gandaia na Ponte à Commando",
-  "date": "2025-04",
-  "slug": "2025-04-gandaia-na-ponte-a-commando",
-  "poster": "evt-2025-04-gandaia-na-ponte-a-commando.jpg"
- },
- {
-  "title": "Pratique forró sur la place du Commando",
-  "date": "2025-06",
-  "slug": "2025-06-pratique-forro-sur-la-place-du-commando",
-  "poster": "evt-2025-06-pratique-forro-sur-la-place-du-commando.jpg"
- },
- {
-  "title": "Pratique forró au Five-Oh",
-  "date": "2025-07",
-  "slug": "2025-07-pratique-forro-au-five-oh",
-  "poster": "evt-2025-07-pratique-forro-au-five-oh.jpg"
- },
- {
-  "title": "Gandaia na Ponte aux terrasses de Méan-Penhoët",
-  "date": "2025-08",
-  "slug": "2025-08-gandaia-na-ponte-aux-terrasses-de-mean-penhoet",
-  "poster": "evt-2025-08-gandaia-na-ponte-aux-terrasses-de-mean-penhoet.jpg"
- },
- {
-  "title": "Bal forró au Commando",
-  "date": "2025-09",
-  "slug": "2025-09-bal-forro-au-commando",
-  "poster": "evt-2025-09-bal-forro-au-commando.jpg"
- },
- {
-  "title": "Gandaia na Ponte à la Bodeguita",
-  "date": "2025-09",
-  "slug": "2025-09-gandaia-na-ponte-a-la-bodeguita",
-  "poster": "evt-2025-09-gandaia-na-ponte-a-la-bodeguita.jpg"
- },
- {
-  "title": "Pratique forró à Gambetta",
-  "date": "2025-10",
-  "slug": "2025-10-pratique-forro-a-gambetta",
-  "poster": "evt-2025-10-pratique-forro-a-gambetta.jpg"
- },
- {
-  "title": "Bal-brunch forró au Nomad Café",
-  "date": "2025-11",
-  "slug": "2025-11-bal-brunch-forro-au-nomad-cafe",
-  "poster": "evt-2025-11-bal-brunch-forro-au-nomad-cafe.jpg"
- },
- {
-  "title": "Gandaia na Ponte au Bar Bar",
-  "date": "2025-11",
-  "slug": "2025-11-gandaia-na-ponte-au-bar-bar",
-  "poster": "evt-2025-11-gandaia-na-ponte-au-bar-bar.jpg"
- },
- {
-  "title": "Gandaia au Quai des arts",
-  "date": "2026-01",
-  "slug": "2026-01-gandaia-au-quai-des-arts",
-  "poster": "evt-2026-01-gandaia-au-quai-des-arts.jpg"
- },
- {
-  "title": "Bal forró au Nomad Café avec Gandaia na Ponte",
-  "date": "2026-04",
-  "slug": "2026-04-bal-forro-au-nomad-cafe-avec-gandaia-na-ponte",
-  "poster": "evt-2026-04-bal-forro-au-nomad-cafe-avec-gandaia-na-ponte.jpg"
- },
- {
-  "title": "Gandaia na Ponte au Bakoua",
-  "date": "2026-11",
+  "kind": "archive",
   "slug": "2026-11-gandaia-na-ponte-au-bakoua",
+  "title": "Gandaia na Ponte au Bakoua",
+  "date": "2026-11-01",
+  "month": true,
   "poster": "evt-2026-11-gandaia-na-ponte-au-bakoua.jpg"
  },
  {
-  "title": "Gros week-end forró 2027",
-  "date": "2027-06",
+  "kind": "archive",
   "slug": "2027-06-gros-week-end-forro-2027",
+  "title": "Gros week-end forró 2027",
+  "date": "2027-06-01",
+  "month": true,
   "poster": "evt-2027-06-gros-week-end-forro-2027.jpg"
  }
 ]

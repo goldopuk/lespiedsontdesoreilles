@@ -6,6 +6,7 @@ Usage : python3 tools/build_news.py
 - écrit posts/*.html et actualites.html
 - met à jour le bloc d'actualités de index.html (entre les marqueurs NEWS)
 """
+import datetime
 import html
 import json
 import re
@@ -27,7 +28,7 @@ def fr_date(iso):
 
 def shown_date(p):
     """Les événements importés du disque dur n'ont que le mois et l'année."""
-    if p.get("month"):
+    if p.get("month") or (p.get("event") or {}).get("kind") == "series":
         y, m = p["date"][:7].split("-")
         return f"{MONTHS[int(m) - 1]} {y}"
     return fr_date(p["date"])
@@ -148,6 +149,39 @@ def page(title, body, prefix, description="", body_class=""):
 """
 
 
+WEEKDAYS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+
+
+def long_date(iso):
+    d = datetime.date.fromisoformat(iso)
+    return f"{WEEKDAYS[d.weekday()]} {d.day} {MONTHS[d.month - 1]} {d.year}"
+
+
+def render_event(e):
+    """Texte d'un événement d'archive : (ligne de date, corps HTML)."""
+    kind = e["kind"]
+    if kind == "archive":
+        y, m = e["date"][:7].split("-")
+        return f"Événement de {MONTHS[int(m) - 1]} {y}", ""
+    if kind == "series":
+        items = "".join(f'<li><time datetime="{d}">{fr_date(d)}</time> : {html.escape(t)}</li>' for d, t in e["dates"])
+        return "Rendez-vous réguliers", f'<p>{html.escape(e["intro"])}</p><ul>{items}</ul>'
+    if e.get("end") and e["end"] != e["date"]:
+        when = f'Du {long_date(e["date"])} au {long_date(e["end"])}'
+    else:
+        when = long_date(e["date"]).capitalize()
+    parts = []
+    if e.get("place"):
+        parts.append(f'<p><strong>Lieu :</strong> {html.escape(e["place"])}</p>')
+    parts += [f"<p>{html.escape(l)}</p>" for l in e.get("desc", "").split("\n") if l.strip()]
+    if e.get("other_org"):
+        parts.append(f'<p class="note">{html.escape(e["other_org"])}.</p>')
+    if e.get("also"):
+        items = "".join(f'<li>{fr_date(a["date"])} : {html.escape(a["title"])} ({html.escape(a["place"])})</li>' for a in e["also"])
+        parts.append(f"<h2>Aussi au programme</h2><ul>{items}</ul>")
+    return when, "".join(parts)
+
+
 def card(p, prefix):
     img = (f'<img src="{prefix}images/affiches/{p["poster"]}" alt="Affiche : {html.escape(p["title"])}" loading="lazy">'
            if p["poster"] else '<div class="no-poster" aria-hidden="true"></div>')
@@ -159,6 +193,8 @@ def card(p, prefix):
 def main():
     IMG_DIR.mkdir(parents=True, exist_ok=True)
     (ROOT / "posts").mkdir(exist_ok=True)
+    for old in (ROOT / "posts").glob("*.html"):  # repart de zéro : évite les pages obsolètes
+        old.unlink()
     raw = json.loads((ROOT / "tools" / "posts.json").read_text())["posts"]
     raw = [p for p in raw if p["slug"] != "contact"]  # la page contact est dans index.html
     raw.sort(key=lambda p: p["date"], reverse=True)
@@ -174,16 +210,20 @@ def main():
         posts.append({"title": title, "slug": slug, "date": r["date"][:10], "raw": r,
                       "poster": poster_of(r)})
 
-    # événements d'archives (affiches du disque dur) : pas de texte, seulement l'affiche
+    # événements d'archives : fiches Facebook (texte, lieu), séries régulières, affiches seules
     events_file = ROOT / "tools" / "events.json"
     if events_file.exists():
         for e in json.loads(events_file.read_text()):
-            posts.append({"title": e["title"], "slug": e["slug"], "date": e["date"] + "-01", "month": True,
-                          "raw": {"content": ""}, "poster": e["poster"]})
+            posts.append({"title": e["title"], "slug": e["slug"], "date": e["date"], "month": e.get("month", False),
+                          "raw": {"content": ""}, "poster": e["poster"], "event": e})
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
 
     for i, p in enumerate(posts):
-        body_html = convert_content(p["raw"]["content"], "../")
+        if p.get("event"):
+            heading_time, body_html = render_event(p["event"])
+        else:
+            body_html = convert_content(p["raw"]["content"], "../")
+            heading_time = f'Publié le {shown_date(p)}'
         poster = ""
         # affiche en tête, sauf si le texte contient déjà la même image
         if p["poster"] and p["poster"] not in body_html:
@@ -195,7 +235,7 @@ def main():
         nav += f'<a href="{newer["slug"]}.html">{html.escape(newer["title"])} →</a>' if newer else "<span></span>"
         nav += "</nav>"
         body = (f'<article class="post"><p><a href="../actualites.html">← Toutes les actualités</a></p>'
-                f'<h1>{html.escape(p["title"])}</h1><time datetime="{p["date"]}">{"Événement de " + shown_date(p) if p.get("month") else "Publié le " + shown_date(p)}</time>'
+                f'<h1>{html.escape(p["title"])}</h1><time datetime="{p["date"]}">{heading_time}</time>'
                 f'{poster}<div class="post-body">{body_html}</div>{nav}</article>')
         (ROOT / "posts" / f'{p["slug"]}.html').write_text(page(p["title"], body, "../"))
 
