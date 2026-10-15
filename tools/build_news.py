@@ -131,6 +131,9 @@ def convert_content(content, prefix):
 
 
 def poster_of(post):
+    wp_file = ROOT / "tools" / "wp_posters.json"
+    if wp_file.exists() and post["slug"] in json.loads(wp_file.read_text()):
+        return json.loads(wp_file.read_text())[post["slug"]]
     url = post.get("featured_image") or next((a["URL"] for a in post["attachments"].values()
                                               if a["mime_type"].startswith("image/")), None)
     if url:

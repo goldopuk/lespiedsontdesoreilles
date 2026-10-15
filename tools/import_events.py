@@ -29,6 +29,10 @@ OVR = {8: "2021/202107 forro na chuva à l'appart/banner.jpg",
        28: "2022/202209 rentrée/banniere FB Porte ouverte cours musique forro.jpg"}
 
 
+# articles WordPress sans image : slug WordPress -> index d'affiche du disque dur
+WP_POSTERS = {"concert-forro-tati-veras": 109}
+
+
 def slugify(t):
     nfkd = unicodedata.normalize("NFKD", t)
     s = "".join(c if ord(c) < 128 else ("" if unicodedata.combining(c) else " ") for c in nfkd)
@@ -64,6 +68,8 @@ def main(disk):
         if e["poster"] is not None:
             used.add(poster_path(e["poster"]))
             poster = convert(poster_path(e["poster"]), slug)
+        elif (IMG_DIR / f'fbcover-{e["fb"]}.jpg').exists():
+            poster = f'fbcover-{e["fb"]}.jpg'  # image de couverture de l'événement Facebook (capturée à la main)
         out.append({"kind": "event", "slug": slug, "title": e["title"], "date": e["date"], "end": e["end"], "place": e["place"],
                     "desc": e["desc"], "also": e["also"], "other_org": e["other_org"], "poster": poster})
 
@@ -71,7 +77,8 @@ def main(disk):
         slug = unique(f'{s["date"]}-{s["slug"]}')
         poster = None
         if s["poster"] is not None:
-            used.add(poster_path(s["poster"]))
+            if s["poster"] != 0:  # l'affiche n° 0 (flyer de L'Appart) sert aussi à l'entrée « 2019 » : on la garde
+                used.add(poster_path(s["poster"]))
             poster = convert(poster_path(s["poster"]), slug)
         out.append({"kind": "series", "slug": slug, "title": s["title"], "date": s["date"] + "-01" if len(s["date"]) == 7 else s["date"],
                     "intro": s["intro"], "dates": s["dates"], "poster": poster})
@@ -86,6 +93,8 @@ def main(disk):
         out.append({"kind": "archive", "slug": slug, "title": e["title"], "date": e["date"] + "-01" if month_only else e["date"],
                     "month": month_only, "end": e.get("end"), "poster": convert(e["source"], slug)})
 
+    wp = {slug: convert(poster_path(idx), f"wp-{slug}") for slug, idx in WP_POSTERS.items()}
+    (ROOT / "tools" / "wp_posters.json").write_text(json.dumps(wp, indent=1))
     (ROOT / "tools" / "events.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     kinds = {k: sum(1 for x in out if x["kind"] == k) for k in ("event", "series", "archive")}
     print(kinds)

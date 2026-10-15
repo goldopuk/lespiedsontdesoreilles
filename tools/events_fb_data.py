@@ -325,7 +325,7 @@ Le groupe Forró de Um Dia pour « pular o carnaval », avec Céline Costa, Manu
 
 # Séries régulières : une page par série, avec la liste des dates.
 SERIES = [
-    dict(slug="forro-de-l-appart-2020", title="Forró de l'Appart et Afterbeach (2020)", date="2020-01", poster=None,
+    dict(slug="forro-de-l-appart-2020", title="Forró de l'Appart et Afterbeach (2020)", date="2020-01", poster=0,
          intro="Les rendez-vous forró au bar L'Appart, à Saint-Nazaire, et les afterbeach de l'été 2020.",
          dates=[("2020-01-26", "Forró à l'Appart"), ("2020-04-26", "Forró à l'Appart"), ("2020-07-17", "Forró à l'Appart"),
                 ("2020-07-24", "Forró Afterbeach de l'Appart"), ("2020-08-07", "Forró Afterbeach de l'Appart"),
@@ -338,13 +338,13 @@ SERIES = [
     dict(slug="cours-forro-2020", title="Cours de forró à Saint-Nazaire (2020)", date="2020-09", poster=None,
          intro="Reprise des cours de forró à Saint-Nazaire.",
          dates=[("2020-09-07", "Cours de forró"), ("2020-09-14", "Cours de forró"), ("2020-12-14", "Cours de forró")]),
-    dict(slug="apero-forro-appart-2021", title="Apéro-forró à l'Appart (2021)", date="2021-05", poster=None,
+    dict(slug="apero-forro-appart-2021", title="Apéro-forró à l'Appart (2021)", date="2021-05", poster=0,
          intro="Les apéro-forró du dimanche au bar L'Appart, à Saint-Nazaire, au printemps et à l'été 2021.",
          dates=[("2021-05-30", "Apéro-forró à l'Appart"), ("2021-06-06", "Apéro-forró à l'Appart"), ("2021-06-20", "Apéro-forró à l'Appart"),
                 ("2021-06-27", "Apéro-forró à l'Appart"), ("2021-07-04", "Apéro-forró à l'Appart"), ("2021-07-18", "Apéro-forró à l'Appart"),
                 ("2021-08-29", "Apéro-forró à l'Appart"), ("2021-09-05", "Apéro-forró à l'Appart"), ("2021-09-12", "Apéro-forró à l'Appart"),
                 ("2021-09-19", "Apéro-forró à l'Appart")]),
-    dict(slug="bals-forro-du-dimanche-appart-2022", title="Bals forró du dimanche à l'Appart (2021-2022)", date="2021-12", poster=None,
+    dict(slug="bals-forro-du-dimanche-appart-2022", title="Bals forró du dimanche à l'Appart (2021-2022)", date="2021-12", poster=0,
          intro="Le bal forró du dimanche au bar L'Appart, à Saint-Nazaire, de décembre 2021 à novembre 2022.",
          dates=[("2021-12-19", "Bal forró du dimanche"), ("2022-02-27", "Bal forró du dimanche"), ("2022-03-06", "Bal forró du dimanche"),
                 ("2022-03-13", "Bal forró du dimanche"), ("2022-03-27", "Bal forró du dimanche"), ("2022-04-24", "Bal forró du dimanche"),
