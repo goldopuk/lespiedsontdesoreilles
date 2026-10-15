@@ -19,6 +19,8 @@ IMG_DIR = ROOT / "images" / "affiches"
 MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
           "septembre", "octobre", "novembre", "décembre"]
 HOME_COUNT = 6
+# articles WordPress retirés du site (événement annulé, etc.) : slug WordPress d'origine
+EXCLUDED = {"electrofaune"}
 
 
 def fr_date(iso):
@@ -182,10 +184,32 @@ def render_event(e):
     return when, "".join(parts)
 
 
+_RATIOS = {}
+
+
+def poster_ratio(name):
+    """Largeur / hauteur de l'affiche (mise en cache) ; permet d'adapter la vignette."""
+    if name not in _RATIOS:
+        r = subprocess.run(["magick", "identify", "-format", "%w %h", str(IMG_DIR / name) + "[0]"],
+                           capture_output=True, text=True)
+        try:
+            w, h = map(int, r.stdout.split())
+            _RATIOS[name] = w / h
+        except ValueError:
+            _RATIOS[name] = 1.91
+    return _RATIOS[name]
+
+
 def card(p, prefix):
-    img = (f'<img src="{prefix}images/affiches/{p["poster"]}" alt="Affiche : {html.escape(p["title"])}" loading="lazy">'
-           if p["poster"] else '<div class="no-poster" aria-hidden="true"></div>')
-    return (f'<a class="news-card" href="{prefix}posts/{p["slug"]}.html">{img}'
+    if p["poster"]:
+        src = f'{prefix}images/affiches/{p["poster"]}'
+        # bannières Facebook (≈ 1,91:1) : image remplie ; affiches carrées ou portrait : image entière sur fond flouté
+        fit = poster_ratio(p["poster"]) < 1.7
+        thumb = (f'<div class="thumb{" fit" if fit else ""}" style="--bg:url(\'{src}\')">'
+                 f'<img src="{src}" alt="Affiche : {html.escape(p["title"])}" loading="lazy"></div>')
+    else:
+        thumb = '<div class="thumb no-poster" aria-hidden="true"></div>'
+    return (f'<a class="news-card" href="{prefix}posts/{p["slug"]}.html">{thumb}'
             f'<span class="news-title">{html.escape(p["title"])}</span>'
             f'<time datetime="{p["date"]}">{shown_date(p)}</time></a>')
 
@@ -196,7 +220,7 @@ def main():
     for old in (ROOT / "posts").glob("*.html"):  # repart de zéro : évite les pages obsolètes
         old.unlink()
     raw = json.loads((ROOT / "tools" / "posts.json").read_text())["posts"]
-    raw = [p for p in raw if p["slug"] != "contact"]  # la page contact est dans index.html
+    raw = [p for p in raw if p["slug"] != "contact" and p["slug"] not in EXCLUDED]  # la page contact est dans index.html
     raw.sort(key=lambda p: p["date"], reverse=True)
 
     posts, seen = [], set()
@@ -246,7 +270,7 @@ def main():
     parts = ['<section><h1>Actualités</h1><p>Concerts, bals, stages et week-ends : toutes les annonces de l\'association, des plus récentes aux plus anciennes.</p></section>']
     for y, ps in by_year.items():
         parts.append(f'<section><h2>{y}</h2><div class="news-grid">' + "".join(card(p, "") for p in ps) + "</div></section>")
-    (ROOT / "actualites.html").write_text(page("Actualités", "\n".join(parts), "", "Toutes les actualités de l'association"))
+    (ROOT / "actualites.html").write_text(page("Actualités", "\n".join(parts), "", "Toutes les actualités de l'association", "archive"))
 
     # bloc de l'accueil
     block = ('<div class="news-grid">' + "".join(card(p, "") for p in posts[:HOME_COUNT]) + "</div>\n"

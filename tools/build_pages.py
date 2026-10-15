@@ -83,7 +83,8 @@ def main():
             slug += "-2"
         seen.add(slug)
         y, m, d = p["date"][:10].split("-")
-        write(ROOT / y / m / d / p["slug"] / "index.html", redirect_page(f"posts/{slug}.html", "../../../../"))
+        target = "actualites.html" if p["slug"] in bn.EXCLUDED else f"posts/{slug}.html"
+        write(ROOT / y / m / d / p["slug"] / "index.html", redirect_page(target, "../../../../"))
         # certaines annonces existaient aussi comme page à la racine (/slug/)
         if p["slug"] in pages and p["slug"] not in KEPT and p["slug"] not in REDIRECTS:
             write(ROOT / p["slug"] / "index.html", redirect_page(f"posts/{slug}.html", "../"))
