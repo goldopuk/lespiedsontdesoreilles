@@ -21,6 +21,35 @@ MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "ao�
 HOME_COUNT = 6
 # articles WordPress retirés du site (événement annulé, etc.) : slug WordPress d'origine
 EXCLUDED = {"electrofaune"}
+# date réelle de l'événement des articles WordPress (sinon l'article serait classé à sa date de publication)
+# fragment du slug WordPress -> date de l'événement (relevée sur la page Facebook de l'association)
+EVENT_DATES = {
+    "concert-forro-tati-veras": "2026-11-28", "le-bal-tempete-2027": "2027-04-17",
+    "stages-de-forro-roots-avec-simon-bagard": "2026-09-26", "concert-everton-corone-trio": "2026-09-26",
+    "fete-de-fin-de-saison-des-podos-2": "2026-07-07", "gros-week-end-forro-avec-cristalino": "2026-06-12",
+    "bal-tempete": "2026-05-02", "concert-de-saira-et-stages": "2026-04-11",
+    "boum-forro-de-la-nouvelle-annee": "2026-01-10", "bal-jam-forro-de-noel-a-saint-nazaire": "2025-12-21",
+    "forro-na-chuva-a-saint-nazaire": "2025-11-08", "forro-do-domingo-a-saint-nazaire": "2025-10-19",
+    "bal-concert-jam-avec-duo-caldo-de-cana": "2025-09-21", "20-sept-gros-concert-forro": "2025-09-20",
+    "bal-concert-trio-forro-pe-de-serra": "2025-07-15", "bal-concert-forro-ateliers-danse": "2025-07-09",
+    "sambada-do-brasil-au-kiosq": "2025-06-27", "les-podos-font-la-fete-de-la-musique": "2025-06-21",
+    "fete-de-fin-de-saison-des-podos": "2025-06-17", "gros-week-end-forro-forrofia": "2025-05-16",
+    "concert-nandinho-barros": "2025-04-19", "concert-carnavalesque-forro-avec-baile-de-rabeca": "2025-03-15",
+    "bel-air-de-forro": "2025-02-01", "boum-forro-avec-dj-caraca": "2025-01-04", "bal-jam-forro-de-noel": "2024-12-15",
+    "concert-madame-forro": "2024-11-16", "la-sambada-du-kiosq": "2024-10-18", "gandaia-na-ponte-au-skate-park": "2024-06-28",
+    "bal-de-fin-dannee-des-podos": "2024-07-02", "concert-forro-lenilda": "2024-05-31",
+    "gros-week-end-forro-avec-trio-d2": "2024-04-06", "roda-do-brasil-forro-samba": "2024-03-15",
+    "concert-bresilien-carnavalesque": "2024-03-02", "carnaval-de-rue-bresilien": "2024-03-02",
+    "the-forroscopics-de-retour": "2024-01-27", "boum-bresilienne-forro-avec-dj-flow": "2024-01-06",
+    "pour-les-enfants": "2024-01-05", "gros-week-end-forro-avec-conterraneos": "2023-09-30",
+    "apero-forro-commando": "2023-08-24", "fete-des-podos-bal-forro": "2023-07-06", "le-gros-week-end-forro-2023": "2023-06-23",
+}
+
+
+def event_date(slug):
+    from urllib.parse import unquote
+    slug = unquote(slug)
+    return next((d for frag, d in EVENT_DATES.items() if frag in slug), None)
 
 
 def fr_date(iso):
@@ -162,9 +191,13 @@ def long_date(iso):
 def render_event(e):
     """Texte d'un événement d'archive : (ligne de date, corps HTML)."""
     kind = e["kind"]
-    if kind == "archive":
+    if kind == "archive" and e.get("month"):
         y, m = e["date"][:7].split("-")
         return f"Événement de {MONTHS[int(m) - 1]} {y}", ""
+    if kind == "archive":
+        if e.get("end"):
+            return f'Du {long_date(e["date"])} au {long_date(e["end"])}', ""
+        return long_date(e["date"]).capitalize(), ""
     if kind == "series":
         items = "".join(f'<li><time datetime="{d}">{fr_date(d)}</time> : {html.escape(t)}</li>' for d, t in e["dates"])
         return "Rendez-vous réguliers", f'<p>{html.escape(e["intro"])}</p><ul>{items}</ul>'
@@ -231,8 +264,9 @@ def main():
             slug += "-2"
         seen.add(slug)
         print("•", slug)
-        posts.append({"title": title, "slug": slug, "date": r["date"][:10], "raw": r,
-                      "poster": poster_of(r)})
+        ev_date = event_date(r["slug"])
+        posts.append({"title": title, "slug": slug, "date": ev_date or r["date"][:10], "event_dated": bool(ev_date),
+                      "raw": r, "poster": poster_of(r)})
 
     # événements d'archives : fiches Facebook (texte, lieu), séries régulières, affiches seules
     events_file = ROOT / "tools" / "events.json"
@@ -247,7 +281,7 @@ def main():
             heading_time, body_html = render_event(p["event"])
         else:
             body_html = convert_content(p["raw"]["content"], "../")
-            heading_time = f'Publié le {shown_date(p)}'
+            heading_time = long_date(p["date"]).capitalize() if p.get("event_dated") else f'Publié le {shown_date(p)}'
         poster = ""
         # affiche en tête, sauf si le texte contient déjà la même image
         if p["poster"] and p["poster"] not in body_html:

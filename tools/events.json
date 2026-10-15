@@ -1596,6 +1596,7 @@
   "title": "Forró do domingo à L'Appart",
   "date": "2019-10-01",
   "month": true,
+  "end": null,
   "poster": "evt-2019-10-forro-do-domingo-a-l-appart.jpg"
  },
  {
@@ -1604,6 +1605,7 @@
   "title": "Forró sous les palmiers",
   "date": "2019-10-01",
   "month": true,
+  "end": null,
   "poster": "evt-2019-10-forro-sous-les-palmiers.jpg"
  },
  {
@@ -1612,6 +1614,7 @@
   "title": "Forró na chuva au Quenet",
   "date": "2020-01-01",
   "month": true,
+  "end": null,
   "poster": "evt-2020-01-forro-na-chuva-au-quenet.jpg"
  },
  {
@@ -1620,6 +1623,7 @@
   "title": "Raiz do Sana",
   "date": "2020-02-01",
   "month": true,
+  "end": null,
   "poster": "evt-2020-02-raiz-do-sana.jpg"
  },
  {
@@ -1628,6 +1632,7 @@
   "title": "Une enceinte pour le forró (crowdfunding)",
   "date": "2021-06-01",
   "month": true,
+  "end": null,
   "poster": "evt-2021-06-une-enceinte-pour-le-forro-crowdfunding.jpg"
  },
  {
@@ -1636,6 +1641,7 @@
   "title": "Cours particulier avec Marion Lima",
   "date": "2022-02-01",
   "month": true,
+  "end": null,
   "poster": "evt-2022-02-cours-particulier-avec-marion-lima.jpg"
  },
  {
@@ -1644,6 +1650,7 @@
   "title": "Rentrée 2022-23 : cours de danse et de musique forró",
   "date": "2022-06-01",
   "month": true,
+  "end": null,
   "poster": "evt-2022-06-rentree-2022-23-cours-de-danse-et-de-musique-forro.jpg"
  },
  {
@@ -1652,22 +1659,25 @@
   "title": "Rythmes salés",
   "date": "2024-05-01",
   "month": true,
+  "end": null,
   "poster": "evt-2024-05-rythmes-sales.jpg"
  },
  {
   "kind": "archive",
-  "slug": "2026-11-gandaia-na-ponte-au-bakoua",
+  "slug": "2026-11-14-gandaia-na-ponte-au-bakoua",
   "title": "Gandaia na Ponte au Bakoua",
-  "date": "2026-11-01",
-  "month": true,
-  "poster": "evt-2026-11-gandaia-na-ponte-au-bakoua.jpg"
+  "date": "2026-11-14",
+  "month": false,
+  "end": null,
+  "poster": "evt-2026-11-14-gandaia-na-ponte-au-bakoua.jpg"
  },
  {
   "kind": "archive",
-  "slug": "2027-06-gros-week-end-forro-2027",
+  "slug": "2027-06-11-gros-week-end-forro-2027",
   "title": "Gros week-end forró 2027",
-  "date": "2027-06-01",
-  "month": true,
-  "poster": "evt-2027-06-gros-week-end-forro-2027.jpg"
+  "date": "2027-06-11",
+  "month": false,
+  "end": "2027-06-13",
+  "poster": "evt-2027-06-11-gros-week-end-forro-2027.jpg"
  }
 ]

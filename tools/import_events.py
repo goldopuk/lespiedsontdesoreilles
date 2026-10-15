@@ -82,8 +82,9 @@ def main(disk):
         if e["source"] in used:
             continue
         slug = unique(f'{e["date"]}-{slugify(e["title"])}')
-        out.append({"kind": "archive", "slug": slug, "title": e["title"], "date": e["date"] + "-01", "month": True,
-                    "poster": convert(e["source"], slug)})
+        month_only = len(e["date"]) == 7  # "AAAA-MM" : mois seul ; "AAAA-MM-JJ" : jour précis
+        out.append({"kind": "archive", "slug": slug, "title": e["title"], "date": e["date"] + "-01" if month_only else e["date"],
+                    "month": month_only, "end": e.get("end"), "poster": convert(e["source"], slug)})
 
     (ROOT / "tools" / "events.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     kinds = {k: sum(1 for x in out if x["kind"] == k) for k in ("event", "series", "archive")}

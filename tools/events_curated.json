@@ -336,12 +336,13 @@
  },
  {
   "title": "Gandaia na Ponte au Bakoua",
-  "date": "2026-11",
+  "date": "2026-11-14",
   "source": "20261114 gandaia au bakoua/gandaia na ponte bakoua fb.jpg"
  },
  {
   "title": "Gros week-end forró 2027",
-  "date": "2027-06",
-  "source": "20270612 GWF/save the date FB.jpg"
+  "date": "2027-06-11",
+  "source": "20270612 GWF/save the date FB.jpg",
+  "end": "2027-06-13"
  }
 ]
