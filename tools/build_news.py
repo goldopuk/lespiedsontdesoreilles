@@ -203,8 +203,8 @@ def poster_ratio(name):
 def card(p, prefix):
     if p["poster"]:
         src = f'{prefix}images/affiches/{p["poster"]}'
-        # bannières Facebook (≈ 1,91:1) : image remplie ; affiches carrées ou portrait : image entière sur fond flouté
-        fit = poster_ratio(p["poster"]) < 1.7
+        # seules les images au format exact des bannières Facebook (16:9) remplissent le cadre ; les autres s'affichent en entier sur fond flouté, sans rognage
+        fit = abs(poster_ratio(p["poster"]) - 16 / 9) > 0.04
         thumb = (f'<div class="thumb{" fit" if fit else ""}" style="--bg:url(\'{src}\')">'
                  f'<img src="{src}" alt="Affiche : {html.escape(p["title"])}" loading="lazy"></div>')
     else:
