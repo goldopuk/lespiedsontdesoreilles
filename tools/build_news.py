@@ -164,6 +164,7 @@ def page(title, body, prefix, description="", body_class=""):
     <nav>
       <a href="{prefix}index.html#asso">L'asso</a>
       <a href="{prefix}actualites.html">Actualités</a>
+      <a href="{prefix}videos.html">Vidéos</a>
       <a href="{prefix}index.html#activites">Activités 2026-27</a>
       <a href="{prefix}index.html#forro">Le forró</a>
       <a href="{prefix}index.html#liens">Liens</a>
@@ -280,6 +281,45 @@ def render_videos(p, prefix):
             f'<div class="video-list">{"".join(items)}</div></section>')
 
 
+def build_videos_page(posts):
+    """Page regroupant toutes les vidéos, avec recherche et filtre par année."""
+    import unicodedata as ud
+    items = []
+    for p in posts:
+        for vid, label in p.get("videos", []):
+            items.append((p["date"], vid, label, p))
+    items.sort(key=lambda x: (x[0], x[2]), reverse=True)
+    years = sorted({d[:4] for d, *_ in items}, reverse=True)
+
+    def norm(t):
+        return "".join(c for c in ud.normalize("NFD", t.lower()) if not ud.combining(c))
+
+    cards = []
+    for d, vid, label, p in items:
+        thumb = video_thumb(vid)
+        style = f' style="background-image:url(images/videos/{thumb})"' if thumb else ""
+        search = norm(f'{label} {html.unescape(p["title"])} {d[:4]} {p.get("event", {}).get("place", "")}')
+        cards.append(
+            f'<figure class="video" data-year="{d[:4]}" data-search="{html.escape(search)}">'
+            f'<button class="video-lite" type="button" data-id="{vid}" data-title="{html.escape(label)}"{style} '
+            f'aria-label="Lire la vidéo : {html.escape(label)}"><span class="play" aria-hidden="true"></span></button>'
+            f'<figcaption><strong>{html.escape(label)}</strong><br>'
+            f'<a href="posts/{p["slug"]}.html">{html.escape(p["title"])}</a> · <time datetime="{d}">{shown_date(p)}</time></figcaption></figure>')
+    chips = '<button type="button" class="chip active" data-year="">Toutes</button>' + "".join(
+        f'<button type="button" class="chip" data-year="{y}">{y}</button>' for y in years)
+    body = (f'<section><h1>Vidéos</h1><p>Concerts, bals et week-ends de l\'association en vidéo : {len(items)} vidéos. '
+            'Elles sont hébergées par YouTube et ne se chargent qu\'au clic. '
+            '<a href="https://www.youtube.com/@lespiedsontdesoreilles">Toute la chaîne YouTube</a>.</p>'
+            '<div class="video-tools"><label class="sr-only" for="video-search">Rechercher une vidéo</label>'
+            '<input id="video-search" type="search" placeholder="Rechercher (artiste, lieu, année…)" autocomplete="off">'
+            f'<div class="chips" role="group" aria-label="Filtrer par année">{chips}</div>'
+            '<p id="video-count" class="note" aria-live="polite"></p></div>'
+            f'<div class="video-list video-gallery">{"".join(cards)}</div>'
+            '<p id="video-none" hidden>Aucune vidéo ne correspond à cette recherche.</p></section>')
+    (ROOT / "videos.html").write_text(page("Vidéos", body, "", "Toutes les vidéos de l'association Les pieds ont des oreilles", "archive"))
+    print(f"{len(items)} vidéos sur videos.html")
+
+
 def card(p, prefix):
     if p["poster"]:
         src = f'{prefix}images/affiches/{p["poster"]}'
@@ -325,6 +365,7 @@ def main():
                           "raw": {"content": ""}, "poster": e["poster"], "event": e})
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
     attach_videos(posts)
+    build_videos_page(posts)
 
     for i, p in enumerate(posts):
         if p.get("event"):

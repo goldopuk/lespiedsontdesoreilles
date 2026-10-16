@@ -100,7 +100,7 @@ def main():
           '<p><a class="button" href="index.html">Retour à l\'accueil</a></p></section>', "").replace(
           "<head>", '<head>\n  <meta name="robots" content="noindex">', 1))
     # plan du site et robots.txt (adresses du domaine définitif)
-    urls = ["", "actualites.html"] + [f"{s}/" for s in KEPT] + sorted(
+    urls = ["", "actualites.html", "videos.html"] + [f"{s}/" for s in KEPT] + sorted(
         f"posts/{f.name}" for f in (ROOT / "posts").glob("*.html"))
     sm = "".join(f"  <url><loc>{SITE}/{u}</loc></url>\n" for u in urls)
     write(ROOT / "sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sm}</urlset>\n')

@@ -120,3 +120,14 @@ footer::before { bottom: 100%; }
 .contact-form .pot { position: absolute; left: -9999px; }
 .contact-form button { justify-self: start; cursor: pointer; font: inherit; font-weight: 700; }
 #contact h3 { margin-top: 2rem; }
+
+/* Page Vidéos : recherche et filtres */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.video-tools { display: grid; gap: .8rem; margin: 1.5rem 0; }
+.video-tools input[type="search"] { width: 100%; max-width: 32rem; padding: .7rem 1rem; border: 3px solid var(--night); border-radius: 2rem; background: var(--bg); color: var(--ink); font: inherit; }
+.video-tools input:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip { padding: .3rem .9rem; border: 3px solid var(--night); border-radius: 2rem; background: var(--bg); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+.chip.active, .chip:hover { background: var(--yellow); color: var(--night); }
+.video-gallery .video[hidden] { display: none; }
+.video-gallery { grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }

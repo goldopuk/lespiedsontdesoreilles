@@ -10,3 +10,34 @@ document.addEventListener("click", function (e) {
   f.className = "video-frame";
   b.replaceWith(f);
 });
+
+// Page « Vidéos » : recherche (sans tenir compte des accents) et filtre par année
+(function () {
+  var input = document.getElementById("video-search");
+  if (!input) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".video-gallery .video"));
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  var count = document.getElementById("video-count");
+  var none = document.getElementById("video-none");
+  var year = "";
+  function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  function apply() {
+    var words = norm(input.value).split(/\s+/).filter(Boolean), shown = 0;
+    cards.forEach(function (c) {
+      var ok = (!year || c.dataset.year === year) && words.every(function (w) { return c.dataset.search.indexOf(w) !== -1; });
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    count.textContent = shown + " vidéo" + (shown > 1 ? "s" : "") + " affichée" + (shown > 1 ? "s" : "");
+    none.hidden = shown > 0;
+  }
+  input.addEventListener("input", apply);
+  chips.forEach(function (b) {
+    b.addEventListener("click", function () {
+      year = b.dataset.year;
+      chips.forEach(function (x) { x.classList.toggle("active", x === b); });
+      apply();
+    });
+  });
+  apply();
+})();
