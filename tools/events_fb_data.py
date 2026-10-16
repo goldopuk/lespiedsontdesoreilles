@@ -10,6 +10,10 @@ def E(fb, title, date, place, poster, desc="", also=(), end=None, other_org=None
 
 EVENTS = [
     # ---------------- 2026 ----------------
+    E("1723349738813896", "Não para à Paris : week-end forró avec Le Petit Bal Perdu", "2026-11-13", "École de danse Kim Kan - Studio des Rigoles, 46 rue des Rigoles, Paris", None, """
+Les Podos à Paris !
+Et si on se lançait ensemble dans un week-end de forró inoubliable ? Du 13 au 15 novembre 2026, notre partenaire Marion Lima et son association Le Petit Bal Perdu organisent à Paris un grand week-end de forró.
+""", end="2026-11-15"),
     E("1565675318382471", "Place aux associations", "2026-09-05", "Place de l'Amérique Latine, Saint-Nazaire", None, """
 Cette année on se retrouve au Forum des associations !
 C'est le moment idéal pour venir nous rencontrer, papoter, poser toutes vos questions sur les cours, les bals, les concerts… et pourquoi pas vous inscrire pour la rentrée.
@@ -129,6 +133,10 @@ Lenilda Verissimo (voix, triangle) et Karine Huet (accordéon, chant), accompagn
     E("272284092588592", "Gandaia na Ponte au Plan B", "2024-04-11", "Le Plan B, 12 place du Marché, La Turballe", None, """
 Initiation à la danse, concert et bal forró avec Gandaia na Ponte, groupe de forró de Saint-Nazaire. Participation libre au chapeau.
 """),
+    E("1538539863443331", "Stage de danse forró avec Madame Forró", "2024-11-16", "Salle des Landettes, 44 chemin d'Avalix, Saint-Nazaire", None, """
+Ce stage est ouvert à tous les danseurs de forró, tous niveaux confondus. Il faut avoir déjà dansé et maîtriser les pas de base.
+Le thème sera la qualité de la danse et la musicalité. De 14h30 à 16h30 environ.
+"""),
     E("1160460032052992", "Stage de danse forró pour salseros avancés", "2024-04-07", "Salle Kerfaouet, 12B rue des Pinsons, Saint-Nazaire", None, """
 Dans le cadre du Gros Week-end Forró, Marion Lima, référence du forró en France, donne un stage réservé aux danseurs de salsa confirmés (au moins 2 ans de pratique régulière). Prix subventionné : 5 €, réservation obligatoire. Le cours est suivi du bal-jam forró à la P'tite Scène des Halles.
 """),
@@ -138,6 +146,10 @@ L'association La Soupe aux Cailloux inaugure son nouveau local avec « La Créma
     E("421281060341343", "Déambulation carnavalesque", "2024-03-02", "Ruban Bleu, devant l'R du Temps, Saint-Nazaire", None, """
 Déambulation carnavalesque avec l'association Les pieds ont des oreilles. Départ à 15h place des Droits de l'Homme, puis 17h au Ruban Bleu devant l'R du Temps. Rendez-vous nombreux et déguisés !
 """, other_org="Événement du Centre commercial Ruban Bleu"),
+    E("804746254667289", "Stages de danses du Nordeste brésilien avec Marion Lima", "2024-01-06", "Salle de danse Hibiscus, 10B rue des Hibiscus, Saint-Nazaire", None, """
+Marion Lima, la superprof internationale parisienne, est parmi nous pendant trois jours pour nous transmettre son art, sa joie, sa bonne humeur et son énergie légendaire.
+Samedi 6 janvier, de 13h30 à 17h30.
+"""),
     E("921099733005817", "Stages pour enfants : cirque et musique brésilienne", "2024-02-26", "La Volière, 60 rue de la Ville Halluard, Saint-Nazaire", None, """
 Stages pour enfants de 3 à 11 ans, du lundi 26 février au vendredi 1er mars 2024, encadrés par un·e intervenant·e cirque de La Volière et un intervenant musique brésilienne de l'association.
 Cirque : acrobatie, équilibres, jonglerie, agrès aériens. Musique brésilienne : jeux de rythmes, instruments brésiliens (pandeiro, agogo, zabumba, ganzas), chansons, fabrication de petits instruments de carnaval.
@@ -285,6 +297,10 @@ Concert du groupe forró nantais Forró Belem : cinq musiciens, un forró tradit
 Venez apprendre à jouer et improviser le forró, cette musique populaire du Nordeste brésilien. Tout instrument (hors percussion), un minimum de maîtrise instrumentale est nécessaire. Le stage est suivi d'un bœuf. 12 places, 25 €.
 """, also=[("Atelier de percussions forró", "2021-09-26", "Saint-Nazaire"),
            ("Jam forró", "2021-09-26", "L'Appart, Saint-Nazaire")]),
+    E("229772902535232", "Concert forró : The Forroscopics à Saint-Nazaire", "2021-12-17", "Sous les palmiers, la plage, Saint-Nazaire", None, """
+The Forroscopics, le célèbre groupe de forró rennais, est de retour pour nous transporter dans le nordeste brésilien, au son de leurs voix, accordéons, triangle, zabumba et autre contrebasse ! Ça va groover le Brésil !
+18h30 : initiation à la danse forró. 19h : concert. Entrée libre avec chapeau. Nous sommes dans un bar : boire un coup est obligatoire.
+"""),
     E("2922167214762485", "Concert de Léo Corrêa e as Trovadoras Itinerantes", "2021-10-22", "L'Appart, Saint-Nazaire", 12, """
 Léo Corrêa, musicien, compositeur et luthier de São Paulo, accompagné de Barbara (Forró Bacana), Julian (Forró Na Chuva) et de deux musiciennes du Nordeste, Josy et Luciana : les « trovadoras itinerantes ». Un bal brésilien à la sauce nordestine : forró, coco, ciranda, arrasta-pé, rabeca, accordéon.
 19h30 : DJ-set. 20h : initiation à la danse forró. 21h : concert. 6 € sur le site, 7 € sur place.

@@ -1,6 +1,18 @@
 [
  {
   "kind": "event",
+  "slug": "2026-11-13-nao-para-a-paris-week-end-forro-avec-le-petit-bal",
+  "title": "Não para à Paris : week-end forró avec Le Petit Bal Perdu",
+  "date": "2026-11-13",
+  "end": "2026-11-15",
+  "place": "École de danse Kim Kan - Studio des Rigoles, 46 rue des Rigoles, Paris",
+  "desc": "Les Podos à Paris !\nEt si on se lançait ensemble dans un week-end de forró inoubliable ? Du 13 au 15 novembre 2026, notre partenaire Marion Lima et son association Le Petit Bal Perdu organisent à Paris un grand week-end de forró.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
   "slug": "2026-09-05-place-aux-associations",
   "title": "Place aux associations",
   "date": "2026-09-05",
@@ -366,6 +378,18 @@
  },
  {
   "kind": "event",
+  "slug": "2024-11-16-stage-de-danse-forro-avec-madame-forro",
+  "title": "Stage de danse forró avec Madame Forró",
+  "date": "2024-11-16",
+  "end": null,
+  "place": "Salle des Landettes, 44 chemin d'Avalix, Saint-Nazaire",
+  "desc": "Ce stage est ouvert à tous les danseurs de forró, tous niveaux confondus. Il faut avoir déjà dansé et maîtriser les pas de base.\nLe thème sera la qualité de la danse et la musicalité. De 14h30 à 16h30 environ.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
   "slug": "2024-04-07-stage-de-danse-forro-pour-salseros-avances",
   "title": "Stage de danse forró pour salseros avancés",
   "date": "2024-04-07",
@@ -399,6 +423,18 @@
   "also": [],
   "other_org": "Événement du Centre commercial Ruban Bleu",
   "poster": "fbcover-421281060341343.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-01-06-stages-de-danses-du-nordeste-bresilien-avec-marion",
+  "title": "Stages de danses du Nordeste brésilien avec Marion Lima",
+  "date": "2024-01-06",
+  "end": null,
+  "place": "Salle de danse Hibiscus, 10B rue des Hibiscus, Saint-Nazaire",
+  "desc": "Marion Lima, la superprof internationale parisienne, est parmi nous pendant trois jours pour nous transmettre son art, sa joie, sa bonne humeur et son énergie légendaire.\nSamedi 6 janvier, de 13h30 à 17h30.",
+  "also": [],
+  "other_org": null,
+  "poster": null
  },
  {
   "kind": "event",
@@ -989,6 +1025,18 @@
   ],
   "other_org": null,
   "poster": "evt-2021-09-26-atelier-et-stage-de-musique-forro-du-26-septembre.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-12-17-concert-forro-the-forroscopics-a-saint-nazaire",
+  "title": "Concert forró : The Forroscopics à Saint-Nazaire",
+  "date": "2021-12-17",
+  "end": null,
+  "place": "Sous les palmiers, la plage, Saint-Nazaire",
+  "desc": "The Forroscopics, le célèbre groupe de forró rennais, est de retour pour nous transporter dans le nordeste brésilien, au son de leurs voix, accordéons, triangle, zabumba et autre contrebasse ! Ça va groover le Brésil !\n18h30 : initiation à la danse forró. 19h : concert. Entrée libre avec chapeau. Nous sommes dans un bar : boire un coup est obligatoire.",
+  "also": [],
+  "other_org": null,
+  "poster": null
  },
  {
   "kind": "event",
