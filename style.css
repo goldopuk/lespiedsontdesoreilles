@@ -97,3 +97,15 @@ footer::before { bottom: 100%; }
 /* page d'archive plus large : les bannières Facebook sont en paysage */
 .archive section { padding-inline: max(1rem, calc((100% - 72rem) / 2)); }
 .archive .news-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }
+
+/* Vidéos YouTube (chargées au clic) */
+.videos h2 { margin-top: 2.5rem; }
+.video-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem; }
+.video { margin: 0; }
+.video-lite, .video-frame { display: block; width: 100%; aspect-ratio: 16 / 9; border: 3px solid var(--night); border-radius: .25rem; background: var(--night) center / cover no-repeat; padding: 0; cursor: pointer; position: relative; }
+.video-frame { cursor: auto; }
+.video-lite .play { position: absolute; inset: 0; margin: auto; width: 4.2rem; height: 3rem; border-radius: .8rem; background: var(--red); border: 3px solid var(--night); }
+.video-lite .play::after { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-35%, -50%); border-left: 1.1rem solid #fff4e0; border-top: .7rem solid transparent; border-bottom: .7rem solid transparent; }
+.video-lite:hover .play, .video-lite:focus-visible .play { background: var(--orange); }
+.video figcaption { margin-top: .4rem; font-size: .95rem; }
+.badge-video { position: absolute; right: .4rem; bottom: .4rem; padding: .1rem .55rem; border: 2px solid var(--night); border-radius: 1rem; background: var(--yellow); color: var(--night); font-size: .8rem; font-weight: 700; line-height: 1.4; }

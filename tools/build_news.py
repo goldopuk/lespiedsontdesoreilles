@@ -178,6 +178,7 @@ def page(title, body, prefix, description="", body_class=""):
       <a href="{prefix}mentions-legales/">Mentions légales</a> ·
       <a href="{prefix}reglement-interieur/">Règlement intérieur</a></p>
   </footer>
+  <script defer src="{prefix}js/videos.js"></script>
 </body>
 </html>
 """
@@ -236,6 +237,49 @@ def poster_ratio(name):
     return _RATIOS[name]
 
 
+def video_thumb(vid):
+    """Vignette locale de la vidéo YouTube : aucune requête vers Google avant le clic du visiteur."""
+    dest = ROOT / "images" / "videos" / f"{vid}.jpg"
+    if not dest.exists():
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        for name in ("maxresdefault", "hqdefault", "mqdefault"):
+            r = subprocess.run(["curl", "-fsSL", "--max-time", "30", "-o", str(dest), f"https://i.ytimg.com/vi/{vid}/{name}.jpg"],
+                               capture_output=True)
+            if r.returncode == 0:
+                break
+            dest.unlink(missing_ok=True)
+    return dest.name if dest.exists() else None
+
+
+def attach_videos(posts):
+    """Rattache les vidéos YouTube (tools/videos.json) aux pages d'événements : date de l'événement + mot-clé du titre."""
+    vf = ROOT / "tools" / "videos.json"
+    if not vf.exists():
+        return
+    for rule in json.loads(vf.read_text()):
+        found = [p for p in posts if p["date"][:10] == rule["date"] and rule["kw"] in html.unescape(p["title"]).lower()]
+        if len(found) != 1:
+            print(f'  ! vidéos non rattachées ({len(found)} pages) : {rule["date"]} {rule["kw"]}')
+            continue
+        found[0].setdefault("videos", []).extend(rule["videos"])
+
+
+def render_videos(p, prefix):
+    if not p.get("videos"):
+        return ""
+    items = []
+    for vid, label in p["videos"]:
+        thumb = video_thumb(vid)
+        style = f' style="background-image:url({prefix}images/videos/{thumb})"' if thumb else ""
+        items.append(
+            f'<figure class="video"><button class="video-lite" type="button" data-id="{vid}" data-title="{html.escape(label)}"{style} '
+            f'aria-label="Lire la vidéo : {html.escape(label)}"><span class="play" aria-hidden="true"></span></button>'
+            f'<figcaption><a href="https://www.youtube.com/watch?v={vid}">{html.escape(label)}</a></figcaption></figure>')
+    return ('<section class="videos"><h2>Vidéos</h2>'
+            '<p class="note">Les vidéos sont hébergées par YouTube. Elles ne se chargent, et YouTube n\'est contacté, qu\'au moment où vous cliquez sur lecture.</p>'
+            f'<div class="video-list">{"".join(items)}</div></section>')
+
+
 def card(p, prefix):
     if p["poster"]:
         src = f'{prefix}images/affiches/{p["poster"]}'
@@ -245,6 +289,8 @@ def card(p, prefix):
                  f'<img src="{src}" alt="Affiche : {html.escape(p["title"])}" loading="lazy"></div>')
     else:
         thumb = '<div class="thumb no-poster" aria-hidden="true"></div>'
+    if p.get("videos"):
+        thumb = thumb.replace("</div>", '<span class="badge-video">▶ Vidéo</span></div>', 1)
     return (f'<a class="news-card" href="{prefix}posts/{p["slug"]}.html">{thumb}'
             f'<span class="news-title">{html.escape(p["title"])}</span>'
             f'<time datetime="{p["date"]}">{shown_date(p)}</time></a>')
@@ -278,6 +324,7 @@ def main():
             posts.append({"title": e["title"], "slug": e["slug"], "date": e["date"], "month": e.get("month", False),
                           "raw": {"content": ""}, "poster": e["poster"], "event": e})
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
+    attach_videos(posts)
 
     for i, p in enumerate(posts):
         if p.get("event"):
@@ -297,7 +344,7 @@ def main():
         nav += "</nav>"
         body = (f'<article class="post"><p><a href="../actualites.html">← Toutes les actualités</a></p>'
                 f'<h1>{html.escape(p["title"])}</h1><time datetime="{p["date"]}">{heading_time}</time>'
-                f'{poster}<div class="post-body">{body_html}</div>{nav}</article>')
+                f'{poster}<div class="post-body">{body_html}</div>{render_videos(p, "../")}{nav}</article>')
         (ROOT / "posts" / f'{p["slug"]}.html').write_text(page(p["title"], body, "../"))
 
     # archive par année
