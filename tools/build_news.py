@@ -340,36 +340,62 @@ def next_event_box(posts, prefix=""):
 
 
 def build_hero_preview(posts):
-    """Page d'aperçu (non liée, non indexée) comparant deux propositions d'en-tête pour l'accueil."""
+    """Page d'aperçu (non liée, non indexée) : trois propositions d'en-tête sobres pour l'accueil."""
     nxt = next_event_box(posts)
+    inscr = "https://www.helloasso.com/beta/associations/les-pieds-ont-des-oreilles/adhesions/inscriptions-podo-2026-27-2"
     heroes = f'''
-<p class="preview-label">Proposition A+B : paysage du logo + prochain rendez-vous</p>
-<section class="hero2">
-  <div class="hero2-inner">
-    <img class="hero2-logo" src="images/logo-podo.jpg" alt="Logo Les pieds ont des oreilles" width="422" height="462">
-    <div class="hero2-text">
-      <h1>Musique et danse forró pour tou.te.s</h1>
-      <p>Cours de danse, bals, stages, concerts et ateliers de percussions, à Saint-Nazaire.</p>
-      <p class="hero-actions"><a class="button" href="https://www.helloasso.com/beta/associations/les-pieds-ont-des-oreilles/adhesions/inscriptions-podo-2026-27-2">S'inscrire pour 2026-27</a>
-      <a class="button ghost" href="actualites.html">Voir les actualités</a></p>
+<p class="preview-label">Proposition 1 · Nuit et photo</p>
+<section class="hn" style="background-image:url(images/videos/e9JbtfMRlTI.jpg)">
+  <div class="hn-inner">
+    <p class="kicker">Association · Saint-Nazaire</p>
+    <h1>Musique et danse forró<br>pour tou·te·s</h1>
+    <p class="lead">Cours de danse, bals, stages, concerts et ateliers de percussions du Nordeste brésilien.</p>
+    <p class="actions"><a class="btn solid" href="{inscr}">S'inscrire pour 2026-27</a><a class="btn line" href="actualites.html">Actualités</a></p>
+    {nxt}
+  </div>
+</section>
+
+<p class="preview-label">Proposition 2 · Papier</p>
+<section class="hp">
+  <div class="hp-inner">
+    <div class="hp-text">
+      <p class="kicker">Les pieds ont des oreilles · Saint-Nazaire</p>
+      <h1>Musique et danse forró<br>pour tou·te·s</h1>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="lead">Cours de danse, bals, stages, concerts et ateliers de percussions du Nordeste brésilien.</p>
+      <p class="actions"><a class="btn solid dark" href="{inscr}">S'inscrire pour 2026-27</a><a class="btn line dark" href="actualites.html">Actualités</a></p>
+    </div>
+    <div class="hp-side">
+      <img src="images/logo-podo.jpg" alt="Logo Les pieds ont des oreilles" width="422" height="462">
       {nxt}
     </div>
   </div>
-  <div class="hero2-sea" aria-hidden="true"></div>
 </section>
 
-<p class="preview-label">Proposition C : vidéo ou photo plein cadre</p>
-<section class="hero3" style="background-image:url(images/videos/e9JbtfMRlTI.jpg)">
-  <div class="hero3-bar">
-    <h1>Musique et danse forró pour tou.te.s</h1>
-    <p>Cours de danse, bals, stages, concerts et ateliers de percussions, à Saint-Nazaire.</p>
-    <p class="hero-actions"><a class="button yellow" href="https://www.helloasso.com/beta/associations/les-pieds-ont-des-oreilles/adhesions/inscriptions-podo-2026-27-2">S'inscrire pour 2026-27</a>
-    <a class="button ghost-light" href="posts/2026-08-07-concert-forro-everton-corone-trio.html">Voir la vidéo du concert d'Everton</a></p>
+<p class="preview-label">Proposition 3 · Mer et phare</p>
+<section class="hm">
+  <svg class="hm-art" viewBox="0 0 1200 420" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">
+    <g fill="none" stroke="#fdc16d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+      <path d="M990 60 l16 -34 l16 34 z"/><rect x="996" y="60" width="20" height="20"/><path d="M984 80 h44"/>
+      <path d="M990 80 l-10 280 h54 l-10 -280"/><path d="M984 150 h44 M981 230 h50 M978 300 h56"/>
+      <path d="M1006 40 l-120 -22 M1006 40 l140 -16" opacity=".5"/>
+    </g>
+    <g fill="none" stroke="#f4813f" stroke-width="1.6" opacity=".75">
+      <path d="M0 352 q75 -26 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0"/>
+      <path d="M0 376 q75 -26 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0" opacity=".7"/>
+      <path d="M0 400 q75 -26 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0" opacity=".5"/>
+    </g>
+  </svg>
+  <div class="hm-inner">
+    <p class="kicker">Association · Saint-Nazaire</p>
+    <h1>Musique et danse forró<br>pour tou·te·s</h1>
+    <p class="lead">Cours de danse, bals, stages, concerts et ateliers de percussions du Nordeste brésilien.</p>
+    <p class="actions"><a class="btn solid" href="{inscr}">S'inscrire pour 2026-27</a><a class="btn line" href="actualites.html">Actualités</a></p>
     {nxt}
   </div>
 </section>'''
     page_html = page("Aperçu des en-têtes", heroes, "", "", "hero-preview")
-    page_html = page_html.replace("<head>", '<head>\n  <meta name="robots" content="noindex">', 1)
+    page_html = page_html.replace("<head>", '<head>\n  <meta name="robots" content="noindex">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap">', 1)
     page_html = page_html.replace("</body>", '<script defer src="js/next-event.js"></script>\n</body>', 1)
     (ROOT / "apercu-entete.html").write_text(page_html)
 

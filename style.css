@@ -171,3 +171,48 @@ footer::before { bottom: 100%; }
 .hero3 h1 { margin: 0 0 .5rem; font-size: clamp(1.9rem, 4.6vw, 3.4rem); color: #fff4e0; }
 .hero3-bar > p:not(.hero-actions) { margin: 0; font-size: 1.15rem; max-width: 36rem; }
 .hero-preview section.hero2, .hero-preview section.hero3 { margin-bottom: 0; }
+
+/* ---- En-têtes sobres (propositions) : sérif élégant, filets fins, couleurs en touches ---- */
+.hn, .hp, .hm { --serif: "DM Serif Display", Georgia, serif; --sans: "Inter", system-ui, sans-serif; font-family: var(--sans); }
+.hn h1, .hp h1, .hm h1 { font-family: var(--serif); font-weight: 400; text-transform: none; letter-spacing: -.01em; line-height: 1.05; margin: 0 0 1.2rem; font-size: clamp(2.4rem, 6vw, 4.6rem); }
+.hn h1::after, .hp h1::after, .hm h1::after { display: none; }
+.kicker { margin: 0 0 1.1rem; font-size: .8rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--yellow); }
+.lead { margin: 0; max-width: 34rem; font-size: 1.15rem; line-height: 1.6; font-weight: 400; }
+.actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.8rem 0 0; }
+.btn { display: inline-block; padding: .8rem 1.4rem; border-radius: 2px; font: 600 .82rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; border: 1px solid transparent; }
+.btn.solid { background: var(--yellow); color: #1b1620; border-color: var(--yellow); }
+.btn.solid:hover { background: #fff4e0; border-color: #fff4e0; }
+.btn.line { color: #fff4e0; border-color: rgba(255, 244, 224, .55); }
+.btn.line:hover { background: rgba(255, 244, 224, .12); }
+.btn.solid.dark { background: #1b1620; color: #fff4e0; border-color: #1b1620; }
+.btn.solid.dark:hover { background: var(--red); border-color: var(--red); }
+.btn.line.dark { color: #1b1620; border-color: rgba(27, 22, 32, .45); }
+.btn.line.dark:hover { background: rgba(27, 22, 32, .07); }
+.hn .next-event, .hm .next-event, .hp .next-event { margin-top: 2.2rem; padding: 1rem 0 0; border: 0; border-top: 1px solid rgba(255, 244, 224, .3); border-radius: 0; background: transparent; color: inherit; max-width: 32rem; }
+.hn .next-label, .hm .next-label { color: var(--yellow); letter-spacing: .16em; font-weight: 600; font-size: .75rem; }
+.hn .next-list a, .hm .next-list a { color: #fff4e0; grid-template-columns: 1fr auto; align-items: baseline; gap: .2rem 1rem; padding: .35rem 0; border-bottom: 1px solid rgba(255, 244, 224, .12); }
+.hn .next-list strong, .hm .next-list strong { font-weight: 500; }
+.hn .next-list span, .hm .next-list span { font-size: .85rem; opacity: .75; grid-column: 2; }
+.hp .next-event { border-top-color: rgba(27, 22, 32, .25); }
+.hp .next-label { color: var(--red); letter-spacing: .16em; font-weight: 600; font-size: .75rem; }
+.hp .next-list a { color: #1b1620; padding: .35rem 0; border-bottom: 1px solid rgba(27, 22, 32, .12); }
+
+/* 1 · Nuit et photo */
+.hn { display: flex; align-items: flex-end; min-height: clamp(30rem, 78vh, 46rem); color: #fff4e0; background: #1b1620 center / cover no-repeat; position: relative; }
+.hn::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(27, 22, 32, .55), rgba(27, 22, 32, .9)); }
+.hn-inner { position: relative; width: 100%; padding: 5rem max(1.2rem, calc((100% - 62rem) / 2)) 3.5rem; }
+
+/* 2 · Papier */
+.hp { background: #f6eddc; color: #1b1620; padding: 4.5rem max(1.2rem, calc((100% - 62rem) / 2)); }
+.hp-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: center; }
+.hp .kicker { color: var(--red); }
+.hp .rule { display: block; width: 5rem; height: 3px; margin: 0 0 1.4rem; background: linear-gradient(90deg, var(--teal) 0 33%, var(--orange) 33% 66%, var(--red) 66%); }
+.hp-side img { display: block; width: min(100%, 16rem); height: auto; margin-bottom: 1.8rem; }
+@media (max-width: 52rem) { .hp-inner { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+/* 3 · Mer et phare */
+.hm { position: relative; overflow: hidden; background: #0d3638; color: #fff4e0; }
+.hm-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hm { min-height: 34rem; }
+.hm-inner { position: relative; padding: 5rem max(1.2rem, calc((100% - 62rem) / 2)) 9rem; }
+@media (max-width: 52rem) { .hm-art { opacity: .55; } }
