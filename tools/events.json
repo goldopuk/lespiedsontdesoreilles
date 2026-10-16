@@ -271,18 +271,7 @@
   "end": null,
   "place": "Skatepark, Saint-Nazaire",
   "desc": "10h - 11h30 : atelier d'initiation à la danse forró\n12h - 13h : atelier de musique forró\n20h - 21h : bal forró",
-  "also": [
-   {
-    "title": "Côté plage : atelier de musique forró",
-    "date": "2024-08-21",
-    "place": "Esplanade Monsieur Hulot, Saint-Nazaire"
-   },
-   {
-    "title": "Côté plage : atelier danse, musique et bal forró",
-    "date": "2024-08-28",
-    "place": "Place du Commando, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2024-07-10-cote-plage-atelier-danse-musique-et-bal-forro.jpg"
  },
@@ -480,13 +469,7 @@
   "end": null,
   "place": "La P'tite Scène des Halles, Saint-Nazaire",
   "desc": "Madame Forró, française expatriée au Brésil, danseuse, clown, chanteuse et accordéoniste, accompagnée de Julian Biblocq (zabumba) et Isadora (triangle et voix). Concert de 18h à 22h30 à la P'tite Scène des Halles, jauge limitée à 60.\nL'après-midi (14h-16h), stage de danse forró niveau intermédiaire : connexion, trava (blocage) et musicalité.",
-  "also": [
-   {
-    "title": "Stage de danse forró inter/avancé avec Madame Forró",
-    "date": "2023-11-18",
-    "place": "Ferme Couronnée, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2023-11-18-concert-et-bal-forro-avec-madame-forro-balanceio.jpg"
  },
@@ -594,18 +577,7 @@
   "end": null,
   "place": "59 route de l'Océan, Saint-Marc, Saint-Nazaire",
   "desc": "Dans le cadre du festival Mai des Arts à Saint-Marc, Gandaia na Ponte en concert à 21h30 dans un jardin particulier face à la mer. Apéro dès 20h. Gratuit.",
-  "also": [
-   {
-    "title": "Stage de danse forró avec Alise Marieta",
-    "date": "2023-05-14",
-    "place": "Salle des Hibiscus, Saint-Nazaire"
-   },
-   {
-    "title": "Ateliers de danse brésilienne enfants 4/6 et 7/12 ans",
-    "date": "2023-05-14",
-    "place": "Salle des Hibiscus, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2023-05-14-apero-forro-et-gandaia-a-saint-marc-sur-mer.jpg"
  },
@@ -618,11 +590,6 @@
   "place": "La P'tite Scène des Halles, Saint-Nazaire",
   "desc": "Une jam forró animée par l'accordéoniste Aline Le Masson, avec en première partie le groupe nazairien Gandaia na Ponte.",
   "also": [
-   {
-    "title": "Atelier batucada forró par Julian Biblocq",
-    "date": "2023-04-16",
-    "place": "Maison de quartier d'Avalix, Saint-Nazaire"
-   },
    {
     "title": "Ateliers de musique brésilienne enfants 4/6 et 7/12 ans",
     "date": "2023-04-16",
@@ -652,13 +619,7 @@
   "end": null,
   "place": "La P'tite Scène des Halles, Saint-Nazaire",
   "desc": "C'est carnaval, déguisons-nous ! Du forró au coco, de la valse à la ciranda, Saíra, quartet franco-brésilien, invite à un bal brésilien populaire et chaleureux, inspiré du répertoire forró des années 70.\n19h : ouverture des portes. 19h15 : initiation. 20h30 : concert. Prix libre entre 7 et 12 €.",
-  "also": [
-   {
-    "title": "Stages de danse forró avec Tatiana Barros",
-    "date": "2023-02-25",
-    "place": "Espace civique Dubé, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2023-02-25-carnaval-forro-avec-saira-en-concert.jpg"
  },
@@ -670,13 +631,7 @@
   "end": null,
   "place": "Espace civique Dubé, 1 rue des Ajoncs, Saint-Nazaire",
   "desc": "Plongez dans l'univers rythmique du bal brésilien à travers la percussion corporelle et le chant : ciranda, xote, baião, arrastapé. Ateliers dirigés par Gabriel Lesoeur, suivis d'un bal-jam forró.\n1re partie : 14h30 - 16h. 2e partie : 16h15 - 17h45. 15 € un stage, 25 € les deux.",
-  "also": [
-   {
-    "title": "Musique et percussion corporelle brésilienne pour les enfants",
-    "date": "2023-02-05",
-    "place": "Salle des Hibiscus, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2023-02-05-percussion-corporelle-et-chant-forro-avec-gabriel.jpg"
  },
@@ -700,18 +655,7 @@
   "end": null,
   "place": "Le Garage, Saint-Nazaire",
   "desc": "Un brunch forró au Garage pour fêter la nouvelle année : apportez de quoi boire et manger, dansez les quadrilles. Initiation à la danse à 11h30. Gratuit. Suivi de deux ateliers de musique forró animés par Gabriel Lesoeur.",
-  "also": [
-   {
-    "title": "Stage de musique forró (niveau inter) avec Gabriel Lesoeur",
-    "date": "2023-01-08",
-    "place": "Les Landettes, Saint-Nazaire"
-   },
-   {
-    "title": "Stage de percussion corporelle et chant forró (pour tous)",
-    "date": "2023-01-08",
-    "place": "Les Landettes, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2023-01-08-brunch-forro-au-garage.jpg"
  },
@@ -735,23 +679,7 @@
   "end": null,
   "place": "L'Appart, Saint-Nazaire",
   "desc": "La brillante accordéoniste Aline Le Masson (Forró Na Chuva) dirige cette jam session au bar L'Appart. Apportez vos instruments ou votre voix, vos pieds et vos oreilles. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.",
-  "also": [
-   {
-    "title": "Stage de percussions corporelles et musique forró",
-    "date": "2022-11-06",
-    "place": "Maison de quartier de la Bouletterie, Saint-Nazaire"
-   },
-   {
-    "title": "Stage de forró avec Alise Marieta (niveau intermédiaire)",
-    "date": "2022-11-06",
-    "place": "Maison de quartier Chesnaie-Trébale, Saint-Nazaire"
-   },
-   {
-    "title": "Stage danses du Nordeste avec Alise et Gabidju",
-    "date": "2022-11-06",
-    "place": "Maison de quartier Chesnaie-Trébale, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2022-11-06-jam-session-forro-avec-aline-le-masson.jpg"
  },
@@ -763,23 +691,7 @@
   "end": "2022-10-09",
   "place": "Le Garage, Saint-Nazaire",
   "desc": "Un week-end de folie avec deux mestres du forró : Black do Acordeon (musique) et Rudolfo Batista (danse). Stages de danse, atelier de musique, concert et jam au Garage.\nBlack, chanteur, accordéoniste et compositeur, est un phénomène au Brésil : un forró aux influences de reggae, samba, ijexá et baião.\nRudolfo Batista, danseur, pédagogue, musicien et producteur, brésilien d'Olinda, installé à Cologne, propose un forró aux influences multiples (roots, universitaire, coco).",
-  "also": [
-   {
-    "title": "Stage d'initiation à la danse forró",
-    "date": "2022-10-08",
-    "place": "Le Garage, Saint-Nazaire"
-   },
-   {
-    "title": "Stages de danse forró avec Rudolfo Batista",
-    "date": "2022-10-08",
-    "place": "Le Garage, Saint-Nazaire"
-   },
-   {
-    "title": "Stages de musique forró avec Leandro Campanha",
-    "date": "2022-10-09",
-    "place": "Les Landettes, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2022-10-08-gros-week-end-forro-avec-black-do-acordeon.jpg"
  },
@@ -959,23 +871,7 @@
   "end": "2022-03-20",
   "place": "L'Appart et Saint-Nazaire",
   "desc": "Grâce à la venue de Cacau Moutinho et Forró Na Chuva, un gros week-end forró à Saint-Nazaire.\nSamedi 19 mars : stage débutant de musique forró (11h-13h), stages de danse niveaux 1 et 2, puis le gros concert à L'Appart (initiation, concert d'arrumadinho de Cacau et Forró Na Chuva, DJ set).\nDimanche 20 mars : stage avancé de musique avec Léo Corrêa, stages de danse niveaux 1 et 2, puis bal/jam forró à L'Appart.",
-  "also": [
-   {
-    "title": "Atelier de musique forró débutant avec Cacau",
-    "date": "2022-03-19",
-    "place": "Saint-Nazaire"
-   },
-   {
-    "title": "Stage de musique forró avancé",
-    "date": "2022-03-20",
-    "place": "Saint-Nazaire"
-   },
-   {
-    "title": "Atelier de pandeiro débutant",
-    "date": "2022-03-30",
-    "place": "École Carnot, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2022-03-19-gros-week-end-forro-avec-cacau-et-forro-na-chuva.jpg"
  },
@@ -1016,11 +912,6 @@
     "title": "Atelier de percussions forró",
     "date": "2021-09-26",
     "place": "Saint-Nazaire"
-   },
-   {
-    "title": "Jam forró",
-    "date": "2021-09-26",
-    "place": "L'Appart, Saint-Nazaire"
    }
   ],
   "other_org": null,
@@ -1046,13 +937,7 @@
   "end": null,
   "place": "L'Appart, Saint-Nazaire",
   "desc": "Léo Corrêa, musicien, compositeur et luthier de São Paulo, accompagné de Barbara (Forró Bacana), Julian (Forró Na Chuva) et de deux musiciennes du Nordeste, Josy et Luciana : les « trovadoras itinerantes ». Un bal brésilien à la sauce nordestine : forró, coco, ciranda, arrasta-pé, rabeca, accordéon.\n19h30 : DJ-set. 20h : initiation à la danse forró. 21h : concert. 6 € sur le site, 7 € sur place.",
-  "also": [
-   {
-    "title": "Atelier de musique forró (tout instrument)",
-    "date": "2021-10-23",
-    "place": "Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2021-10-22-concert-de-leo-correa-e-as-trovadoras-itinerantes.jpg"
  },
@@ -1064,18 +949,7 @@
   "end": "2021-10-03",
   "place": "L'Appart, Saint-Nazaire",
   "desc": "Les deux Rodrigos du groupe carioca Conterrâneos, en tournée européenne, accompagnés de Barbara de Trio Bacana, pour un concert exceptionnel au bar L'Appart.\n20h : ouverture des portes + DJ. 21h30 : concert. 2h : fin de soirée. Jauge limitée à 60 personnes. 8 € / 11 € / 14 €.",
-  "also": [
-   {
-    "title": "Masterclass forró avec Rodrigo et Rodrigo de Conterrâneos",
-    "date": "2021-10-03",
-    "place": "Saint-Nazaire"
-   },
-   {
-    "title": "Stages forró avec Yse Góes",
-    "date": "2021-10-03",
-    "place": "Rue des Hibiscus, Saint-Nazaire"
-   }
-  ],
+  "also": [],
   "other_org": null,
   "poster": "evt-2021-10-02-concert-de-conterraneos-rio-de-janeiro.jpg"
  },
@@ -1192,6 +1066,1278 @@
   ],
   "other_org": null,
   "poster": "evt-2020-02-23-concert-carnavalesque-avec-forro-de-um-dia.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-06-23-pratique-forro-au-five-oh",
+  "title": "Pratique forró au Five-Oh",
+  "date": "2026-06-23",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Tous les mardis de juin, si le temps le permet, pratique forró au Five-Oh de 19h à 21h. Consommation de courtoisie obligatoire pour le bar qui nous accueille.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-2511264062650811.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-06-09-pratique-forro-au-five-oh",
+  "title": "Pratique forró au Five-Oh",
+  "date": "2026-06-09",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Tous les mardis de juin, si le temps le permet, pratique forró au Five-Oh de 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-2488790058231545.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-09-01-pratique-forro-au-five-oh",
+  "title": "Pratique forró au Five-Oh",
+  "date": "2026-09-01",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Pratique forró au Five-Oh de 19h à 21h. Consommation de courtoisie obligatoire pour le bar qui nous accueille.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-2580368352418090.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-08-18-pratique-forro-au-five-oh",
+  "title": "Pratique forró au Five-Oh",
+  "date": "2026-08-18",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Pratique forró au Five-Oh de 19h à 21h. Consommation de courtoisie obligatoire pour le bar qui nous accueille.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-986062227810400.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-07-21-pratique-forro-au-five-oh",
+  "title": "Pratique forró au Five-Oh",
+  "date": "2026-07-21",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Pratique forró au Five-Oh de 19h à 21h. Consommation de courtoisie obligatoire pour le bar qui nous accueille.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-26845250731816914.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-05-17-pratique-forro-a-saint-nazaire",
+  "title": "Pratique forró à Saint-Nazaire",
+  "date": "2026-05-17",
+  "end": null,
+  "place": "Salle Gambetta, 67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "Auberge espagnole. Adhésion 3 € obligatoire.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-848591657743681.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-03-29-pratique-forro-a-saint-nazaire",
+  "title": "Pratique forró à Saint-Nazaire",
+  "date": "2026-03-29",
+  "end": null,
+  "place": "Salle Gambetta, 67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "Auberge espagnole. Adhésion à prix libre obligatoire.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-34697412463239521.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-02-01-pratique-forro-a-saint-nazaire",
+  "title": "Pratique forró à Saint-Nazaire",
+  "date": "2026-02-01",
+  "end": null,
+  "place": "Salle Gambetta, 67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "Auberge espagnole. Adhésion à prix libre obligatoire. De 18h à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1198482862406200.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-10-28-pratique-forro-a-saint-nazaire",
+  "title": "Pratique forró à Saint-Nazaire",
+  "date": "2025-10-28",
+  "end": null,
+  "place": "Salle Gambetta, 67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "Pratique forró sur playlist, sur un superbe parquet de danse. Auberge espagnole (apportez des trucs à partager). De 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1440798833661427.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-09-26-portes-ouvertes-des-cours-hebdomadaires-de-danse-f",
+  "title": "Portes ouvertes des cours hebdomadaires de danse forró",
+  "date": "2025-09-26",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Envie de découvrir le forró, cette danse brésilienne chaleureuse, festive et accessible à tous ? Rejoignez-nous chaque mardi ou vendredi de septembre pour des cours ouverts à toutes et tous. De 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1546313036723966.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-09-25-portes-ouvertes-du-cours-hebdomadaire-de-musique-d",
+  "title": "Portes ouvertes du cours hebdomadaire de musique du Nordeste brésilien",
+  "date": "2025-09-25",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Envie de faire de la musique et d'apprendre un répertoire de musique brésilienne, au chant et aux percussions ? Rejoignez Léo Corrêa le jeudi pour découvrir la musique du Nordeste. De 19h à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1258652399611916.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-07-01-pratique-forro-au-five-oh",
+  "title": "Pratique forró au Five-Oh",
+  "date": "2025-07-01",
+  "end": null,
+  "place": "Five-Oh, skatepark, Saint-Nazaire",
+  "desc": "Un petit forró à Saint-Nazaire au Five-Oh, de 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1025994563021512.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-07-09-forro-a-cote-plage",
+  "title": "Forró à Côté Plage",
+  "date": "2025-07-09",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Nous sommes invités par la Ville pour animer Côté Plage le mercredi 9 juillet. 16h-17h : atelier de chant et percussion du Nordeste avec Léo Corrêa. 17h-18h : initiation à la danse forró. Puis bal forró jusqu'à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1425327328495105.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-06-24-pratique-forro-commando",
+  "title": "Pratique forró commando",
+  "date": "2025-06-24",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Un petit forró sauvage place du Commando en mode auberge espagnole ! Apportez ce que vous voulez grignoter ou glouglouter ! De 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1497729648267812.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2025-04-08-pratique-forro-commando",
+  "title": "Pratique forró commando",
+  "date": "2025-04-08",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Une pratique forró sauvage sur la place du Commando. Auberge espagnole. De 19h à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-674320408428148.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-09-12-ateliers-hebdomadaires-de-musique-bresilienne-forr",
+  "title": "Ateliers hebdomadaires de musique brésilienne (forró, coco…)",
+  "date": "2024-09-12",
+  "end": null,
+  "place": "École Carnot, 24 rue Fernand Gasnier, Saint-Nazaire",
+  "desc": "Jeudi, cours de musique adultes avec Léo Corrêa : 19h-20h15 atelier chant et percussions du Nordeste brésilien ; 20h30-21h45 cours de musique forró.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-825227086384189.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-10-01-cours-hebdomadaire-de-danse-forro",
+  "title": "Cours hebdomadaire de danse forró",
+  "date": "2024-10-01",
+  "end": null,
+  "place": "École Carnot, 24 rue Fernand Gasnier, Saint-Nazaire",
+  "desc": "Venez découvrir le forró, cette danse à deux du Nordeste brésilien, festive et conviviale ! Cours de danse forró avec Julien Colomb et Alice Vigneron. De 19h à 22h, plusieurs niveaux.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1412191279449743.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-10-02-portes-ouvertes-des-ateliers-de-musique-bresilienn",
+  "title": "Portes ouvertes des ateliers de musique brésilienne pour enfants",
+  "date": "2024-10-02",
+  "end": null,
+  "place": "67bis rue de Cardurand, Saint-Nazaire",
+  "desc": "Mercredi, ateliers de musique brésilienne pour enfants avec Léo Corrêa. 14h-15h : 6-8 ans. 15h-16h : atelier suivant.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-476411192035078.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-09-10-portes-ouvertes-danse-et-musique-forro-pour-enfant",
+  "title": "Portes ouvertes danse et musique forró pour enfants et adultes",
+  "date": "2024-09-10",
+  "end": "2024-09-20",
+  "place": "Saint-Nazaire",
+  "desc": "Venez nous rencontrer et tester les différents ateliers et cours autour du forró et de la musique brésilienne du Nordeste, pendant le mois de septembre.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-816698980641928.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-08-28-cote-plage-atelier-danse-musique-et-bal-forro",
+  "title": "Côté plage : atelier danse, musique et bal forró",
+  "date": "2024-08-28",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "10h-11h30 : atelier d'initiation à la danse forró. 15h-16h : atelier de musique forró. 20h-21h : bal forró. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1174911453698331.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-08-21-cote-plage-atelier-de-musique-forro",
+  "title": "Côté plage : atelier de musique forró",
+  "date": "2024-08-21",
+  "end": null,
+  "place": "Esplanade Mr Hulot, Saint-Nazaire",
+  "desc": "16h-17h : atelier de musique forró. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-250646931464867.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-07-04-portes-ouvertes-des-pieds-ont-des-oreilles",
+  "title": "Portes ouvertes des Pieds ont des oreilles",
+  "date": "2024-07-04",
+  "end": null,
+  "place": "École Carnot, 25 rue Fernand Gasnier, Saint-Nazaire",
+  "desc": "Venez nous rencontrer et discuter avec nous ! De 18h30 à 19h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-3859663007640578.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-04-24-atelier-hebdomadaire-de-coco-chant-et-percussions",
+  "title": "Atelier hebdomadaire de coco, chant et percussions brésiliennes avec Léo Corrêa",
+  "date": "2024-04-24",
+  "end": null,
+  "place": "Salle polyvalente Lamartine, 50 rue Jeanne d'Arc, Saint-Nazaire",
+  "desc": "Léo Corrêa lance des ateliers hebdomadaires de coco, chant et percussions du Nordeste du Brésil. Une chance unique de pratiquer à la fois le chant, les percussions et la danse. De 20h à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-411256015021984.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-04-10-atelier-hebdomadaire-de-coco-chant-et-percussions",
+  "title": "Atelier hebdomadaire de coco, chant et percussions brésiliennes avec Léo Corrêa",
+  "date": "2024-04-10",
+  "end": null,
+  "place": "Salle polyvalente Lamartine, 50 rue Jeanne d'Arc, Saint-Nazaire",
+  "desc": "Léo Corrêa lance des ateliers hebdomadaires de coco, chant et percussions du Nordeste du Brésil. Une chance unique de pratiquer à la fois le chant, les percussions et la danse. À partir de 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1468340473767058.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2024-01-21-juste-une-pratique-forro",
+  "title": "Juste une pratique forró",
+  "date": "2024-01-21",
+  "end": null,
+  "place": "Espace Dubé, Saint-Nazaire",
+  "desc": "Une pratique pour pratiquer sa pratique du forró ! Réservé à ceux qui dansent déjà le forró.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-306492061883576.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-12-22-juste-une-pratique-forro",
+  "title": "Juste une pratique forró",
+  "date": "2023-12-22",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Pratique réservée aux adhérents des Pieds Ont Des Oreilles. Merci de nous contacter si vous voulez participer. De 20h30 à 23h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-373998751668720.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-12-10-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2023-12-10",
+  "end": null,
+  "place": "Espace civique Dubé, 1 bis rue des Ajoncs, Saint-Nazaire",
+  "desc": "Pratique forró du dimanche. Ouvert à tou·tes les danseur·ses de forró, tous niveaux. N'apportez rien à manger mais quelque chose à boire à partager. De 18h à 19h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1049883129385606.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-12-03-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2023-12-03",
+  "end": null,
+  "place": "Espace civique Dubé, 1 bis rue des Ajoncs, Saint-Nazaire",
+  "desc": "Pratique forró du dimanche. Ouvert à tou·tes les danseur·ses de forró, tous niveaux. N'apportez rien à manger mais quelque chose à boire à partager.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-6939433132806953.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-11-26-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2023-11-26",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Forró du dimanche. Contactez-nous si vous souhaitez venir à cette pratique, elle a lieu dans un lieu privé. De 20h à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1045552000005061.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-11-12-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2023-11-12",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Forró du dimanche. Lieu à définir. De 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-874588704237294.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-09-19-portes-ouvertes-du-cours-de-danse-forro",
+  "title": "Portes ouvertes du cours de danse forró",
+  "date": "2023-09-19",
+  "end": null,
+  "place": "École Carnot, Saint-Nazaire",
+  "desc": "Venez découvrir les cours de danse forró. Niveau 1 : 18h45-20h15. Niveau 2 : 20h-21h30. Accès par l'entrée principale de l'école Carnot.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-329713122818827.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-09-14-portes-ouvertes-du-cours-de-musique-forro",
+  "title": "Portes ouvertes du cours de musique forró",
+  "date": "2023-09-14",
+  "end": null,
+  "place": "École Carnot, Saint-Nazaire",
+  "desc": "Venez tester les cours de musique forró et autres musiques du Nordeste brésilien. Percussions et chant, principalement. Ouvert à tous. 240 €/an. De 19h à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2023-10-31-portes-ouvertes-du-cours-de-batucada-samba-carioca",
+  "title": "Portes ouvertes du cours de batucada samba carioca",
+  "date": "2023-10-31",
+  "end": null,
+  "place": "École Jean-Zay, Saint-Nazaire",
+  "desc": "Venez jouer avec la nouvelle batucada de Saint-Nazaire, de samba carioca, avec Max Oll. Pour tous. De 20h à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-293858030016115.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-06-04-apero-forro",
+  "title": "Apéro-forró",
+  "date": "2023-06-04",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Un autre bal forró sous les arbres de la place du Commando pour rendre hommage au soleil, à la mer, à la musique, à la danse ! Auberge espagnole, musicien·nes bienvenu·es. De 19h30 à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-983869739479702.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-05-28-apero-forro",
+  "title": "Apéro-forró",
+  "date": "2023-05-28",
+  "end": null,
+  "place": "Place du Commando, Saint-Nazaire",
+  "desc": "Un bal forró sous les arbres de la place du Commando pour rendre hommage au soleil, à la mer, à la musique, à la danse ! Auberge espagnole, musicien·nes bienvenu·es. De 19h30 à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-11-27-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2022-11-27",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Que c'est bon de terminer le week-end en faisant la fête à l'heure de l'apéro ! Venez danser le forró ! Initiation à 19h. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1314727439326821.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-10-16-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2022-10-16",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Que c'est bon de terminer le week-end en faisant la fête à l'heure de l'apéro ! Venez danser le forró ! Initiation à 19h. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-661032052399679.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-10-02-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2022-10-02",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Que c'est bon de terminer le week-end en faisant la fête à l'heure de l'apéro ! Venez danser le forró ! Initiation à 19h. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1028897204457782.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-09-25-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2022-09-25",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Que c'est bon de terminer le week-end en faisant la fête à l'heure de l'apéro ! Venez danser le forró ! Initiation à 19h. Gratuit.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-892093845510078.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-09-15-portes-ouvertes-du-cours-de-musique-forro-avec-leo",
+  "title": "Portes ouvertes du cours de musique forró avec Léo Corrêa",
+  "date": "2022-09-15",
+  "end": null,
+  "place": "École Carnot, Saint-Nazaire",
+  "desc": "Venez apprendre à jouer le forró. Le musicien Léo Corrêa dirigera les deux premiers cours, les 8 et 15 septembre. Vous pratiquerez la zabumba, le pandeiro… De 18h30 à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1300341337437499.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-09-06-portes-ouvertes-du-cours-de-danse-forro",
+  "title": "Portes ouvertes du cours de danse forró",
+  "date": "2022-09-06",
+  "end": null,
+  "place": "École Carnot, Saint-Nazaire",
+  "desc": "Venez apprendre à danser le forró. Tous les mardis : 18h45-19h45 débutant, 20h-21h intermédiaire, 21h-21h30 avancé. 150 €/an.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-373869048089539.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-09-04-forro-do-domingo",
+  "title": "Forró do domingo",
+  "date": "2022-09-04",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 19h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-757915665285860.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-07-03-forro-du-dimanche",
+  "title": "Forró du dimanche",
+  "date": "2022-07-03",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 19h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-424699749351073.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-05-29-forro-du-dimanche",
+  "title": "Forró du dimanche",
+  "date": "2022-05-29",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 19h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-551041443074957.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-05-22-forro-du-dimanche",
+  "title": "Forró du dimanche",
+  "date": "2022-05-22",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 19h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-690993315499725.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-04-24-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2022-04-24",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 19h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-535410827965372.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-03-27-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2022-03-27",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h30 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-267235815577155.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-03-13-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2022-03-13",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h15 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-3215085382144676.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-02-27-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2022-02-27",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1115021229260386.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-12-05-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2021-12-05",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h15 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-206486984888074.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-11-28-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2021-11-28",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h15 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-206486998221406.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-10-17-bal-forro-du-dimanche",
+  "title": "Bal forró du dimanche",
+  "date": "2021-10-17",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h15 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-206487004888072.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-09-26-jam-forro-a-saint-nazaire",
+  "title": "Jam forró à Saint-Nazaire",
+  "date": "2021-09-26",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Musicien·nes, pour la première fois à Saint-Nazaire, nous aurons une jam forró. Apportez vos instruments et joignez-vous à nos deux musiciens. De 18h30 à 21h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-4146282982145928.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-07-18-apero-forro-a-l-appart",
+  "title": "Apéro-forró à l'Appart",
+  "date": "2021-07-18",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 19h30 à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-829889084265617.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-06-27-apero-forro-a-l-appart",
+  "title": "Apéro-forró à l'Appart",
+  "date": "2021-06-27",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h15 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-238461977769411.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-06-20-apero-forro-a-l-appart",
+  "title": "Apéro-forró à l'Appart",
+  "date": "2021-06-20",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h15 à 20h15.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-949948422449585.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-06-06-apero-forro-a-l-appart",
+  "title": "Apéro-forró à l'Appart",
+  "date": "2021-06-06",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-4343817022304419.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-05-30-apero-forro-a-l-appart",
+  "title": "Apéro-forró à l'Appart",
+  "date": "2021-05-30",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-777492676465116.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-10-25-forro-de-pornichet",
+  "title": "Forró de Pornichet",
+  "date": "2020-10-25",
+  "end": null,
+  "place": "15 avenue des Pins, Pornichet",
+  "desc": "Venez découvrir, écouter le forró et terminer joyeusement le week-end. Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-259416605482406.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-10-18-forro-de-pornichet",
+  "title": "Forró de Pornichet",
+  "date": "2020-10-18",
+  "end": null,
+  "place": "15 avenue des Pins, Pornichet",
+  "desc": "Venez découvrir, écouter le forró et terminer joyeusement le week-end. Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-260279928729407.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-10-11-forro-de-l-appart",
+  "title": "Forró de l'Appart",
+  "date": "2020-10-11",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1044299346009650.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-10-04-forro-de-l-appart",
+  "title": "Forró de l'Appart",
+  "date": "2020-10-04",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-260243878586610.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-12-14-cours-de-forro-a-saint-nazaire",
+  "title": "Cours de forró à Saint-Nazaire",
+  "date": "2020-12-14",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Venez apprendre à danser le forró, une danse brésilienne qui se danse à deux, à la fois facile, festive, joyeuse et parfois lascive ! De 20h30 à 21h45.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-658723551422108.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-09-20-forro-de-l-appart",
+  "title": "Forró de l'Appart",
+  "date": "2020-09-20",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-659613014676256.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-09-14-cours-de-forro-a-saint-nazaire",
+  "title": "Cours de forró à Saint-Nazaire",
+  "date": "2020-09-14",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Venez apprendre à danser le forró, une danse brésilienne qui se danse à deux, à la fois facile, festive, joyeuse et parfois lascive ! De 20h30 à 21h45.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-329094658439344.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-09-13-forro-de-l-appart",
+  "title": "Forró de l'Appart",
+  "date": "2020-09-13",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-659613028009588.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-12-27-forro-de-l-appart",
+  "title": "Forró de l'Appart",
+  "date": "2020-12-27",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 18h à 20h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-659613008009590.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-09-07-cours-de-forro-a-saint-nazaire",
+  "title": "Cours de forró à Saint-Nazaire",
+  "date": "2020-09-07",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Venez apprendre à danser le forró, une danse brésilienne qui se danse à deux, à la fois facile, festive, joyeuse et parfois lascive ! De 20h30 à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-810617596349017.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-08-30-forro-afterbeach-de-l-appart",
+  "title": "Forró Afterbeach de l'Appart",
+  "date": "2020-08-30",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Forró Afterbeach/Afterwork à Saint-Nazaire ! Venez découvrir le forró et danser sur les rythmes brésiliens de la musique nordestina. De 18h30 à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-312532353327861.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-08-21-forro-afterbeach-de-l-appart",
+  "title": "Forró Afterbeach de l'Appart",
+  "date": "2020-08-21",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Forró Afterbeach/Afterwork à Saint-Nazaire ! Venez découvrir le forró et danser sur les rythmes brésiliens de la musique nordestina. De 19h à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-334017004619029.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-08-07-forro-afterbeach-de-l-appart",
+  "title": "Forró Afterbeach de l'Appart",
+  "date": "2020-08-07",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Forró Afterbeach/Afterwork à Saint-Nazaire ! Venez découvrir le forró et danser sur les rythmes brésiliens de la musique nordestina. De 19h30 à 22h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-842580199614250.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-07-24-forro-afterbeach-de-l-appart",
+  "title": "Forró Afterbeach de l'Appart",
+  "date": "2020-07-24",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Forró Afterbeach/Afterwork à Saint-Nazaire ! Venez découvrir le forró et danser sur les rythmes brésiliens de la musique nordestina. De 19h à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-3408795209151148.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-07-17-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-07-17",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "C'est le grand retour du forró à Saint-Nazaire ! Venez découvrir et danser sur les rythmes brésiliens. De 19h à 21h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-582673685784590.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-04-26-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-04-26",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-169113441166765.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-02-16-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-02-16",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-169113451166764.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-02-09-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-02-09",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-169113447833431.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-02-02-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-02-02",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-169113444500098.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-01-26-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-01-26",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-836656883457917.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-01-19-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-01-19",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-836656880124584.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-01-12-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2020-01-12",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-836656876791251.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2019-12-22-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2019-12-22",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-785591248564481.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2019-12-15-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2019-12-15",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-785591271897812.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2019-11-17-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2019-11-17",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-785591258564480.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2019-11-10-forro-a-l-appart",
+  "title": "Forró à l'Appart",
+  "date": "2019-11-10",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Venez danser, découvrir, écouter le forró et terminer joyeusement le week-end ! Le forró est une musique et une danse du Nordeste brésilien, dansée traditionnellement à deux. De 17h30 à 20h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-785591255231147.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-12-20-jam-forro-de-noel",
+  "title": "Jam forró de Noël",
+  "date": "2026-12-20",
+  "end": null,
+  "place": "La P'tite Scène des Halles, 14 place du Commerce, Saint-Nazaire",
+  "desc": "On se retrouve pour une dernière danse avant les fêtes ! Dimanche 20 décembre, de 18h à 22h. Gandaia sera de la partie, et la scène est ouverte aux musicien·nes qui ont envie de venir jouer !",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1645426964000083.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-11-18-stage-de-danse-forro-inter-avance-avec-madame-forr",
+  "title": "Stage de danse forró inter/avancé avec Madame Forró",
+  "date": "2023-11-18",
+  "end": null,
+  "place": "Ferme Couronnée, rue Pitre Grenapin, Saint-Nazaire",
+  "desc": "Stage de danse forró niveau intermédiaire/avancé, par Madame Forró. Thème : connexion, trava (blocage) et musicalité. Vous aborderez les variations rythmiques et explorerez la connexion. De 14h à 16h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-245088115244762.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-05-14-ateliers-de-danse-bresilienne-pour-enfants-4-6-ans",
+  "title": "Ateliers de danse brésilienne pour enfants (4-6 ans et 7-12 ans)",
+  "date": "2023-05-14",
+  "end": null,
+  "place": "Salle des Hibiscus, rue des Hibiscus, Saint-Nazaire",
+  "desc": "Voyage dans l'univers des danses du Nordeste brésilien adapté aux enfants ! Dirigé par Alise Marieta. 10h-11h : 4-6 ans. 11h-12h : 7-12 ans.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1706496896472313.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-05-14-stage-de-danse-forro-avec-alise-marieta",
+  "title": "Stage de danse forró avec Alise Marieta",
+  "date": "2023-05-14",
+  "end": null,
+  "place": "Salle des Hibiscus, rue des Hibiscus, Saint-Nazaire",
+  "desc": "Un stage de danse forró de 2h sur les thèmes de la musicalité et de la qualité de la danse, dirigé par Alise Marieta. Six mois de pratique requis, maîtrise des pas de base demandée. De 14h à 16h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-965114637826251.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-04-16-atelier-batucada-forro-avec-julian-biblocq",
+  "title": "Atelier Batucada Forró avec Julian Biblocq",
+  "date": "2023-04-16",
+  "end": null,
+  "place": "Maison de quartier Avalix, 3 rue du Docteur Albert Calmette, Saint-Nazaire",
+  "desc": "Atelier batucada forró avec Julian Biblocq, mestre de batucada. Niveau requis : au moins un an de pratique de la musique (percussions, instrument, batucada…). De 14h30 à 17h. Organisé avec Aline Le Masson.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-2472825442883666.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-02-25-stages-de-danse-forro-avec-tatiana-barros",
+  "title": "Stages de danse forró avec Tatiana Barros",
+  "date": "2023-02-25",
+  "end": null,
+  "place": "Espace civique Dubé, 1 rue des Ajoncs, Saint-Nazaire",
+  "desc": "Atelier débutant 13h30-14h30 (10 €). Atelier niveau 1 14h45-16h15 : pas de base requis. Atelier niveau 2 16h30-18h : au moins un an de forró, orienté roots. 15 €/cours. Suivi du concert de Saíra le soir.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1647904365643397.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-02-05-musique-et-percussion-corporelle-bresilienne-pour",
+  "title": "Musique et percussion corporelle brésilienne pour les enfants",
+  "date": "2023-02-05",
+  "end": null,
+  "place": "3 rue des Hibiscus, Saint-Nazaire",
+  "desc": "10h-11h : 3-6 ans. 11h-12h : 7-12 ans. Un parc de petites percussions à main, en présence de Gabriel Lesoeur, animateur musicien, et de son accordéon. Prix libre entre 5 et 10 €. Réservation nécessaire.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-3304120946502771.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-01-08-stage-de-musique-forro-niveau-intermediaire-avec-g",
+  "title": "Stage de musique forró (niveau intermédiaire) avec Gabriel Lesoeur",
+  "date": "2023-01-08",
+  "end": null,
+  "place": "Les Landettes, Saint-Nazaire",
+  "desc": "Vous connaissez déjà le forró, le baião, le xote ? Vous avez déjà pratiqué le triangle, la zabumba et le ganza ? Vous aimez chanter ? Venez découvrir le forró selon Gabriel Lesoeur. 15 €, réservation obligatoire. De 16h45 à 18h45.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-3274115272809523.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2023-01-08-stage-de-percussion-corporelle-et-chant-forro-pour",
+  "title": "Stage de percussion corporelle et chant forró (pour tous)",
+  "date": "2023-01-08",
+  "end": null,
+  "place": "Les Landettes, Saint-Nazaire",
+  "desc": "Plongez dans l'univers rythmique du bal brésilien à travers la percussion corporelle et le chant. Au programme : ciranda, xote, baião, arrastapé. Dirigé par Gabriel Lesoeur. Accessible à tous. 15 €, réservation obligatoire. De 14h30 à 16h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-614964670381930.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-11-06-stage-de-danses-du-nordeste-avec-alise-et-gabidju",
+  "title": "Stage de danses du Nordeste avec Alise et Gabidju",
+  "date": "2022-11-06",
+  "end": null,
+  "place": "Maison de quartier Chesnaie-Trébale, Saint-Nazaire",
+  "desc": "Un stage de danses du Nordeste brésilien (arrastapé, xote, baião, coco, ciranda) à travers la danse et les percussions corporelles, dirigé par Alise Marieta et Gabriel Lesoeur. Minimum 10 €, le juste prix 20 €. De 13h30 à 15h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1173540123514593.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-11-06-stage-de-percussions-corporelles-et-musique-forro",
+  "title": "Stage de percussions corporelles et musique forró",
+  "date": "2022-11-06",
+  "end": null,
+  "place": "Maison de quartier de la Bouletterie, 29 rue des Frênes, Saint-Nazaire",
+  "desc": "Plongez dans l'univers rythmique du bal brésilien à travers la percussion corporelle et le chant. Au programme : ciranda, xote, baião, arrastapé. Minimum 10 €, le juste prix 20 €. De 16h à 18h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1526633447779974.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-11-06-stage-de-forro-avec-alise-marieta-niveau-intermedi",
+  "title": "Stage de forró avec Alise Marieta (niveau intermédiaire)",
+  "date": "2022-11-06",
+  "end": null,
+  "place": "Maison de quartier Chesnaie-Trébale, Saint-Nazaire",
+  "desc": "Stage de forró universitaire de 2h, niveau intermédiaire, ouvert à toute personne maîtrisant les pas et figures de base. Dirigé par Alise Marieta : postures de guide et de suiveur, connexion en couple fermé ou ouvert. De 15h45 à 17h45.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1443374232821741.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-10-09-stage-de-musique-forro-avec-leandro-campanha",
+  "title": "Stage de musique forró avec Leandro Campanha",
+  "date": "2022-10-09",
+  "end": null,
+  "place": "Les Landettes, Saint-Nazaire",
+  "desc": "À l'occasion du Gros Week-end forró, nous accueillons le Brésilien Leandro Campanha, percussionniste spécialiste du forró. Découvrez et pratiquez cette musique populaire du Nordeste : zabumba, triangle, pandeiro, agogô, ganza. 25 €, limité à 10 participants, 2h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-644671200653056.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-10-08-stage-d-initiation-a-la-danse-forro",
+  "title": "Stage d'initiation à la danse forró",
+  "date": "2022-10-08",
+  "end": null,
+  "place": "Le Garage, Saint-Nazaire",
+  "desc": "Dans le cadre du Gros Week-end forró, ce stage pour découvrir les bases du forró, avant le grand concert du soir. Accessible à tous, même sans aucune connaissance. De 11h à 12h30 : 15 €. Dirigé par Alice et Julien.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-768038717619644.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-10-08-stage-de-danse-forro-avec-rudolfo-batista",
+  "title": "Stage de danse forró avec Rudolfo Batista",
+  "date": "2022-10-08",
+  "end": null,
+  "place": "Le Garage, Saint-Nazaire",
+  "desc": "Pour notre Gros Week-end forró, nous recevons Rudolfo Batista, danseur, pédagogue, musicien et tourneur, qui a grandi à Olinda dans le Nordeste brésilien. À partir de 14h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-815930316254814.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-03-30-atelier-de-pandeiro-debutant",
+  "title": "Atelier de pandeiro débutant",
+  "date": "2022-03-30",
+  "end": null,
+  "place": "École Carnot, Saint-Nazaire",
+  "desc": "Atelier de pandeiro pour débutants. Sept places pour sept pandeiros ; si vous en apportez un, la jauge augmente. Participation à partir de 3 €. De 18h à 19h.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
+  "kind": "event",
+  "slug": "2022-03-20-stage-de-musique-forro-avance",
+  "title": "Stage de musique forró avancé",
+  "date": "2022-03-20",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Venez jouer du forró avec Léo Corrêa et Aline Le Masson (Forró Na Chuva). Ce stage est réservé aux musiciens qui connaissent déjà le forró. Tout instrument bienvenu. De 14h30 à 17h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-709517790432121.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2022-03-19-atelier-de-musique-forro-debutant-avec-cacau",
+  "title": "Atelier de musique forró débutant avec Cacau",
+  "date": "2022-03-19",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Que vous soyez néophyte ou musicien chevronné, venez participer à cet atelier dirigé par Cacau Moutinho. 10 personnes maximum, 2h d'atelier : 20 €. Réservation obligatoire. De 11h à 13h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1316524478815786.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-10-23-atelier-de-musique-forro-tout-instrument-avec-leo",
+  "title": "Atelier de musique forró (tout instrument) avec Léo Corrêa",
+  "date": "2021-10-23",
+  "end": null,
+  "place": "Saint-Nazaire",
+  "desc": "Quel que soit votre instrument de musique favori, venez participer aux ateliers forró de Léo ! Ce sera l'occasion de monter un groupe de forró éphémère : vous apprendrez à jouer deux ou trois forrós avec style. De 14h30 à 18h.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-297689038530479.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2020-01-25-atelier-forro-a-pornichet",
+  "title": "Atelier forró à Pornichet",
+  "date": "2020-01-25",
+  "end": null,
+  "place": "Hôtel Le Danicheff, Pornichet",
+  "desc": "En complément de l'atelier d'initiation du dimanche, nous proposons ponctuellement des ateliers de 6 à 10 participants. Sur réservation. Participation : 5 €. 1h d'atelier + 30 min de pratique. De 17h à 18h30.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-185939385800215.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-10-16-carte-blanche-a-l-ecole-de-musique-samauma",
+  "title": "Carte blanche à l'école de musique Samaùma",
+  "date": "2026-10-16",
+  "end": null,
+  "place": "Salle Étoile de Jade, Saint-Brévin-les-Pins",
+  "desc": "Carte blanche à l'École de Musique Samaùma, avec Léo Corrêa. Vendredi 16 octobre, 20h30. Bar et restauration sur place.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-2562927864149741.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2026-10-07-leo-correa-dj-set-forro-et-concert-en-solo",
+  "title": "Léo Corrêa : DJ set forró et concert en solo",
+  "date": "2026-10-07",
+  "end": null,
+  "place": "Café Chez la Bretonne, 5 place du Commerce, Saint-Nazaire",
+  "desc": "Léo Corrêa présente un set de DJ forró avec de grands noms du genre, mêlant l'énergie de la musique brésilienne à une performance live, entre machines et instruments.",
+  "also": [],
+  "other_org": null,
+  "poster": "fbcover-1105082222170791.jpg"
  },
  {
   "kind": "series",

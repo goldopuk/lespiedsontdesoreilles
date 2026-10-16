@@ -18,6 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import events_fb_data as fb  # noqa: E402
+import events_fb_more as fbmore  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 IMG_DIR = ROOT / "images" / "affiches"
@@ -72,6 +73,24 @@ def main(disk):
             poster = f'fbcover-{e["fb"]}.jpg'  # image de couverture de l'événement Facebook (capturée à la main)
         out.append({"kind": "event", "slug": slug, "title": e["title"], "date": e["date"], "end": e["end"], "place": e["place"],
                     "desc": e["desc"], "also": e["also"], "other_org": e["other_org"], "poster": poster})
+
+    # ateliers, stages, cours, pratiques et bals récurrents : une fiche par événement Facebook, sans affiche du disque dur
+    for e in fbmore.MORE:
+        slug = unique(f'{e["date"]}-{slugify(e["title"])}')
+        poster = f'fbcover-{e["fb"]}.jpg' if (IMG_DIR / f'fbcover-{e["fb"]}.jpg').exists() else None
+        out.append({"kind": "event", "slug": slug, "title": e["title"], "date": e["date"], "end": e["end"], "place": e["place"],
+                    "desc": e["desc"], "also": [], "other_org": None, "poster": poster})
+
+    # une entrée « Également » qui a maintenant sa propre fiche (même jour, titre proche) est retirée de la fiche principale
+    def words(t):
+        return {w for w in re.sub(r"[^a-z0-9]+", " ", slugify(t).replace("-", " ")).split() if len(w) > 3}
+
+    standalone = [(x["date"], words(x["title"])) for x in out if x["kind"] == "event"]
+    for x in out:
+        if x["kind"] == "event" and x["also"]:
+            x["also"] = [a for a in x["also"]
+                         if not any(d == a["date"] and (words(a["title"]) & w) and len(words(a["title"]) & w) >= min(2, len(words(a["title"])))
+                                    for d, w in standalone if (d, w) != (x["date"], words(x["title"])))]
 
     for s in fb.SERIES:
         slug = unique(f'{s["date"]}-{s["slug"]}')
