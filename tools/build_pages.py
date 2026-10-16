@@ -68,6 +68,11 @@ def main():
             for old, new in MENTIONS_FIXES:
                 content = content.replace(old, new)
         body = bn.convert_content(content, "../")
+        if slug == "mentions-legales":
+            body += ("<p><strong>Formulaire de contact :</strong> les informations saisies (nom, adresse e-mail, message) sont transmises par "
+                     "le service FormSubmit (formsubmit.co) à l'adresse e-mail de l'association, uniquement pour répondre à votre demande. "
+                     "Elles ne sont pas utilisées à d'autres fins. Pour exercer vos droits (accès, suppression), écrivez à "
+                     "lespiedsontdesoreilles@gmail.com.</p>")
         body = (f'<article class="post"><p><a href="../index.html">← Accueil</a></p>'
                 f'<h1>{html.escape(title)}</h1><div class="post-body">{body}</div></article>')
         write(ROOT / slug / "index.html", bn.page(title, body, "../"))
@@ -90,6 +95,10 @@ def main():
             write(ROOT / p["slug"] / "index.html", redirect_page(f"posts/{slug}.html", "../"))
 
     write(ROOT / ".nojekyll", "")
+    write(ROOT / "merci.html", bn.page("Message envoyé",
+          '<section><h1>Merci !</h1><p>Votre message a bien été envoyé. L\'association vous répondra dès que possible.</p>'
+          '<p><a class="button" href="index.html">Retour à l\'accueil</a></p></section>', "").replace(
+          "<head>", '<head>\n  <meta name="robots" content="noindex">', 1))
     # plan du site et robots.txt (adresses du domaine définitif)
     urls = ["", "actualites.html"] + [f"{s}/" for s in KEPT] + sorted(
         f"posts/{f.name}" for f in (ROOT / "posts").glob("*.html"))

@@ -52,5 +52,5 @@ Le script vérifie les DNS, ajoute le fichier `CNAME`, déclare le domaine à Gi
 Remettre les deux `A` `192.0.78.24` et `192.0.78.25` et l'ancien `CNAME` `www` dans Cloudflare : le site WordPress redevient visible en quelques minutes.
 
 ## Reste à faire
-- formulaire de contact (la newsletter renvoie vers le formulaire Brevo de l'ancien site)
+- formulaire de contact : géré par FormSubmit (formsubmit.co). Le tout premier message envoyé déclenche un e-mail d'activation à lespiedsontdesoreilles@gmail.com : il faut cliquer sur le lien reçu une seule fois. La newsletter renvoie vers le formulaire Brevo de l'ancien site.
 - vérifier les mentions légales (hébergeur remplacé par GitHub)

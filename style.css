@@ -109,3 +109,14 @@ footer::before { bottom: 100%; }
 .video-lite:hover .play, .video-lite:focus-visible .play { background: var(--orange); }
 .video figcaption { margin-top: .4rem; font-size: .95rem; }
 .badge-video { position: absolute; right: .4rem; bottom: .4rem; padding: .1rem .55rem; border: 2px solid var(--night); border-radius: 1rem; background: var(--yellow); color: var(--night); font-size: .8rem; font-weight: 700; line-height: 1.4; }
+
+/* Formulaire de contact */
+.contact-form { display: grid; gap: 1rem; max-width: 36rem; }
+.contact-form label { display: grid; gap: .3rem; font-weight: 700; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { width: 100%; padding: .6rem .8rem; border: 3px solid var(--night); border-radius: .4rem; background: var(--bg); color: var(--ink); font: inherit; font-weight: 500; }
+.contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.contact-form .consent { display: block; font-weight: 500; font-size: .9rem; }
+.contact-form .consent input { margin-right: .5rem; }
+.contact-form .pot { position: absolute; left: -9999px; }
+.contact-form button { justify-self: start; cursor: pointer; font: inherit; font-weight: 700; }
+#contact h3 { margin-top: 2rem; }
