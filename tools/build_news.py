@@ -151,8 +151,6 @@ def page(title, body, prefix, description="", body_class=""):
   <title>{html.escape(title)} – Les pieds ont des oreilles</title>
   <meta name="description" content="{html.escape(description)}">
   <link rel="icon" href="{prefix}images/logo-podo.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap">
   <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body class="{body_class}">
@@ -339,67 +337,6 @@ def next_event_box(posts, prefix=""):
             f'<span class="next-label">Prochain rendez-vous</span><div class="next-list">{fallback}</div></div>')
 
 
-def build_hero_preview(posts):
-    """Page d'aperçu (non liée, non indexée) : trois propositions d'en-tête sobres pour l'accueil."""
-    nxt = next_event_box(posts)
-    inscr = "https://www.helloasso.com/beta/associations/les-pieds-ont-des-oreilles/adhesions/inscriptions-podo-2026-27-2"
-    heroes = f'''
-<p class="preview-label">Proposition 1 · Nuit et photo</p>
-<section class="hn" style="background-image:url(images/videos/e9JbtfMRlTI.jpg)">
-  <div class="hn-inner">
-    <p class="kicker">Association · Saint-Nazaire</p>
-    <h1>Musique et danse forró<br>pour tou·te·s</h1>
-    <p class="lead">Cours de danse, bals, stages, concerts et ateliers de percussions du Nordeste brésilien.</p>
-    <p class="actions"><a class="btn solid" href="{inscr}">S'inscrire pour 2026-27</a><a class="btn line" href="actualites.html">Actualités</a></p>
-    {nxt}
-  </div>
-</section>
-
-<p class="preview-label">Proposition 2 · Papier</p>
-<section class="hp">
-  <div class="hp-inner">
-    <div class="hp-text">
-      <p class="kicker">Les pieds ont des oreilles · Saint-Nazaire</p>
-      <h1>Musique et danse forró<br>pour tou·te·s</h1>
-      <span class="rule" aria-hidden="true"></span>
-      <p class="lead">Cours de danse, bals, stages, concerts et ateliers de percussions du Nordeste brésilien.</p>
-      <p class="actions"><a class="btn solid dark" href="{inscr}">S'inscrire pour 2026-27</a><a class="btn line dark" href="actualites.html">Actualités</a></p>
-    </div>
-    <div class="hp-side">
-      <img src="images/logo-podo.jpg" alt="Logo Les pieds ont des oreilles" width="422" height="462">
-      {nxt}
-    </div>
-  </div>
-</section>
-
-<p class="preview-label">Proposition 3 · Mer et phare</p>
-<section class="hm">
-  <svg class="hm-art" viewBox="0 0 1200 420" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">
-    <g fill="none" stroke="#fdc16d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
-      <path d="M990 60 l16 -34 l16 34 z"/><rect x="996" y="60" width="20" height="20"/><path d="M984 80 h44"/>
-      <path d="M990 80 l-10 280 h54 l-10 -280"/><path d="M984 150 h44 M981 230 h50 M978 300 h56"/>
-      <path d="M1006 40 l-120 -22 M1006 40 l140 -16" opacity=".5"/>
-    </g>
-    <g fill="none" stroke="#f4813f" stroke-width="1.6" opacity=".75">
-      <path d="M0 352 q75 -26 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0"/>
-      <path d="M0 376 q75 -26 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0" opacity=".7"/>
-      <path d="M0 400 q75 -26 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0" opacity=".5"/>
-    </g>
-  </svg>
-  <div class="hm-inner">
-    <p class="kicker">Association · Saint-Nazaire</p>
-    <h1>Musique et danse forró<br>pour tou·te·s</h1>
-    <p class="lead">Cours de danse, bals, stages, concerts et ateliers de percussions du Nordeste brésilien.</p>
-    <p class="actions"><a class="btn solid" href="{inscr}">S'inscrire pour 2026-27</a><a class="btn line" href="actualites.html">Actualités</a></p>
-    {nxt}
-  </div>
-</section>'''
-    page_html = page("Aperçu des en-têtes", heroes, "", "", "hero-preview")
-    page_html = page_html.replace("<head>", '<head>\n  <meta name="robots" content="noindex">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap">', 1)
-    page_html = page_html.replace("</body>", '<script defer src="js/next-event.js"></script>\n</body>', 1)
-    (ROOT / "apercu-entete.html").write_text(page_html)
-
-
 def card(p, prefix):
     if p["poster"]:
         src = f'{prefix}images/affiches/{p["poster"]}'
@@ -446,7 +383,6 @@ def main():
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
     attach_videos(posts)
     build_videos_page(posts)
-    build_hero_preview(posts)
 
     for i, p in enumerate(posts):
         if p.get("event"):
@@ -484,6 +420,7 @@ def main():
     idx = ROOT / "index.html"
     s = idx.read_text()
     s = re.sub(r"(<!-- NEWS:start -->).*?(<!-- NEWS:end -->)", lambda m: f"{m.group(1)}\n      {block}\n      {m.group(2)}", s, flags=re.S)
+    s = re.sub(r"(<!-- NEXT:start -->).*?(<!-- NEXT:end -->)", lambda m: f"{m.group(1)}\n        {next_event_box(posts)}\n        {m.group(2)}", s, flags=re.S)
     idx.write_text(s)
     print(f"{len(posts)} articles générés")
 
