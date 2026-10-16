@@ -320,6 +320,60 @@ def build_videos_page(posts):
     print(f"{len(items)} vidéos sur videos.html")
 
 
+def upcoming_events(posts, today=None):
+    """Événements à venir (date >= aujourd'hui), du plus proche au plus lointain."""
+    today = (today or datetime.date.today()).isoformat()
+    ev = [p for p in posts if p["date"][:10] >= today and not p.get("month")
+          and (p.get("event") or {}).get("kind") != "series"]
+    return sorted(ev, key=lambda p: p["date"])
+
+
+def next_event_box(posts, prefix=""):
+    """Carte « prochains rendez-vous » : la liste complète est dans la page, un petit script garde les événements non passés."""
+    up = upcoming_events(posts)[:8]
+    data = [{"t": html.unescape(p["title"]), "d": p["date"][:10], "l": long_date(p["date"][:10]), "u": f'{prefix}posts/{p["slug"]}.html'} for p in up]
+    first = up[0] if up else None
+    fallback = (f'<a href="{prefix}posts/{first["slug"]}.html"><strong>{html.escape(first["title"])}</strong></a>'
+                f'<span>{long_date(first["date"][:10])}</span>') if first else ""
+    return (f'<div class="next-event" data-events=\'{html.escape(json.dumps(data, ensure_ascii=False), quote=True)}\' {"" if first else "hidden"}>'
+            f'<span class="next-label">Prochain rendez-vous</span><div class="next-list">{fallback}</div></div>')
+
+
+def build_hero_preview(posts):
+    """Page d'aperçu (non liée, non indexée) comparant deux propositions d'en-tête pour l'accueil."""
+    nxt = next_event_box(posts)
+    heroes = f'''
+<p class="preview-label">Proposition A+B : paysage du logo + prochain rendez-vous</p>
+<section class="hero2">
+  <div class="hero2-inner">
+    <img class="hero2-logo" src="images/logo-podo.jpg" alt="Logo Les pieds ont des oreilles" width="422" height="462">
+    <div class="hero2-text">
+      <h1>Musique et danse forró pour tou.te.s</h1>
+      <p>Cours de danse, bals, stages, concerts et ateliers de percussions, à Saint-Nazaire.</p>
+      <p class="hero-actions"><a class="button" href="https://www.helloasso.com/beta/associations/les-pieds-ont-des-oreilles/adhesions/inscriptions-podo-2026-27-2">S'inscrire pour 2026-27</a>
+      <a class="button ghost" href="actualites.html">Voir les actualités</a></p>
+      {nxt}
+    </div>
+  </div>
+  <div class="hero2-sea" aria-hidden="true"></div>
+</section>
+
+<p class="preview-label">Proposition C : vidéo ou photo plein cadre</p>
+<section class="hero3" style="background-image:url(images/videos/e9JbtfMRlTI.jpg)">
+  <div class="hero3-bar">
+    <h1>Musique et danse forró pour tou.te.s</h1>
+    <p>Cours de danse, bals, stages, concerts et ateliers de percussions, à Saint-Nazaire.</p>
+    <p class="hero-actions"><a class="button yellow" href="https://www.helloasso.com/beta/associations/les-pieds-ont-des-oreilles/adhesions/inscriptions-podo-2026-27-2">S'inscrire pour 2026-27</a>
+    <a class="button ghost-light" href="posts/2026-08-07-concert-forro-everton-corone-trio.html">Voir la vidéo du concert d'Everton</a></p>
+    {nxt}
+  </div>
+</section>'''
+    page_html = page("Aperçu des en-têtes", heroes, "", "", "hero-preview")
+    page_html = page_html.replace("<head>", '<head>\n  <meta name="robots" content="noindex">', 1)
+    page_html = page_html.replace("</body>", '<script defer src="js/next-event.js"></script>\n</body>', 1)
+    (ROOT / "apercu-entete.html").write_text(page_html)
+
+
 def card(p, prefix):
     if p["poster"]:
         src = f'{prefix}images/affiches/{p["poster"]}'
@@ -366,6 +420,7 @@ def main():
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
     attach_videos(posts)
     build_videos_page(posts)
+    build_hero_preview(posts)
 
     for i, p in enumerate(posts):
         if p.get("event"):

@@ -131,3 +131,43 @@ footer::before { bottom: 100%; }
 .chip.active, .chip:hover { background: var(--yellow); color: var(--night); }
 .video-gallery .video[hidden] { display: none; }
 .video-gallery { grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }
+
+/* ---- Propositions d'en-tête de l'accueil ---- */
+.preview-label { margin: 0; padding: .5rem 1rem; background: var(--night); color: #fff4e0; font-weight: 700; text-align: center; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0 0; }
+.button.ghost { background: transparent; color: var(--night); }
+.button.ghost:hover { background: var(--night); color: #fff4e0; }
+.button.yellow { background: var(--yellow); color: var(--night); border-color: var(--yellow); }
+.button.ghost-light { background: transparent; color: #fff4e0; border-color: #fff4e0; }
+.button.ghost-light:hover { background: #fff4e0; color: var(--night); }
+
+.next-event { margin-top: 1.5rem; padding: .8rem 1.1rem; border: 3px solid var(--night); border-radius: .5rem; background: #fff4e0; color: var(--night); max-width: 30rem; }
+.next-event[hidden] { display: none; }
+.next-label { display: block; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--red); }
+.next-list { display: grid; gap: .5rem; margin-top: .3rem; }
+.next-list a { display: grid; color: var(--night); text-decoration: none; line-height: 1.3; }
+.next-list a:hover strong { text-decoration: underline; }
+.next-list span { font-size: .9rem; }
+
+/* A+B : le paysage du logo (ciel jaune-orange, bande rouge, mer turquoise, phare) */
+.hero2 { position: relative; overflow: hidden; padding: 3rem max(1rem, calc((100% - 62rem) / 2)) 7.5rem; color: var(--night);
+  background: linear-gradient(180deg, var(--yellow) 0 52%, var(--orange) 52% 82%, var(--red) 82% 100%); }
+.hero2-inner { display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center; position: relative; z-index: 1; }
+.hero2-logo { width: clamp(9rem, 22vw, 17rem); height: auto; border: 5px solid var(--night); box-shadow: 8px 8px 0 var(--night); }
+.hero2 h1 { margin: 0 0 .6rem; font-size: clamp(1.9rem, 4.6vw, 3.4rem); color: var(--night); }
+.hero2-text > p { margin: 0 0 .4rem; font-weight: 700; font-size: 1.15rem; max-width: 34rem; }
+.hero2-sea { position: absolute; left: 0; right: 0; bottom: 0; height: 5.5rem; background: var(--teal) url("images/vague.svg") 0 0 / 14rem 100% repeat-x; border-top: 0; }
+.hero2::after { content: ""; position: absolute; right: max(1rem, 6%); bottom: 3.2rem; width: clamp(3.5rem, 8vw, 6rem); aspect-ratio: 60 / 170; background: url("images/phare.svg") center / contain no-repeat; z-index: 2; }
+@media (max-width: 40rem) {
+  .hero2-inner { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .hero-actions { justify-content: center; }
+  .hero2::after { display: none; }
+}
+
+/* C : photo ou vidéo plein cadre */
+.hero3 { display: flex; align-items: flex-end; min-height: clamp(24rem, 62vh, 40rem); padding: 0; background: var(--night) center / cover no-repeat; }
+.hero3-bar { width: 100%; padding: 4rem max(1rem, calc((100% - 62rem) / 2)) 2rem; color: #fff4e0;
+  background: linear-gradient(180deg, rgba(38, 31, 46, 0), rgba(38, 31, 46, .92) 45%); }
+.hero3 h1 { margin: 0 0 .5rem; font-size: clamp(1.9rem, 4.6vw, 3.4rem); color: #fff4e0; }
+.hero3-bar > p:not(.hero-actions) { margin: 0; font-size: 1.15rem; max-width: 36rem; }
+.hero-preview section.hero2, .hero-preview section.hero3 { margin-bottom: 0; }
