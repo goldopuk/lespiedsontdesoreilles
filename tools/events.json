@@ -1018,11 +1018,6 @@
   "desc": "Les deux Rodrigos du groupe carioca Conterrâneos, en tournée européenne, accompagnés de Barbara de Trio Bacana, pour un concert exceptionnel au bar L'Appart.\n20h : ouverture des portes + DJ. 21h30 : concert. 2h : fin de soirée. Jauge limitée à 60 personnes. 8 € / 11 € / 14 €.",
   "also": [
    {
-    "title": "Jam session forró avec Conterrâneos",
-    "date": "2021-10-03",
-    "place": "L'Appart, Saint-Nazaire"
-   },
-   {
     "title": "Masterclass forró avec Rodrigo et Rodrigo de Conterrâneos",
     "date": "2021-10-03",
     "place": "Saint-Nazaire"
@@ -1035,6 +1030,18 @@
   ],
   "other_org": null,
   "poster": "evt-2021-10-02-concert-de-conterraneos-rio-de-janeiro.jpg"
+ },
+ {
+  "kind": "event",
+  "slug": "2021-10-03-jam-session-forro-avec-conterraneos",
+  "title": "Jam session forró avec Conterrâneos",
+  "date": "2021-10-03",
+  "end": null,
+  "place": "L'Appart, Saint-Nazaire",
+  "desc": "Le lendemain du concert, jam session forró à L'Appart avec les deux Rodrigos de Conterrâneos.",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2021-10-03-jam-session-forro-avec-conterraneos.jpg"
  },
  {
   "kind": "event",

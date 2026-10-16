@@ -292,9 +292,11 @@ Léo Corrêa, musicien, compositeur et luthier de São Paulo, accompagné de Bar
     E("4175728629162816", "Concert de Conterrâneos (Rio de Janeiro)", "2021-10-02", "L'Appart, Saint-Nazaire", 14, """
 Les deux Rodrigos du groupe carioca Conterrâneos, en tournée européenne, accompagnés de Barbara de Trio Bacana, pour un concert exceptionnel au bar L'Appart.
 20h : ouverture des portes + DJ. 21h30 : concert. 2h : fin de soirée. Jauge limitée à 60 personnes. 8 € / 11 € / 14 €.
-""", also=[("Jam session forró avec Conterrâneos", "2021-10-03", "L'Appart, Saint-Nazaire"),
-           ("Masterclass forró avec Rodrigo et Rodrigo de Conterrâneos", "2021-10-03", "Saint-Nazaire"),
+""", also=[("Masterclass forró avec Rodrigo et Rodrigo de Conterrâneos", "2021-10-03", "Saint-Nazaire"),
            ("Stages forró avec Yse Góes", "2021-10-03", "Rue des Hibiscus, Saint-Nazaire")], end="2021-10-03"),
+    E("", "Jam session forró avec Conterrâneos", "2021-10-03", "L'Appart, Saint-Nazaire", 14, """
+Le lendemain du concert, jam session forró à L'Appart avec les deux Rodrigos de Conterrâneos.
+"""),
     E("6096676037070012", "Mini-forró brunch sauvage à Saint-Marc", "2021-09-19", "12 rue du Commandant Charcot, Saint-Nazaire", None, """
 Mini-bal forró à Saint-Marc, devant le manège, pour faire un petit coup de pub pour le forró à Saint-Nazaire. 11h : café. 11h30 : mini-bal. 12h : apéro.
 """),
