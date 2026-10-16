@@ -90,6 +90,12 @@ def main():
             write(ROOT / p["slug"] / "index.html", redirect_page(f"posts/{slug}.html", "../"))
 
     write(ROOT / ".nojekyll", "")
+    # plan du site et robots.txt (adresses du domaine définitif)
+    urls = ["", "actualites.html"] + [f"{s}/" for s in KEPT] + sorted(
+        f"posts/{f.name}" for f in (ROOT / "posts").glob("*.html"))
+    sm = "".join(f"  <url><loc>{SITE}/{u}</loc></url>\n" for u in urls)
+    write(ROOT / "sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sm}</urlset>\n')
+    write(ROOT / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     write(ROOT / "404.html", bn.page("Page introuvable",
           '<section><h1>Page introuvable</h1><p>Cette page n\'existe pas ou a changé d\'adresse.</p>'
           '<p><a class="button" href="/index.html">Retour à l\'accueil</a> '

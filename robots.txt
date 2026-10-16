@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lespiedsontdesoreilles.fr/sitemap.xml
