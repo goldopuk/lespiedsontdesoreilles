@@ -152,6 +152,7 @@ def page(title, body, prefix, description="", body_class=""):
   <meta name="description" content="{html.escape(description)}">
   <link rel="icon" href="{prefix}images/logo-podo.jpg">
   <link rel="stylesheet" href="{prefix}style.css">
+  <script>document.documentElement.className += " js";</script>
 </head>
 <body class="{body_class}">
   <header class="site-header">
@@ -159,7 +160,8 @@ def page(title, body, prefix, description="", body_class=""):
       <img src="{prefix}images/logo-podo.jpg" alt="" width="55" height="60">
       <span>Les pieds ont des oreilles</span>
     </a>
-    <nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav id="menu" aria-label="Menu principal">
       <a href="{prefix}index.html#asso">L'asso</a>
       <a href="{prefix}actualites.html">Actualités</a>
       <a href="{prefix}videos.html">Vidéos</a>
@@ -177,6 +179,7 @@ def page(title, body, prefix, description="", body_class=""):
       <a href="{prefix}mentions-legales/">Mentions légales</a> ·
       <a href="{prefix}reglement-interieur/">Règlement intérieur</a></p>
   </footer>
+  <script defer src="{prefix}js/menu.js"></script>
   <script defer src="{prefix}js/videos.js"></script>
 </body>
 </html>

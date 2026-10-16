@@ -43,6 +43,24 @@ h3 { font-size: 1.35rem; }
 .site-header nav { display: flex; flex-wrap: wrap; gap: .2rem 1.4rem; }
 .site-header nav a { color: rgba(248, 241, 228, .85); text-decoration: none; font: 500 .74rem/1.4 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
 .site-header nav a:hover { color: var(--yellow); }
+.nav-toggle { display: none; align-items: center; gap: .6rem; padding: .5rem .2rem; border: 0; background: transparent; color: #f8f1e4; font: 500 .74rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; }
+.nav-toggle .bars { position: relative; width: 1.1rem; height: 2px; background: currentColor; transition: background .15s; }
+.nav-toggle .bars::before, .nav-toggle .bars::after { content: ""; position: absolute; left: 0; width: 100%; height: 2px; background: currentColor; transition: transform .15s; }
+.nav-toggle .bars::before { top: -.32rem; }
+.nav-toggle .bars::after { top: .32rem; }
+.site-header.open .nav-toggle .bars { background: transparent; }
+.site-header.open .nav-toggle .bars::before { transform: translateY(.32rem) rotate(45deg); }
+.site-header.open .nav-toggle .bars::after { transform: translateY(-.32rem) rotate(-45deg); }
+.nav-toggle:focus-visible, .site-header nav a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
+@media (max-width: 64rem) {
+  .js .nav-toggle { display: inline-flex; }
+  .js .brand { flex: 1 1 0; min-width: 0; }
+  .js .brand span { max-width: 9rem; font-size: .7rem; letter-spacing: .1em; }
+  .js .site-header { flex-wrap: wrap; }
+  .js .site-header nav { display: none; flex-basis: 100%; flex-direction: column; gap: 0; margin-top: .4rem; border-top: 1px solid rgba(248, 241, 228, .15); }
+  .js .site-header.open nav { display: flex; }
+  .js .site-header nav a { padding: .85rem .2rem; border-bottom: 1px solid rgba(248, 241, 228, .1); font-size: .8rem; }
+}
 
 section, footer { padding: 4rem max(1.2rem, calc((100% - 52rem) / 2)); }
 section.alt { background: var(--alt); }
