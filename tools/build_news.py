@@ -214,6 +214,8 @@ def render_event(e):
         when = f'Du {long_date(e["date"])} au {long_date(e["end"])}'
     else:
         when = long_date(e["date"]).capitalize()
+    if e.get("html"):  # texte complet rédigé à la main : remplace le lieu et la description importés de Facebook
+        return when, e["html"]
     parts = []
     if e.get("place"):
         parts.append(f'<p><strong>Lieu :</strong> {html.escape(e["place"])}</p>')
