@@ -21,6 +21,9 @@ MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "ao�
 HOME_COUNT = 6
 # articles WordPress retirés du site (événement annulé, etc.) : slug WordPress d'origine
 EXCLUDED = {"electrofaune"}
+# adresse (nom de fichier) à conserver quand le titre change : slug WordPress d'origine -> nom de la page dans posts/
+# (évite de casser les liens déjà publiés sur Facebook, HelloAsso, RitmoBrasil)
+FIXED_SLUGS = {"concert-forro-tati-veras": "2026-10-09-concert-forro-tati-veras"}
 # date réelle de l'événement des articles WordPress (sinon l'article serait classé à sa date de publication)
 # fragment du slug WordPress -> date de l'événement (relevée sur la page Facebook de l'association)
 EVENT_DATES = {
@@ -368,7 +371,7 @@ def main():
     posts, seen = [], set()
     for r in raw:
         title = clean_title(r["title"])
-        slug = make_slug(r["title"], r["date"])
+        slug = FIXED_SLUGS.get(r["slug"]) or make_slug(r["title"], r["date"])
         while slug in seen:
             slug += "-2"
         seen.add(slug)
