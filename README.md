@@ -9,13 +9,16 @@ Site statique (HTML/CSS), contenu repris de l'ancien site WordPress.com. Héberg
 - `reglement-interieur/`, `mentions-legales/`, `activites*/` : pages reprises de WordPress (générées)
 - `about/`, `contact/`, `2023/…` etc. : redirections des anciennes adresses WordPress (générées)
 - `images/` : logo, phare, vagues, `affiches/`
+- `histoire/` : page « Notre histoire » et une page par saison (générées par `tools/build_histoire.py` à partir de `tools/histoire/*.md`)
 - `tools/` : scripts de génération et export WordPress (`posts.json`, `pages.json`)
 
 Régénérer les pages après modification des scripts ou des exports :
 
 ```
-python3 tools/build_news.py && python3 tools/build_pages.py
+python3 tools/build_news.py && python3 tools/build_histoire.py && python3 tools/build_pages.py
 ```
+
+Les textes de « Notre histoire » (`tools/histoire/`) sont des copies nettoyées des brouillons hors dépôt (sans comptabilité ni notes internes) : pour les mettre à jour, relancer `python3 tools/histoire_import.py "<dossier chronologie>"` puis `build_histoire.py`.
 
 Voir le site en local : `python3 -m http.server 8765` puis http://localhost:8765
 
