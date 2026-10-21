@@ -118,6 +118,11 @@ def main(disk):
     wp = {slug: convert(poster_path(idx), f"wp-{slug}") for slug, idx in WP_POSTERS.items()}
     wp.update(WP_POSTER_FILES)
     (ROOT / "tools" / "wp_posters.json").write_text(json.dumps(wp, indent=1))
+    # textes complets rédigés à la main (HTML), par adresse de fiche : ils remplacent le texte importé de Facebook
+    texts = json.loads((ROOT / "tools" / "event_texts.json").read_text())
+    for x in out:
+        if x["slug"] in texts:
+            x["html"] = texts[x["slug"]]
     (ROOT / "tools" / "events.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     kinds = {k: sum(1 for x in out if x["kind"] == k) for k in ("event", "series", "archive")}
     print(kinds)
