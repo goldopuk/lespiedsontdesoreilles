@@ -340,13 +340,9 @@ def upcoming_events(posts, today=None):
     return sorted(ev, key=lambda p: p["date"])
 
 
-# événements qui ne figurent pas dans l'encart « prochains rendez-vous » de l'accueil (fragments d'adresse)
-NEXT_HIDE = ("nao-para-a-paris",)
-
-
 def next_event_box(posts, prefix=""):
     """Carte « prochains rendez-vous » : la liste complète est dans la page, un petit script garde les événements non passés."""
-    up = [p for p in upcoming_events(posts) if not any(h in p["slug"] for h in NEXT_HIDE)][:8]
+    up = upcoming_events(posts)[:8]
     data = [{"t": html.unescape(p["title"]), "d": p["date"][:10], "l": long_date(p["date"][:10]), "u": f'{prefix}posts/{p["slug"]}.html'} for p in up]
     first = up[0] if up else None
     fallback = "".join(f'<a href="{prefix}posts/{p["slug"]}.html"><strong>{html.escape(p["title"])}</strong>'

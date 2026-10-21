@@ -10,10 +10,6 @@ def E(fb, title, date, place, poster, desc="", also=(), end=None, other_org=None
 
 EVENTS = [
     # ---------------- 2026 ----------------
-    E("1723349738813896", "Não para à Paris : week-end forró avec Le Petit Bal Perdu", "2026-11-13", "École de danse Kim Kan - Studio des Rigoles, 46 rue des Rigoles, Paris", None, """
-Les Podos à Paris !
-Et si on se lançait ensemble dans un week-end de forró inoubliable ? Du 13 au 15 novembre 2026, notre partenaire Marion Lima et son association Le Petit Bal Perdu organisent à Paris un grand week-end de forró.
-""", end="2026-11-15"),
     E("1565675318382471", "Place aux associations", "2026-09-05", "Place de l'Amérique Latine, Saint-Nazaire", None, """
 Cette année on se retrouve au Forum des associations !
 C'est le moment idéal pour venir nous rencontrer, papoter, poser toutes vos questions sur les cours, les bals, les concerts… et pourquoi pas vous inscrire pour la rentrée.
