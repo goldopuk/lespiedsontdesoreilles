@@ -32,6 +32,8 @@ OVR = {8: "2021/202107 forro na chuva à l'appart/banner.jpg",
 
 # articles WordPress sans image : slug WordPress -> index d'affiche du disque dur
 WP_POSTERS = {"concert-forro-tati-veras": 109}
+# articles WordPress dont l'affiche est déjà dans images/affiches/ (remplace celle du disque dur)
+WP_POSTER_FILES = {"concert-forro-tati-veras": "2026-11-concert-tati-veras-marion-fb.jpg"}
 
 
 def slugify(t):
@@ -113,6 +115,7 @@ def main(disk):
                     "month": month_only, "end": e.get("end"), "poster": convert(e["source"], slug)})
 
     wp = {slug: convert(poster_path(idx), f"wp-{slug}") for slug, idx in WP_POSTERS.items()}
+    wp.update(WP_POSTER_FILES)
     (ROOT / "tools" / "wp_posters.json").write_text(json.dumps(wp, indent=1))
     (ROOT / "tools" / "events.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     kinds = {k: sum(1 for x in out if x["kind"] == k) for k in ("event", "series", "archive")}
