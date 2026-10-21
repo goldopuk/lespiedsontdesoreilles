@@ -79,7 +79,8 @@ def main(disk):
     # ateliers, stages, cours, pratiques et bals récurrents : une fiche par événement Facebook, sans affiche du disque dur
     for e in fbmore.MORE:
         slug = unique(f'{e["date"]}-{slugify(e["title"])}')
-        poster = f'fbcover-{e["fb"]}.jpg' if (IMG_DIR / f'fbcover-{e["fb"]}.jpg').exists() else None
+        poster = e.get("poster") or f'fbcover-{e["fb"]}.jpg'
+        poster = poster if (IMG_DIR / poster).exists() else None
         out.append({"kind": "event", "slug": slug, "title": e["title"], "date": e["date"], "end": e["end"], "place": e["place"],
                     "desc": e["desc"], "also": [], "other_org": None, "poster": poster})
 

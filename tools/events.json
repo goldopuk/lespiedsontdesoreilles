@@ -2328,6 +2328,18 @@
   "poster": "fbcover-1105082222170791.jpg"
  },
  {
+  "kind": "event",
+  "slug": "2026-11-14-gandaia-na-ponte-au-bakoua",
+  "title": "Gandaia na Ponte au Bakoua",
+  "date": "2026-11-14",
+  "end": null,
+  "place": "Au Bakoua",
+  "desc": "Concert forró et bal brésilien avec Gandaia na Ponte, au Bakoua. Samedi 14 novembre 2026, à 20h30.\nGandaia na Ponte est un groupe de forró : accordéon, guitares et percussions pour faire danser tout le monde. Venez avec vos pieds et vos oreilles !",
+  "also": [],
+  "other_org": null,
+  "poster": "evt-2026-11-14-gandaia-na-ponte-au-bakoua.jpg"
+ },
+ {
   "kind": "series",
   "slug": "2020-01-forro-de-l-appart-2020",
   "title": "Forró de l'Appart et Afterbeach (2020)",
@@ -2850,15 +2862,6 @@
   "month": true,
   "end": null,
   "poster": "evt-2024-05-rythmes-sales.jpg"
- },
- {
-  "kind": "archive",
-  "slug": "2026-11-14-gandaia-na-ponte-au-bakoua",
-  "title": "Gandaia na Ponte au Bakoua",
-  "date": "2026-11-14",
-  "month": false,
-  "end": null,
-  "poster": "evt-2026-11-14-gandaia-na-ponte-au-bakoua.jpg"
  },
  {
   "kind": "archive",
