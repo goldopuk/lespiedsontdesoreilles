@@ -4,7 +4,7 @@ document.querySelectorAll(".next-event").forEach(function (box) {
   try { events = JSON.parse(box.dataset.events); } catch (e) { return; }
   var now = new Date();
   var today = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0") + "-" + String(now.getDate()).padStart(2, "0");
-  var next = events.filter(function (e) { return e.d >= today; }).slice(0, 2);
+  var next = events.filter(function (e) { return e.d >= today; }).slice(0, 3);
   var list = box.querySelector(".next-list");
   if (!next.length) { box.hidden = true; return; }
   list.textContent = "";
