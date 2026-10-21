@@ -222,8 +222,8 @@ Un brunch forró au Garage pour fêter la nouvelle année : apportez de quoi boi
     E("671327771099586", "Bal-jam forró de Noël", "2022-12-18", "La P'tite Scène des Halles, Saint-Nazaire", 31, """
 Une pratique forró pour fêter la fin d'année : initiation à la danse à 19h, début de la jam à 19h30. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.
 """),
-    E("5350782015032057", "Jam session forró avec Alise et Gabiju", "2022-11-06", "L'Appart, Saint-Nazaire", 30, """
-Jam session au bar L'Appart, avec Alise et Gabiju. Apportez vos instruments ou votre voix, vos pieds et vos oreilles. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.
+    E("5350782015032057", "Jam session forró avec Aline, Alise et Gabiju", "2022-11-06", "L'Appart, Saint-Nazaire", 30, """
+Jam session au bar L'Appart, avec Aline Le Masson (accordéoniste de Forró Na Chuva), Alise et Gabiju. Apportez vos instruments ou votre voix, vos pieds et vos oreilles. Ouvert à tous les instruments, tous niveaux. Participation libre au chapeau.
 """, also=[("Stage de percussions corporelles et musique forró", "2022-11-06", "Maison de quartier de la Bouletterie, Saint-Nazaire"),
            ("Stage de forró avec Alise Marieta (niveau intermédiaire)", "2022-11-06", "Maison de quartier Chesnaie-Trébale, Saint-Nazaire"),
            ("Stage danses du Nordeste avec Alise et Gabiju", "2022-11-06", "Maison de quartier Chesnaie-Trébale, Saint-Nazaire")]),
