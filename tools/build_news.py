@@ -422,10 +422,12 @@ def main():
     parts = ['<section><h1>Actualités</h1><p>Concerts, bals, stages et week-ends : toutes les annonces de l\'association, des plus récentes aux plus anciennes.</p></section>']
     parts.append('<section><div class="video-tools"><label class="sr-only" for="news-search">Rechercher dans les actualités</label>'
                  '<input id="news-search" type="search" placeholder="Rechercher (titre, lieu, mois, année…)" autocomplete="off">'
+                 '<div class="chips" role="group" aria-label="Filtrer par année"><button type="button" class="chip active" data-year="">Toutes</button>'
+                 + "".join(f'<button type="button" class="chip" data-year="{y}">{y}</button>' for y in by_year) + '</div>'
                  '<p id="news-count" class="note" aria-live="polite"></p></div>'
                  '<p id="news-none" hidden>Aucune actualité ne correspond à cette recherche.</p></section>')
     for y, ps in by_year.items():
-        parts.append(f'<section class="news-year"><h2>{y}</h2><div class="news-grid">' + "".join(card(p, "") for p in ps) + "</div></section>")
+        parts.append(f'<section class="news-year" data-year="{y}"><h2>{y}</h2><div class="news-grid">' + "".join(card(p, "") for p in ps) + "</div></section>")
     (ROOT / "actualites.html").write_text(page("Actualités", "\n".join(parts), "", "Toutes les actualités de l'association", "archive"))
 
     # bloc de l'accueil

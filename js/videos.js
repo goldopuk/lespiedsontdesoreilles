@@ -50,17 +50,26 @@ document.addEventListener("click", function (e) {
   var years = Array.prototype.slice.call(document.querySelectorAll(".news-year"));
   var count = document.getElementById("news-count");
   var none = document.getElementById("news-none");
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".video-tools .chip"));
+  var year = "";
   function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
   function apply() {
     var words = norm(input.value).split(/\s+/).filter(Boolean), shown = 0;
     cards.forEach(function (c) {
-      var ok = words.every(function (w) { return c.dataset.search.indexOf(w) !== -1; });
+      var ok = (!year || c.closest(".news-year").dataset.year === year) && words.every(function (w) { return c.dataset.search.indexOf(w) !== -1; });
       c.hidden = !ok;
       if (ok) shown++;
     });
     years.forEach(function (y) { y.hidden = !y.querySelector(".news-card:not([hidden])"); });
-    count.textContent = words.length ? shown + " actualité" + (shown > 1 ? "s" : "") + " affichée" + (shown > 1 ? "s" : "") : "";
+    count.textContent = words.length || year ? shown + " actualité" + (shown > 1 ? "s" : "") + " affichée" + (shown > 1 ? "s" : "") : "";
     none.hidden = shown > 0;
   }
   input.addEventListener("input", apply);
+  chips.forEach(function (b) {
+    b.addEventListener("click", function () {
+      year = b.dataset.year;
+      chips.forEach(function (x) { x.classList.toggle("active", x === b); });
+      apply();
+    });
+  });
 })();
