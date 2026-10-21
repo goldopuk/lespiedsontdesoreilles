@@ -171,5 +171,5 @@ footer a { color: var(--yellow); }
 .chip { padding: .35rem 1rem; border: 1px solid var(--line); border-radius: 2px; background: transparent; color: var(--ink); font: 500 .85rem/1.4 var(--sans); cursor: pointer; }
 .chip:hover { border-color: var(--ink); }
 .chip.active { background: var(--btn-bg); border-color: var(--btn-bg); color: var(--btn-ink); }
-.video-gallery .video[hidden] { display: none; }
+.video-gallery .video[hidden], .news-card[hidden], .news-year[hidden] { display: none; }
 .video-gallery { grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }

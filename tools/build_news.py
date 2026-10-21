@@ -356,7 +356,9 @@ def card(p, prefix):
         thumb = '<div class="thumb no-poster" aria-hidden="true"></div>'
     if p.get("videos"):
         thumb = thumb.replace("</div>", '<span class="badge-video">▶ Vidéo</span></div>', 1)
-    return (f'<a class="news-card" href="{prefix}posts/{p["slug"]}.html">{thumb}'
+    search = "".join(c for c in unicodedata.normalize("NFD", f'{p["title"]} {shown_date(p)} {p.get("event", {}).get("place", "")}'.lower())
+                     if not unicodedata.combining(c))
+    return (f'<a class="news-card" href="{prefix}posts/{p["slug"]}.html" data-search="{html.escape(search)}">{thumb}'
             f'<span class="news-title">{html.escape(p["title"])}</span>'
             f'<time datetime="{p["date"]}">{shown_date(p)}</time></a>')
 
@@ -418,8 +420,12 @@ def main():
     for p in posts:
         by_year.setdefault(p["date"][:4], []).append(p)
     parts = ['<section><h1>Actualités</h1><p>Concerts, bals, stages et week-ends : toutes les annonces de l\'association, des plus récentes aux plus anciennes.</p></section>']
+    parts.append('<section><div class="video-tools"><label class="sr-only" for="news-search">Rechercher dans les actualités</label>'
+                 '<input id="news-search" type="search" placeholder="Rechercher (titre, lieu, mois, année…)" autocomplete="off">'
+                 '<p id="news-count" class="note" aria-live="polite"></p></div>'
+                 '<p id="news-none" hidden>Aucune actualité ne correspond à cette recherche.</p></section>')
     for y, ps in by_year.items():
-        parts.append(f'<section><h2>{y}</h2><div class="news-grid">' + "".join(card(p, "") for p in ps) + "</div></section>")
+        parts.append(f'<section class="news-year"><h2>{y}</h2><div class="news-grid">' + "".join(card(p, "") for p in ps) + "</div></section>")
     (ROOT / "actualites.html").write_text(page("Actualités", "\n".join(parts), "", "Toutes les actualités de l'association", "archive"))
 
     # bloc de l'accueil

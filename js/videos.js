@@ -41,3 +41,26 @@ document.addEventListener("click", function (e) {
   });
   apply();
 })();
+
+// Page « Actualités » : champ de recherche (sans tenir compte des accents), les années sans résultat sont masquées
+(function () {
+  var input = document.getElementById("news-search");
+  if (!input) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".news-year .news-card"));
+  var years = Array.prototype.slice.call(document.querySelectorAll(".news-year"));
+  var count = document.getElementById("news-count");
+  var none = document.getElementById("news-none");
+  function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  function apply() {
+    var words = norm(input.value).split(/\s+/).filter(Boolean), shown = 0;
+    cards.forEach(function (c) {
+      var ok = words.every(function (w) { return c.dataset.search.indexOf(w) !== -1; });
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    years.forEach(function (y) { y.hidden = !y.querySelector(".news-card:not([hidden])"); });
+    count.textContent = words.length ? shown + " actualité" + (shown > 1 ? "s" : "") + " affichée" + (shown > 1 ? "s" : "") : "";
+    none.hidden = shown > 0;
+  }
+  input.addEventListener("input", apply);
+})();
