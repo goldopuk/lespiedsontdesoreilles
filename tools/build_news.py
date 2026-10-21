@@ -287,15 +287,21 @@ def render_videos(p, prefix):
             f'<div class="video-list">{"".join(items)}</div></section>')
 
 
+def season(date):
+    """Saison (septembre à août) d'une date AAAA-MM-JJ : « 2022-23 »."""
+    y, m = int(date[:4]), int(date[5:7])
+    return f"{y}-{str(y + 1)[2:]}" if m >= 9 else f"{y - 1}-{str(y)[2:]}"
+
+
 def build_videos_page(posts):
-    """Page regroupant toutes les vidéos, avec recherche et filtre par année."""
+    """Page regroupant toutes les vidéos, avec recherche et filtre par saison."""
     import unicodedata as ud
     items = []
     for p in posts:
         for vid, label in p.get("videos", []):
             items.append((p["date"], vid, label, p))
     items.sort(key=lambda x: (x[0], x[2]), reverse=True)
-    years = sorted({d[:4] for d, *_ in items}, reverse=True)
+    years = sorted({season(d) for d, *_ in items}, reverse=True)
 
     def norm(t):
         return "".join(c for c in ud.normalize("NFD", t.lower()) if not ud.combining(c))
@@ -306,7 +312,7 @@ def build_videos_page(posts):
         style = f' style="background-image:url(images/videos/{thumb})"' if thumb else ""
         search = norm(f'{label} {html.unescape(p["title"])} {d[:4]} {p.get("event", {}).get("place", "")}')
         cards.append(
-            f'<figure class="video" data-year="{d[:4]}" data-search="{html.escape(search)}">'
+            f'<figure class="video" data-year="{season(d)}" data-search="{html.escape(search)}">'
             f'<button class="video-lite" type="button" data-id="{vid}" data-title="{html.escape(label)}"{style} '
             f'aria-label="Lire la vidéo : {html.escape(label)}"><span class="play" aria-hidden="true"></span></button>'
             f'<figcaption><strong>{html.escape(label)}</strong><br>'
@@ -318,7 +324,7 @@ def build_videos_page(posts):
             '<a href="https://www.youtube.com/@lespiedsontdesoreilles">Toute la chaîne YouTube</a>.</p>'
             '<div class="video-tools"><label class="sr-only" for="video-search">Rechercher une vidéo</label>'
             '<input id="video-search" type="search" placeholder="Rechercher (artiste, lieu, année…)" autocomplete="off">'
-            f'<div class="chips" role="group" aria-label="Filtrer par année">{chips}</div>'
+            f'<div class="chips" role="group" aria-label="Filtrer par saison">{chips}</div>'
             '<p id="video-count" class="note" aria-live="polite"></p></div>'
             f'<div class="video-list video-gallery">{"".join(cards)}</div>'
             '<p id="video-none" hidden>Aucune vidéo ne correspond à cette recherche.</p></section>')
@@ -416,10 +422,6 @@ def main():
         (ROOT / "posts" / f'{p["slug"]}.html').write_text(page(p["title"], body, "../"))
 
     # archive par année
-    def season(date):
-        y, m = int(date[:4]), int(date[5:7])
-        return f"{y}-{str(y + 1)[2:]}" if m >= 9 else f"{y - 1}-{str(y)[2:]}"
-
     by_year = {}  # saisons (septembre à août), de la plus récente à la plus ancienne
     for p in posts:
         by_year.setdefault(season(p["date"]), []).append(p)
