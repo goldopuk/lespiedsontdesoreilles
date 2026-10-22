@@ -1,0 +1,10 @@
+#!/bin/sh
+# Contrôle du site avant chaque commit (voir tools/check_site.py) : refuse le commit si une page a été retirée,
+# vidée ou si un lien est cassé. Le registre des pages est mis à jour automatiquement avec les nouvelles pages.
+cd "$(git rev-parse --show-toplevel)" || exit 1
+python3 tools/check_site.py || {
+  echo ""
+  echo "Commit refusé : voir les problèmes ci-dessus. Pour un retrait ou un raccourcissement voulu, utilisez --retirer / --accepter."
+  exit 1
+}
+python3 tools/check_site.py --update >/dev/null && git add tools/pages_attendues.tsv

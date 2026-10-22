@@ -22,6 +22,18 @@ Les textes de « Notre histoire » (`tools/histoire/`) sont des copies nettoyée
 
 Voir le site en local : `python3 -m http.server 8765` puis http://localhost:8765
 
+## Contrôles avant commit (pages retirées par erreur)
+
+Un contrôle automatique (`tools/check_site.py`) tourne avant chaque commit (hook `tools/hooks/pre-commit`, activé par `git config core.hooksPath tools/hooks`). Il refuse le commit si :
+- une page du registre `tools/pages_attendues.tsv` a disparu ou a perdu plus de 40 % de sa taille ;
+- un lien ou une image interne est cassé, ou une adresse du plan du site n'existe plus ;
+- un texte rédigé à la main (`tools/event_texts.json`) n'est plus dans sa page ;
+- une vidéo de `tools/videos.json` n'est plus sur la page Vidéos.
+
+Quand le retrait est voulu : `python3 tools/check_site.py --retirer posts/<page>.html` (ou `--accepter` pour une page raccourcie volontairement), puis commit. Les nouvelles pages entrent dans le registre toutes seules. Les tests du contrôle : `python3 tools/test_check_site.py`.
+
+Les textes d'événements écrits à la main se mettent dans `tools/event_texts.json` (clé : adresse de la fiche) : modifier `tools/events.json` ne sert à rien, il est regénéré par `tools/import_events.py`.
+
 ## Mise en ligne sur lespiedsontdesoreilles.fr
 
 Situation constatée le 16/10/2026 : le domaine est enregistré chez **Gandi**, mais ses serveurs de noms sont ceux de **Cloudflare**
