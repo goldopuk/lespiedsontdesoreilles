@@ -2330,6 +2330,18 @@
   "html": "<p>🪗💃 <strong>Envie de danser, de progresser ou juste de vous échauffer les pieds ? La pratique forró est faite pour vous !</strong> 🕺🌴</p><p>📍 <strong>Lieu :</strong> Salle Gambetta, 67bis rue de Cardurand, Saint-Nazaire<br>📅 <strong>Dimanche 25 octobre 2026</strong>, de 18h30 à 20h30</p><p>🎓 <strong>18h30 – 19h30 : pratique dirigée par Alice.</strong> On travaille ensemble, pas à pas, dans la bonne humeur.<br>💃 <strong>19h30 – 20h30 : pratique libre.</strong> On danse, on essaie, on s'amuse, sans contrainte !</p><p>🎟️ <strong>L'adhésion à l'association est obligatoire</strong> pour accéder à la pratique (à partir de 3 €).</p><p>🥗 <strong>Petite auberge espagnole :</strong> apportez de quoi grignoter et partager ! Pensez aux plats faciles à manger, sans miettes ni casse-tête : on évite ce qui s'émiette et ce qui est compliqué à manger. 😉</p><p>On a hâte de vous retrouver sur la piste ! 🌟</p><p>💛 <strong>Les Podos</strong><br>📧 <a href=\"mailto:lespiedsontdesoreilles@gmail.com\">lespiedsontdesoreilles@gmail.com</a></p>"
  },
  {
+  "kind": "event",
+  "slug": "2020-02-01-forroscopics-aux-palmiers",
+  "title": "Forroscopics aux Palmiers",
+  "date": "2020-02-01",
+  "end": null,
+  "place": "Sous les palmiers, la plage, Saint-Nazaire",
+  "desc": "Concert des Forroscopics, groupe de forró rennais, aux Palmiers, à Saint-Nazaire.",
+  "also": [],
+  "other_org": null,
+  "poster": null
+ },
+ {
   "kind": "series",
   "slug": "2020-01-forro-de-l-appart-2020",
   "title": "Forró de l'Appart et Afterbeach (2020)",
