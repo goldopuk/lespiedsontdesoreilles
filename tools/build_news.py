@@ -13,6 +13,7 @@ import re
 import subprocess
 import unicodedata
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 IMG_DIR = ROOT / "images" / "affiches"
@@ -145,7 +146,23 @@ def poster_of(post):
     return download(imgs[0]) if imgs else None
 
 
-def page(title, body, prefix, description="", body_class=""):
+SITE_URL = "https://lespiedsontdesoreilles.fr"
+
+
+def og_tags(title, description, image, url=None, kind="website"):
+    """Balises Open Graph : c'est ce que lisent Messenger, WhatsApp et Facebook pour l'aperçu d'un lien."""
+    img = SITE_URL + "/" + quote(image)
+    tags = [("og:type", kind), ("og:site_name", "Les pieds ont des oreilles"), ("og:locale", "fr_FR"),
+            ("og:title", title), ("og:image", img)]
+    if description:
+        tags.append(("og:description", description))
+    if url:
+        tags.append(("og:url", SITE_URL + "/" + url))
+    return "\n  ".join(f'<meta property="{k}" content="{html.escape(v)}">' for k, v in tags)
+
+
+def page(title, body, prefix, description="", body_class="", image="images/logo-podo.jpg", url=None, kind="website"):
+    og = og_tags(title, description, image, url, kind)
     return f"""<!doctype html>
 <html lang="fr">
 <head>
@@ -153,6 +170,7 @@ def page(title, body, prefix, description="", body_class=""):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)} – Les pieds ont des oreilles</title>
   <meta name="description" content="{html.escape(description)}">
+  {og}
   <link rel="icon" href="{prefix}images/logo-podo.jpg">
   <link rel="stylesheet" href="{prefix}style.css">
   <script>document.documentElement.className += " js";</script>
@@ -419,7 +437,11 @@ def main():
         body = (f'<article class="post"><p><a href="../actualites.html">← Toutes les actualités</a></p>'
                 f'<h1>{html.escape(p["title"])}</h1><time datetime="{p["date"]}">{heading_time}</time>'
                 f'{poster}<div class="post-body">{body_html}</div>{render_videos(p, "../")}{nav}</article>')
-        (ROOT / "posts" / f'{p["slug"]}.html').write_text(page(p["title"], body, "../"))
+        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", body_html))).strip()
+        desc = ((p["event"].get("desc") or text) if p.get("event") else text)[:200].rstrip()
+        image = f'images/affiches/{p["poster"]}' if p["poster"] else "images/logo-podo.jpg"
+        (ROOT / "posts" / f'{p["slug"]}.html').write_text(
+            page(p["title"], body, "../", desc, image=image, url=f'posts/{p["slug"]}.html', kind="article"))
 
     # archive par année
     by_year = {}  # saisons (septembre à août), de la plus récente à la plus ancienne
